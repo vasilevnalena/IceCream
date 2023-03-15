@@ -2,6 +2,10 @@
     --color-background: #849D8F;
 }
 
+body {
+    background-color: var(--color-background);
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -13,6 +17,3 @@
     overflow: hidden;
 }
 
-body {
-    background-color: var(--color-background);
-}

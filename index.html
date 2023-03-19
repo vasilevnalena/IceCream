@@ -20,22 +20,23 @@
         <li><a href="">Доставка и оплата</a></li>
         <li><a href="">О компании</a></li>
       </ul>
-      <ul>
+      <ul class="user-navigation">
         <li><button type="button"><!--<img src="IMG/Loupe_icon.png">--> Поиск</button></li>
-        <li><button type="button">Вход</button></li>
+        <li><a class="login-link" href="">Вход</a></li>
         <li><button type="button">Корзина</button></li>
         </li>
       </ul>
     </nav>
     <h1 class="visually-hidden">Магазин мороженого</h1>
-    <p>
-      С 10 до 20, ежедневно<br>
-      8 812 450-25-25
-    </p>
+    <ul>
+      <li>С 10 до 20, ежедневно</li>
+      <li>8 812 450-25-25</li>
+    </ul>
   </header>
-  <main>
+
+  <main class="main-container">
     <h2 class="visually-hidden">Предложения</h2>
-    <article class="offer_1">
+    <article class="special-offer">
       <img src="IMG/IceCreams_1.png">
       <p>
         Крем-брюле и пломбир<br>
@@ -43,7 +44,26 @@
       </p>
       <button type="button">Давайте оба!</button>
     </article>
-    <section>
+
+    <article class="special-offer">
+      <img src="IMG/IceCreams_2.png">
+      <p>
+        Шоколадный пломбир <br>
+        и лимонный сорбет
+      </p>
+      <button type="button">Давайте оба!</button>
+    </article>
+
+    <article class="special-offer">
+      <img src="IMG/IceCreams_3.png">
+      <p>
+        Пломбир с помадкой <br>
+        и клубничный щербет
+      </p>
+      <button type="button">Давайте оба!</button>
+    </article>
+
+    <section class="banner">
       <h3>Малинка даром!</h3>
       <p>
         При покупке 2 кг любого фруктового мороженого, добавим<br>
@@ -51,7 +71,8 @@
       </p>
       <button type="button">Хочу варенье!</button>
     </section>
-    <section>
+
+    <section class="banner">
       <h3>Шоколадки даром!</h3>
       <p>
         При покупке 2 кг пломбира, добавим в ваш заказ упаковку<br>
@@ -59,70 +80,91 @@
       </p>
       <button type="button">Хочу шоколадки!</button>
     </section>
-    <section>
+
+    <section class="hits">
       <ul>
         <li>
-          <img src="IMG/Hit.png" alt="Хит">
-          <img src="IMG/Taste_1.png" alt="Мороженое 1">
-          <p>310 ₽/кг</p>
+          <div class="hit-icon">
+            <img src="IMG/Hit.png" alt="Хит">
+            <img src="IMG/Taste_1.png" alt="Мороженое 1">
+          </div>
+          <p class="price">310 ₽/кг</p>
           <button type="button">Сливочное с апельсиновым джемом и цитрусовой стружкой</button>
         </li>
         <li>
-          <img src="IMG/Hit.png" alt="Хит">
-          <img src="IMG/Taste_2.png" alt="Мороженое 2">
-          <p>380 ₽/кг</p>
+          <div class="hit-icon">
+            <img src="IMG/Hit.png" alt="Хит">
+            <img src="IMG/Taste_2.png" alt="Мороженое 2">
+          </div>
+          <p class="price">380 ₽/кг</p>
           <button type="button">Сливочно-кофейное с кусочками шоколада</button>
         </li>
         <li>
-          <img src="IMG/Hit.png" alt="Хит">
-          <img src="IMG/Taste_3.png" alt="Мороженое 3">
-          <p>355 ₽/кг</p>
+          <div class="hit-icon">
+            <img src="IMG/Hit.png" alt="Хит">
+            <img src="IMG/Taste_3.png" alt="Мороженое 3">
+          </div>
+          <p class="price">355 ₽/кг</p>
           <button type="button">Сливочно-клубничное с присыпкой из белого шоколада</button>
         </li>
         <li>
+          <div class="hit-icon"></div>
           <img src="IMG/Hit.png" alt="Хит">
           <img src="IMG/Taste_4.png" alt="Мороженое 4">
-          <p>415 ₽/кг</p>
+          </div>
+          <p class="price">415 ₽/кг</p>
           <button type="button">Сливочное крем-брюле с карамельной подливкой</button>
         </li>
       </ul>
     </section>
-    <section>
+
+    <section class="SEO">
       <h3>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого
         собственного производства на развес</h3>
       <ul>
-        <img src="IMG/IceCream_icon.png" alt="Иконка 1">
-        <p>Все наше мороженое изготавливается на собственном производстве,
-          с использованием современного оборудования
-          и проверенных временем технологий.</p>
-        <img src="IMG/Leaf_icon.png" alt="Иконка 2">
-        <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего
-          качества. Все дополнительные ингредиенты и добавки произведены из натурального,
-          экологически чистого сырья.</p>
+        <li><img src="IMG/IceCream_icon.png" alt="Иконка 1">
+          <p>Все наше мороженое изготавливается на собственном производстве,
+            с использованием современного оборудования
+            и проверенных временем технологий.</p>
+        </li>
+        <li><img src="IMG/Leaf_icon.png" alt="Иконка 2">
+          <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего
+            качества. Все дополнительные ингредиенты и добавки произведены из натурального,
+            экологически чистого сырья.</p>
+        </li>
       </ul>
       <ul>
-        <img src="IMG/Cow_icon.png" alt="Иконка 3">
-        <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний,
-          с которыми нас связывает долговременное сотрудничество.</p>
-        <img src="IMG/Thermometer_icon.png" alt="Иконка 4">
-        <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
-          который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        <li>
+          <img src="IMG/Cow_icon.png" alt="Иконка 3">
+          <p>Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний,
+            с которыми нас связывает долговременное сотрудничество.</p>
+        </li>
+        <li><img src="IMG/Thermometer_icon.png" alt="Иконка 4">
+          <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
+            который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+        </li>
       </ul>
     </section>
-    <article>
+
+    <article class="news">
       <h4>Новое в нашем блоге</h4>
       <p>10 способов сервировки фруктовых щербетов к столу</p>
     </article>
-    <section>
+
+    <section class="mailing">
       <form>
-        <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
-          что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <p>
+          Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного,
+          что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+        </p>
         <input type="email" placeholder="email@example.com">
         <button type="submit">Отправить</button>
       </form>
     </section>
-    <article>
-      <img src="IMG/Map.png" alt="Карта с адресом">
+
+    <article class="map">
+      <!-- <img src="IMG/Map.png" alt="Карта с адресом"> -->
+
       <section>
         <h5>Адрес главного офиса и офлайн-магазина:</h5>
         <p>
@@ -135,26 +177,32 @@
       </section>
     </article>
   </main>
-  <footer>
-    <ul>
-      <li><img src="IMG/Twitter_icon.png" alt="Иконка Твиттер"></li>
+
+  <footer class="main-footer">
+    <ul class="social-media">
+      <li><button><img src="IMG/Twitter_icon.png" alt="Иконка Твиттер"></button></li>
       <li><img src="IMG/Instagram_icon.png" alt="Иконка Инстаграм"></li>
       <li><img src="IMG/Facebook_icon.png" alt="Иконка Фейсбук"></li>
       <li><img src="IMG/VK_icon.png" alt="Иконка ВКонтакте"></li>
     </ul>
-    <ul>
+
+    <ul class="menu-footer">
       <li>
         <img src="IMG/Heart_icon.png" alt="Иконка сердечко">
         <a href="">Для поставщиков</a>
       </li>
       <li><a href="">О производстве</a></li>
     </ul>
-    <ul>
+
+    <ul class="menu-footer">
       <li><a href="">Наши документы</a></li>
       <li><a href="">Экологические стандарты</a></li>
     </ul>
-    <img src="IMG/Logo_html_Academy.png" alt="HTML Academy">
-    <p>Сделано в HTML Academy © 2019</p>
+
+    <div class="created-by">
+      <img src="IMG/Logo_html_Academy.png" alt="HTML Academy">
+      <p>Сделано в HTML Academy © 2019</p>
+    </div>
   </footer>
 </body>
 

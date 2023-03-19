@@ -2,7 +2,25 @@
     --color-background: #849D8F;
 }
 
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Roboto"),
+        url("/fonts/web/roboto.woff2") format("woff2"),
+        url("/fonts/web/roboto.woff") format("woff");
+}
+
 body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    font-style: normal;
+    color: #ffffff;
+    /* text-transform: ; */
     background-color: var(--color-background);
 }
 
@@ -17,3 +35,84 @@ body {
     overflow: hidden;
 }
 
+a {
+    text-decoration: none;
+}
+
+.index-navigation {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.main-header {}
+
+.main-navigation {}
+
+.main-header-logo {}
+
+.site-navigation {}
+
+.user-navigation {}
+
+.main-container {}
+
+.special-offer {}
+
+.banner {}
+
+.hits {}
+
+.price {}
+
+.hit-icon {}
+
+.SEO {}
+
+.news {}
+
+.mailing {}
+
+.map {
+    background-color: rgb(151, 210, 191);
+    background-image: url("IMG/Map.png");
+    width: 100%;
+    height: 430px;
+    background-size: 100% 100%;    
+}
+
+.main-footer {}
+
+.social-media {}
+
+.menu-footer {}
+
+.created-by {}
+
+
+
+
+
+
+
+
+
+
+/* .site-navigation,
+.user-navigation{
+    list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a{
+    color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+    background-color: #628d63;
+    padding: 0.2px ;
+} */

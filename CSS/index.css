@@ -4,8 +4,8 @@
 
 @font-face {
     font-family: "Roboto";
-    font-style: normal;
-    font-weight: normal;
+    /* font-style: normal; */
+    /* font-weight: normal; */
     src: local("Roboto"),
         url("/fonts/web/roboto.woff2") format("woff2"),
         url("/fonts/web/roboto.woff") format("woff");
@@ -20,8 +20,11 @@ body {
     font-weight: 700;
     font-style: normal;
     color: #ffffff;
-    /* text-transform: ; */
     background-color: var(--color-background);
+}
+
+li {
+    list-style: none;
 }
 
 .visually-hidden {
@@ -39,74 +42,33 @@ a {
     text-decoration: none;
 }
 
-.index-navigation {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 700;
+/* Шапка */
+.main-header {
     color: #ffffff;
 }
-
-.main-header {}
 
 .main-navigation {}
 
 .main-header-logo {}
 
-.site-navigation {}
-
-.user-navigation {}
-
-.main-container {}
-
-.special-offer {}
-
-.banner {}
-
-.hits {}
-
-.price {}
-
-.hit-icon {}
-
-.SEO {}
-
-.news {}
-
-.mailing {}
-
-.map {
-    background-color: rgb(151, 210, 191);
-    background-image: url("IMG/Map.png");
-    width: 100%;
-    height: 430px;
-    background-size: 100% 100%;    
+.site-navigation {
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: underline;
+    /* text-decoration-color: #D1C1BB; */
 }
 
-.main-footer {}
-
-.social-media {}
-
-.menu-footer {}
-
-.created-by {}
-
-
-
-
-
-
-
-
-
-
-/* .site-navigation,
-.user-navigation{
-    list-style: none;
+.user-navigation {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
 }
 
 .site-navigation a,
-.user-navigation a{
-    color: #ffffff;
+.user-navigation a,
+.hits a,
+.main-footer a {
+    color: inherit;
 }
 
 .site-navigation a:hover,
@@ -114,5 +76,196 @@ a {
 .user-navigation a:hover,
 .user-navigation a:focus {
     background-color: #628d63;
-    padding: 0.2px ;
-} */
+}
+
+.working-time {}
+
+.working-time li:nth-child(1) {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.working-time li:nth-child(2) {
+    font-size: 22px;
+    line-height: 24px;
+}
+
+/* Тело страницы */
+.main-container {}
+
+.special-offer {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.special-offer button {
+    font-size: 32px;
+    line-height: 44px;
+
+    background: linear-gradient(0deg, #E74A35 0%, #F26843 100%), #FFFFFF;
+    box-shadow: 0px 2px 2px rgba(172, 16, 0, 64%);
+    /* border-radius: 40px; */
+    /* background-image: url("IMG/Button_choose_offer.svg"); */
+    color: #ffffff;
+}
+
+.banner {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.banner button {
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    /* color: #ffffff; */
+}
+
+.banner h3 {
+    font-size: 35px;
+    line-height: 41px;
+}
+
+.hits {}
+
+.hits a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: underline;
+}
+
+.price {
+    text-align: left;
+    font-size: 45px;
+    line-height: 13px;
+}
+
+.hit-icon {
+    text-align: left;
+}
+
+.SEO {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    color: #323232
+}
+
+.SEO ul {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.news {
+    /* background-image: url("IMG/Strawberry_background.jpg"); */
+
+}
+
+.news a {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-decoration: underline;
+    color: #000000;
+}
+
+.news h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    /* text-decoration: none; */
+}
+
+.mailing {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #5A5A5A;
+    /* background-image: url(IMG/Mail.png) */
+}
+
+.mailing input {
+    line-height: 24px;
+    color: #999999;
+}
+
+.mailing button {
+    font-size: 18px;
+    line-height: 24px;
+    color: #FEFEFE;
+}
+
+.map {
+    background-color: rgb(151, 210, 191);
+    background-image: url("IMG/Map.png");
+    width: 100%;
+    height: 430px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #000000;
+}
+
+.map {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.map :nth-child(2) {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.map :nth-child(4) {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.map :nth-child(5) {
+    line-height: 20px;
+}
+
+.map button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FEFEFE;
+}
+
+/* Подвал */
+.main-footer {}
+
+.social-media {}
+
+.menu-footer-first-column {}
+
+
+.menu-footer-second-column {}
+
+.menu-footer-first-column,
+.menu-footer-second-column {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    align-items: center;
+    text-decoration: underline;
+    /* text-decoration-color: rgba(0, 0, 0, 0.0001); */
+}
+
+.menu-footer-first-column li:nth-child(1) {
+    font-weight: 700
+}
+
+.created-by {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FEFEFE;
+
+}

@@ -23,6 +23,44 @@ body {
     background-color: var(--color-background);
 }
 
+input {
+    background: #FFFFFF;
+    border: 1px solid rgba(178, 178, 178, 0.52);
+    line-height: 24px;
+    font-size: 16px;
+}
+
+input:hover {
+    border: 2px solid rgba(154, 154, 154, 0.52);
+}
+
+input:focus {
+    border: 2px solid rgba(46, 136, 228, 0.52);
+}
+
+input:active {
+    border: 1px solid rgba(178, 178, 178, 0.52);
+}
+
+button {
+    color: #ffffff;
+    border: none;
+    background: linear-gradient(0deg, #E74A35 0%, #F26843 100%);
+    box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+
+}
+
+button:hover,
+button:focus {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(0deg, #E74A35 -3.14%, #F26843 103.11%);
+    box-shadow: 0px 2px 2px #AC1000;
+}
+
+button:active {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(0deg, #F26843 0%, #E74A35 100%);
+    box-shadow: inset 0px 2px 2px #942718;
+}
+
 li {
     list-style: none;
 }
@@ -78,12 +116,15 @@ a {
     background-color: #628d63;
 }
 
-.working-time {}
-
-.working-time li:nth-child(1) {
+.working-time {
     font-size: 14px;
     line-height: 16px;
 }
+
+/* .working-time li:nth-child(1) {
+    font-size: 14px;
+    line-height: 16px;
+} */
 
 .working-time li:nth-child(2) {
     font-size: 22px;
@@ -102,24 +143,35 @@ a {
 .special-offer button {
     font-size: 32px;
     line-height: 44px;
-
-    background: linear-gradient(0deg, #E74A35 0%, #F26843 100%), #FFFFFF;
-    box-shadow: 0px 2px 2px rgba(172, 16, 0, 64%);
-    /* border-radius: 40px; */
-    /* background-image: url("IMG/Button_choose_offer.svg"); */
+    text-align: center;
     color: #ffffff;
 }
 
 .banner {
     font-size: 18px;
     line-height: 22px;
+    text-align: left;
 }
 
 .banner button {
     font-size: 32px;
     line-height: 44px;
     text-align: center;
-    /* color: #ffffff; */
+    background: linear-gradient(0deg, #CA3824 -2.17%, #F26843 104.35%);
+    mix-blend-mode: normal;
+    opacity: 0.99;
+    box-shadow: 0px 2px 2px rgba(85, 8, 0, 0.54);
+}
+
+.banner button:focus,
+.banner button:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(0deg, #E74A35 0%, #F26843 100%);
+    box-shadow: 0px 1px 2px #AC1000;
+}
+
+.banner button:active {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(0deg, #F26843 0%, #E74A35 100%);
+    box-shadow: inset 0px 2px 2px #942718;
 }
 
 .banner h3 {
@@ -127,7 +179,9 @@ a {
     line-height: 41px;
 }
 
-.hits {}
+.hits {
+    text-align: center;
+}
 
 .hits a {
     font-weight: 500;
@@ -136,17 +190,20 @@ a {
     text-decoration: underline;
 }
 
+.hit-icon {
+    text-align: left;
+}
+
 .price {
     text-align: left;
     font-size: 45px;
     line-height: 13px;
 }
 
-.hit-icon {
-    text-align: left;
-}
+
 
 .SEO {
+    text-align: left;
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
@@ -160,8 +217,7 @@ a {
 }
 
 .news {
-    /* background-image: url("IMG/Strawberry_background.jpg"); */
-
+    text-align: left;
 }
 
 .news a {
@@ -177,20 +233,20 @@ a {
     font-size: 16px;
     line-height: 22px;
     color: #000000;
-    /* text-decoration: none; */
 }
 
 .mailing {
+    text-align: center;
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     color: #5A5A5A;
-    /* background-image: url(IMG/Mail.png) */
 }
 
 .mailing input {
+    /* font-family: inherit; */
+    text-align: left;
     line-height: 24px;
-    color: #999999;
 }
 
 .mailing button {
@@ -200,19 +256,16 @@ a {
 }
 
 .map {
-    background-color: rgb(151, 210, 191);
-    background-image: url("IMG/Map.png");
-    width: 100%;
-    height: 430px;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    color: #000000;
-}
-
-.map {
+    text-align: left;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
+
+    /* background-color: rgb(151, 210, 191); */
+    background-image: url("IMG/Map.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #000000;
 }
 
 .map :nth-child(2) {
@@ -232,6 +285,7 @@ a {
 }
 
 .map button {
+    text-align: center;
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
@@ -239,7 +293,9 @@ a {
 }
 
 /* Подвал */
-.main-footer {}
+.main-footer {
+    text-align: left;
+}
 
 .social-media {}
 
@@ -255,7 +311,6 @@ a {
     line-height: 16px;
     align-items: center;
     text-decoration: underline;
-    /* text-decoration-color: rgba(0, 0, 0, 0.0001); */
 }
 
 .menu-footer-first-column li:nth-child(1) {
@@ -267,5 +322,8 @@ a {
     font-size: 12px;
     line-height: 16px;
     color: #FEFEFE;
+}
 
+.modal {
+    visibility:hidden
 }

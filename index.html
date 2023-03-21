@@ -21,9 +21,9 @@
         <li><a href="">О компании</a></li>
       </ul>
       <ul class="user-navigation">
-        <li><button type="button">Поиск</button></li>
+        <li><button type="button"><img src="IMG/loupe.svg" alt="Иконка поиска"></button></li>
         <li><a class="login-link" href="">Вход</a></li>
-        <li><button type="button">Корзина</button></li>
+        <li><button type="button"><img src="IMG/basket.svg" alt="Корзина"></button></li>
         </li>
       </ul>
     </nav>
@@ -163,7 +163,7 @@
     </section>
 
     <article class="map">
-      <section>
+      <section class="address">
         <h5>Адрес главного офиса и офлайн-магазина:</h5>
         <p>ул. Большая Конюшенная 19/8, Санкт-Петербург</p>
         <p>Для заказов по телефону:</p>
@@ -204,11 +204,13 @@
 
   <section class="modal modal-login">
     <form class="login-form">
-      <input type="email" placeholder="email@example.com">
-      <input type="password">
-      <button type="submit">Войти</button>
-      <a class="restore" href="">Забыли пароль?</a>
-      <a href="">Новая регистрация</a>
+      <input class="login" type="email" placeholder="email@example.com">
+      <input class="password" type="password">
+      <button class="button-sign-in" type="submit">Войти</button>
+      <ul>
+        <li><a class="restore" href="">Забыли пароль?</a></li>
+        <li><a href="">Новая регистрация</a></li>
+      </ul>
     </form>
   </section>
 </body>

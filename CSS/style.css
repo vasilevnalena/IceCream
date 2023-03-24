@@ -13,16 +13,23 @@
 }
 
 body {
-  margin: 0;
+  /* Временные размеры по образцу макета */
+  width: 1200px;
+  height: 2416px;
+
+  /* display: flex; */
+  flex-direction: column;
   padding: 0;
+  margin: 0;
+
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
   font-style: normal;
   color: #ffffff;
-  background-color: var(--color-background3);
-  background-image: url(IMG/Background_3.png);
+  background-color: var(--color-background1);
+  background-image: url(IMG/IceCreams_1.png);
   background-repeat: no-repeat;
 }
 
@@ -46,6 +53,15 @@ input:active {
 }
 
 button {
+  display: flex;
+  padding: 8px 28px 15px 28px;
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  align-items: center;
+  text-align: center;
   color: #ffffff;
   border: none;
   background: linear-gradient(0deg, #e74a35 0%, #f26843 100%);
@@ -91,8 +107,11 @@ a {
 
 /* Шапка */
 .main-header {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 9px 27px 270px 25px;
   color: #ffffff;
-  margin-bottom: 284px;
 }
 
 .main-navigation {
@@ -103,23 +122,24 @@ a {
 }
 
 .site-navigation {
-  /* display: block; */
+  display: flex;
+  margin: 0;
   font-size: 16px;
   line-height: 18px;
   text-decoration: underline;
   align-items: center;
   text-decoration-color: rgba(255, 255, 255, 0.2);
-  margin: 0;
-  padding: 0;
 }
 
 .site-navigation button {
-  margin: 9 15;
-  padding: 0;
-  
+  display: flex;
+  padding: 9px 15px 8px 15px;
+  margin: 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
+  font-style: normal;
+  align-items: center;
   background: none;
   box-shadow: none;
   text-align: center;
@@ -133,37 +153,42 @@ a {
   color: #000000;
 }
 
- .site-navigation button:active {
+.site-navigation button:active {
   color: #000000;
   background: linear-gradient(0deg, #ededed, #ededed), rgba(248, 247, 244, 0.99);
   box-shadow: inset 0px 2px 1px #696969;
 }
 
-.site-navigation li{
-    border-radius: 40px;
+.site-navigation a {
+  display: flex;
+  padding: 9px 15px 8px 15px;
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
 }
 
-.site-navigation li:hover,
-.site-navigation li:focus {
+.site-navigation a:hover,
+.site-navigation a:focus {
   background: #f7f6f3;
   color: #000000;
   border-radius: 40px;
 }
 
-.site-navigation li:active {
+.site-navigation a:active {
   color: #000000;
   background: linear-gradient(0deg, #ededed, #ededed), rgba(248, 247, 244, 0.99);
   box-shadow: inset 0px 2px 1px #696969;
-} 
+}
 
 .user-navigation {
-  font-size: 14px;
-  line-height: 16px;
-  font-weight: 500;
   display: flex;
 
   margin: 0;
-  padding: 0;
+  align-items: center;
+  /* padding: 0; */
 }
 
 .site-navigation a,
@@ -174,21 +199,39 @@ a {
 }
 
 .user-navigation button {
+  display: flex;
+  padding: 9px 18px 10px 16px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
   box-shadow: none;
   background: #ffffff;
   mix-blend-mode: normal;
-  border: none;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* .site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
-    background-color: #628d63;
-} */
+.login-link {
+  display: flex;
+  padding: 9px 18px 10px 16px;
+  margin: 0;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+  text-align: right;
+  box-shadow: none;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  background-color: rgba(255, 255, 255, 0.2);
+}
 
 .working-time {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
   font-size: 14px;
   line-height: 16px;
 }

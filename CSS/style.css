@@ -18,7 +18,7 @@ body {
   height: 2416px;
 
   /* display: flex; */
-  flex-direction: column;
+  /* flex-direction: column; */
   padding: 0;
   margin: 0;
 
@@ -118,9 +118,6 @@ a {
   display: flex;
 }
 
-.main-header-logo {
-}
-
 .site-navigation {
   display: flex;
   margin: 0;
@@ -185,10 +182,14 @@ a {
 
 .user-navigation {
   display: flex;
-
   margin: 0;
   align-items: center;
-  /* padding: 0; */
+}
+
+.user-navigation button,
+.user-navigation a {
+  display: flex;
+  height: 35px;
 }
 
 .site-navigation a,
@@ -198,9 +199,9 @@ a {
   color: inherit;
 }
 
-.user-navigation button {
-  display: flex;
-  padding: 9px 18px 10px 16px;
+.user-navigation .search__button {
+  /* display: flex; */
+  padding: 9px 9px 9px 9px;
   margin: 0;
   font-weight: 500;
   font-size: 14px;
@@ -212,8 +213,27 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.search__button path:focus,
+.search__button path:hover {
+  fill: #000000;
+}
+
+.user-navigation button:hover,
+.user-navigation button:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background: #f7f6f3;
+  color: #000000;
+}
+
+.user-navigation button:active {
+  color: #000000;
+  background: linear-gradient(0deg, #ededed, #ededed), rgba(248, 247, 244, 0.99);
+  box-shadow: inset 0px 2px 1px #696969;
+}
+
 .login-link {
-  display: flex;
+  /* display: flex; */
   padding: 9px 18px 10px 16px;
   margin: 0;
   border-radius: 40px;
@@ -222,6 +242,20 @@ a {
   line-height: 16px;
   align-items: center;
   text-align: right;
+  box-shadow: none;
+  background: #ffffff;
+  mix-blend-mode: normal;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.user-navigation .basket__button {
+  /* display: flex; */
+  padding: 9px 18px 10px 16px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
   box-shadow: none;
   background: #ffffff;
   mix-blend-mode: normal;

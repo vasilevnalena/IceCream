@@ -17,9 +17,9 @@ body {
   width: 1200px;
   height: 2416px;
 
-  /* display: flex; */
-  /* flex-direction: column; */
-  padding: 0;
+  /* display: flex;
+  flex-direction: column; */
+  /* padding: 9px 13px 28px 27px; */
   margin: 0;
 
   font-family: "Roboto", "Arial", sans-serif;
@@ -33,27 +33,29 @@ body {
   background-repeat: no-repeat;
 }
 
+.container {
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
 input {
   background: #ffffff;
   border: 1px solid rgba(178, 178, 178, 0.52);
   line-height: 24px;
   font-size: 16px;
 }
-
 input:hover {
   border: 2px solid rgba(154, 154, 154, 0.52);
 }
-
 input:focus {
   border: 2px solid rgba(46, 136, 228, 0.52);
 }
-
 input:active {
   border: 1px solid rgba(178, 178, 178, 0.52);
 }
 
 button {
-  display: flex;
   padding: 8px 28px 15px 28px;
   margin: 0;
 
@@ -66,7 +68,7 @@ button {
   border: none;
   background: linear-gradient(0deg, #e74a35 0%, #f26843 100%);
   box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
-  border-radius: 50px;
+  border-radius: 50vh;
 }
 
 button:hover,
@@ -79,7 +81,6 @@ button:focus {
     linear-gradient(0deg, #e74a35 -3.14%, #f26843 103.11%);
   box-shadow: 0px 2px 2px #ac1000;
 }
-
 button:active {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
     linear-gradient(0deg, #f26843 0%, #e74a35 100%);
@@ -88,6 +89,11 @@ button:active {
 
 li {
   list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden {
@@ -107,20 +113,44 @@ a {
 
 /* Шапка */
 .main-header {
-  display: flex;
-  flex-direction: column;
   margin: 0;
-  padding: 9px 27px 270px 25px;
+  padding-bottom: 270px;
   color: #ffffff;
+}
+
+.main-header-logo {
+  padding-top: 9px;
+  padding-left: 27px;
+  padding-right: 9px;
+  margin: 0;
 }
 
 .main-navigation {
   display: flex;
+  /* justify-content: space-between; */
+  margin: 0;
+  padding: 0;
+
+  background-color: #00000023;
+  align-items: center;
+}
+
+.main-navigation .container {
+  display: flex;
+  padding-top: 2px;
+  /* justify-content: space-between; */
+  margin: 0;
 }
 
 .site-navigation {
   display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
   margin: 0;
+  padding: 0;
+
+  font-style: normal;
+  font-weight: 700;
   font-size: 16px;
   line-height: 18px;
   text-decoration: underline;
@@ -129,12 +159,12 @@ a {
 }
 
 .site-navigation button {
-  display: flex;
-  padding: 9px 15px 8px 15px;
+  padding: 8px 14px 9px 14px;
   margin: 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 18px;
+
   font-style: normal;
   align-items: center;
   background: none;
@@ -160,9 +190,10 @@ a {
 }
 
 .site-navigation a {
-  display: flex;
-  padding: 9px 15px 8px 15px;
+  padding: 8px 14px 9px 14px;
   margin: 0;
+  border-radius: 50vh;
+
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -172,13 +203,14 @@ a {
 
 .user-navigation {
   display: flex;
+
+  /* justify-content: space-between; */
   margin: 0;
   align-items: center;
 }
 
 .user-navigation button,
 .user-navigation a {
-  display: flex;
   height: 35px;
 }
 
@@ -190,7 +222,6 @@ a {
 }
 
 .user-navigation .search__button {
-  display: flex;
   padding: 7px 8px 8px 8px;
   margin: 0;
   font-weight: 500;
@@ -203,24 +234,29 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.login-link {
+.user-navigation .login-link {
   display: flex;
-  padding: 6px 16px 7px 16px;
   margin: 0;
-  border-radius: 50px;
+  border-radius: 50vh;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   align-items: center;
-  text-align: right;
   box-shadow: none;
   background: #ffffff;
   mix-blend-mode: normal;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.login-link svg {
+  padding: 8px 9px 8px 17px;
+}
+
+.login-link div {
+  padding: 9px 18px 10px 0px;
+}
+
 .user-navigation .basket__button {
-  display: flex;
   padding: 6px 17px 6px 16px;
   margin: 0;
   font-weight: 500;
@@ -271,8 +307,8 @@ a {
 }
 
 /* Тело страницы */
-.main-container {
-}
+/* .main-container {
+} */
 
 .special-offer {
   font-size: 60px;
@@ -442,6 +478,9 @@ a {
 
 /* Подвал */
 .main-footer {
+  margin-top: 65px; /*   из примера    */
+  padding: 60px 0; /*   из примера    */
+
   text-align: left;
 }
 

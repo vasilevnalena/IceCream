@@ -19,9 +19,8 @@ body {
 
   /* display: flex;
   flex-direction: column; */
-  /* padding: 9px 13px 28px 27px; */
   margin: 0;
-
+  padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -30,11 +29,11 @@ body {
   color: #ffffff;
   background-color: var(--color-background1);
   background-image: url(IMG/IceCreams_1.png);
+  background-position: top;
   background-repeat: no-repeat;
 }
 
 .container {
-  width: auto;
   margin: 0;
   padding: 0;
 }
@@ -56,7 +55,7 @@ input:active {
 }
 
 button {
-  padding: 8px 28px 15px 28px;
+  padding: 0;
   margin: 0;
 
   font-weight: 700;
@@ -92,8 +91,7 @@ li {
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+  /* height: auto; */
 }
 
 .visually-hidden {
@@ -113,8 +111,11 @@ a {
 
 /* Шапка */
 .main-header {
+  padding-right: 28px;
+  padding-bottom: 212px;
+  /* padding: 0 28 0 0; */
   margin: 0;
-  padding-bottom: 270px;
+
   color: #ffffff;
 }
 
@@ -127,28 +128,31 @@ a {
 
 .main-navigation {
   display: flex;
+  /* width: 100%; */
   /* justify-content: space-between; */
   margin: 0;
   padding: 0;
 
-  background-color: #00000023;
+  /* background-color: #00000023; */
   align-items: center;
 }
 
 .main-navigation .container {
   display: flex;
-  padding-top: 2px;
-  /* justify-content: space-between; */
+  width: 100%;
+
+  justify-content: space-between;
   margin: 0;
+  padding: 0;
+  /* background-color: #00000023; */
 }
 
 .site-navigation {
   display: flex;
-  justify-content: space-between;
   /* flex-wrap: wrap; */
   margin: 0;
   padding: 0;
-
+  /* padding-top: 2px; */
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -159,7 +163,7 @@ a {
 }
 
 .site-navigation button {
-  padding: 8px 14px 9px 14px;
+  padding: 9px 14px 9px 14px;
   margin: 0;
   font-weight: 700;
   font-size: 16px;
@@ -203,15 +207,17 @@ a {
 
 .user-navigation {
   display: flex;
-
-  /* justify-content: space-between; */
+  width: 246px;
+  justify-content: space-between;
   margin: 0;
+  padding: 0;
   align-items: center;
+  background-color: #00000023;
 }
 
 .user-navigation button,
 .user-navigation a {
-  height: 35px;
+  height: 30px;
 }
 
 .site-navigation a,
@@ -222,11 +228,9 @@ a {
 }
 
 .user-navigation .search__button {
-  padding: 7px 8px 8px 8px;
+  display: flex;
+  padding: 9px 9px 9px 9px;
   margin: 0;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
   align-items: center;
   box-shadow: none;
   background: #ffffff;
@@ -241,6 +245,7 @@ a {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
+  text-align: right;
   align-items: center;
   box-shadow: none;
   background: #ffffff;
@@ -248,16 +253,18 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* #заменить теги на классы */
 .login-link svg {
-  padding: 8px 9px 8px 17px;
+  padding: 8px 8px 8px 15px;
 }
 
 .login-link div {
-  padding: 9px 18px 10px 0px;
+  padding: 9px 17px 9px 0;
 }
 
 .user-navigation .basket__button {
-  padding: 6px 17px 6px 16px;
+  display: flex;
+  /* padding: 6px 17px 6px 16px; */
   margin: 0;
   font-weight: 500;
   font-size: 14px;
@@ -267,6 +274,16 @@ a {
   background: #ffffff;
   mix-blend-mode: normal;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.basket__button svg {
+  padding: 6px 7px 6px 16px;
+  margin: 0;
+}
+
+.basket__button div {
+  padding: 7px 16px 9px 0;
+  margin: 0;
 }
 
 .user-navigation button:hover path,
@@ -294,6 +311,8 @@ a {
 }
 
 .working-time {
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -302,6 +321,7 @@ a {
 }
 
 .working-time li:nth-child(2) {
+  padding-top: 3px;
   font-size: 22px;
   line-height: 24px;
 }
@@ -311,9 +331,13 @@ a {
 } */
 
 .special-offer {
+  display: flex;
+  flex-direction: column;
   font-size: 60px;
   line-height: 60px;
   text-align: center;
+  margin: 0;
+  align-items: center;
 }
 
 .special-offer button {
@@ -322,6 +346,7 @@ a {
   align-items: center;
   text-align: center;
   color: #ffffff;
+  margin: 0;
 }
 
 .banner {

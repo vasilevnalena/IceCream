@@ -32,11 +32,11 @@ body {
   background-position: top;
   background-repeat: no-repeat;
 }
-
+/* 
 .container {
   margin: 0;
   padding: 0;
-}
+} */
 
 input {
   background: #ffffff;
@@ -91,7 +91,8 @@ li {
 }
 
 img {
-  /* height: auto; */
+  /* max-width: 100%;
+  height: auto; */
 }
 
 .visually-hidden {
@@ -111,48 +112,41 @@ a {
 
 /* Шапка */
 .main-header {
+  /* display: flex;
+  flex-direction: column; */
   padding-right: 28px;
   padding-bottom: 212px;
-  /* padding: 0 28 0 0; */
   margin: 0;
-
   color: #ffffff;
 }
 
 .main-header-logo {
-  padding-top: 9px;
-  padding-left: 27px;
-  padding-right: 9px;
+  padding: 9px 9px 0 27px;
   margin: 0;
 }
 
 .main-navigation {
   display: flex;
-  /* width: 100%; */
-  /* justify-content: space-between; */
   margin: 0;
   padding: 0;
-
-  /* background-color: #00000023; */
+  height: 74px;
   align-items: center;
+
 }
 
 .main-navigation .container {
   display: flex;
   width: 100%;
-
   justify-content: space-between;
   margin: 0;
-  padding: 0;
-  /* background-color: #00000023; */
+  padding-top: 3px;
 }
 
 .site-navigation {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  /* padding-top: 2px; */
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -207,12 +201,12 @@ a {
 
 .user-navigation {
   display: flex;
+  flex-wrap: wrap;
   width: 246px;
   justify-content: space-between;
   margin: 0;
   padding: 0;
   align-items: center;
-  background-color: #00000023;
 }
 
 .user-navigation button,
@@ -259,12 +253,11 @@ a {
 }
 
 .login-link div {
-  padding: 9px 17px 9px 0;
+  padding: 10px 17px 9px 0;
 }
 
 .user-navigation .basket__button {
   display: flex;
-  /* padding: 6px 17px 6px 16px; */
   margin: 0;
   font-weight: 500;
   font-size: 14px;
@@ -282,7 +275,7 @@ a {
 }
 
 .basket__button div {
-  padding: 7px 16px 9px 0;
+  padding: 10px 16px 9px 0;
   margin: 0;
 }
 
@@ -312,12 +305,15 @@ a {
 
 .working-time {
   margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: end;
   font-size: 14px;
   line-height: 16px;
+}
+
+.working-time-container{
+  
 }
 
 .working-time li:nth-child(2) {
@@ -450,7 +446,6 @@ a {
 }
 
 .mailing input {
-  /* font-family: inherit; */
   text-align: left;
   line-height: 24px;
 }

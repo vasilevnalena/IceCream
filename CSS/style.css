@@ -13,14 +13,10 @@
 }
 
 body {
-  /* Временные размеры по образцу макета */
   width: 1200px;
-  height: 2416px;
-
-  /* display: flex;
-  flex-direction: column; */
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -112,10 +108,11 @@ a {
 
 /* Шапка */
 .main-header {
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
+
   padding-right: 28px;
-  padding-bottom: 212px;
+  padding-bottom: 214px;
   margin: 0;
   color: #ffffff;
 }
@@ -131,7 +128,6 @@ a {
   padding: 0;
   height: 74px;
   align-items: center;
-
 }
 
 .main-navigation .container {
@@ -312,10 +308,6 @@ a {
   line-height: 16px;
 }
 
-.working-time-container{
-  
-}
-
 .working-time li:nth-child(2) {
   padding-top: 3px;
   font-size: 22px;
@@ -329,29 +321,79 @@ a {
 .special-offer {
   display: flex;
   flex-direction: column;
+
   font-size: 60px;
   line-height: 60px;
   text-align: center;
   margin: 0;
+  padding: 0;
+  align-items: center;
+
+  background-color: chartreuse;
+}
+
+.special-offer .offer-text {
   align-items: center;
 }
 
 .special-offer button {
+  position: relative;
+  bottom: 30px;
+
   font-size: 32px;
   line-height: 44px;
   align-items: center;
   text-align: center;
   color: #ffffff;
   margin: 0;
+  padding: 10px 40px;
 }
 
 .banner {
+  /* display: flex;
+  flex-direction: column; */
+  width: 560px;
+  height: auto;
+  /* max-width: 100%;
+  height: auto; */
+  /* width: 100%;
+  height: auto; */
+  /* position: relative;
+  left: 27px; */
   font-size: 18px;
   line-height: 22px;
   text-align: left;
+  background-size: cover;
+}
+
+.banner h3 {
+  /* position: relative;
+  top: 16px;
+  left: 22px; */
+}
+
+.banner .banner-text {
+  /* position: relative;
+  top: 20px;
+  left: 22px; */
+}
+
+#first-banner {
+  background: url(IMG/Raspberry_background.svg) no-repeat;
+}
+
+#second-banner {
+  background: url(IMG/Chocolate_background.svg) no-repeat;
 }
 
 .banner button {
+  /* position: relative;
+  top: 20px;
+  bottom: 23px; 
+  right: 21px; */
+  margin: 0;
+  padding: 10px 40px;
+
   font-size: 32px;
   line-height: 44px;
   text-align: center;

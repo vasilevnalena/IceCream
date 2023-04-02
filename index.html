@@ -19,7 +19,6 @@
             alt="Логотип магазина"
           />
         </a>
-        <!-- <div class="main-navigation-wrapper"> -->
         <div class="container">
           <ul class="site-navigation">
             <li>
@@ -89,39 +88,34 @@
               </button>
             </li>
           </ul>
-          <!-- </div> -->
         </div>
       </nav>
 
       <h1 class="visually-hidden">Магазин мороженого</h1>
-      <div class="working-time-container">
+      <!-- <div class="working-time-container"> -->
         <ul class="working-time">
           <li>С 10 до 20, ежедневно</li>
           <li>8 812 450-25-25</li>
         </ul>
-      </div>
+      <!-- </div> -->
     </header>
 
-    <!-- <main class="main-container"> -->
     <main class="container">
       <h2 class="visually-hidden">Предложения</h2>
 
       <article class="special-offer">
-        <!-- <img alt="Крем-брюле и пломбир с малиновым джемом" src="IMG/IceCreams_1.png" /> -->
-        <p>
-          Крем-брюле и пломбир
-          <br />
-          с малиновым джемом
-        </p>
+        <div class="offer-text">
+          <p>
+            Крем-брюле и пломбир
+            <br />
+            с малиновым джемом
+          </p>
+        </div>
+        <!-- Радиокнопка где-то здесь -->
         <button type="button">Давайте оба!</button>
       </article>
 
       <article class="special-offer visually-hidden">
-        <!-- <img
-          alt="Шоколадный пломбир и лимонный сорбет"
-          src="IMG/IceCreams_2.png"
-        /> -->
-
         <p>
           Шоколадный пломбир
           <br />
@@ -132,11 +126,6 @@
       </article>
 
       <article class="special-offer visually-hidden">
-        <!-- <img
-          alt="Пломбир с помадкой и клубничный щербет"
-          src="IMG/IceCreams_3.png"
-        /> -->
-
         <p>
           Пломбир с помадкой
           <br />
@@ -146,28 +135,28 @@
         <button type="button">Давайте оба!</button>
       </article>
 
-      <section class="banner">
+      <section class="banner" id="first-banner">
         <h3>Малинка даром!</h3>
 
-        <p>
+        <p class="banner-text">
           При покупке 2 кг любого фруктового мороженого, добавим
           <br />
           в ваш заказ банку малинового варенья бесплатно.
         </p>
 
-        <button type="button">Хочу варенье!</button>
+        <button class="banner__button" type="button">Хочу варенье!</button>
       </section>
 
-      <section class="banner">
+      <section class="banner" id="second-banner">
         <h3>Шоколадки даром!</h3>
 
-        <p>
+        <p class="banner-text">
           При покупке 2 кг пломбира, добавим в ваш заказ упаковку
           <br />
           вкуснейшей шоколадной присыпки совершенно бесплатно.
         </p>
 
-        <button type="button">Хочу шоколадки!</button>
+        <button class="banner__button" type="button">Хочу шоколадки!</button>
       </section>
 
       <section class="hits">

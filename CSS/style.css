@@ -30,11 +30,11 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
 }
-/* 
+
 .container {
   margin: 0;
   padding: 0;
-} */
+}
 
 input {
   background: #ffffff;
@@ -590,18 +590,103 @@ a {
   color: #fefefe;
 }
 
+/* Всплывающее окно входа */
 .modal {
+  color: #000000;
   /* visibility: hidden; */
   position: fixed;
+
   background-color: #9d8b84;
   /* background-color: url(); */
   background-position: 0 0;
   /* background-repeat: repeat; */
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .modal-login {
+  top: 59px;
+  left: 50%;
+
+  margin-left: -139px;
+
+  /* display: none; */
 }
 
 .modal-login a {
   color: inherit;
+}
+
+.login-form {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: left;
+  margin: 20px 18px;
+}
+
+/* Добавить скругления! */
+.login,
+.password {
+  /* padding: 9px 15px; */
+  padding: 0;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #d3d3d2;
+  width: auto;
+}
+
+/* Отступ курсора не совпадает с отступом placeholder! */
+.login input[type="email"],
+.password input[type="password"],
+.login input::placeholder,
+.password input::placeholder {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 9px 15px;
+  height: 47px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #999999;
+}
+
+.button-sign-in {
+  padding: 11px 24px 13px 25px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  align-items: center;
+  color: #fefefe;
+
+  background: linear-gradient(0deg, #e74a35 0%, #f26843 100%), #e84d37;
+  box-shadow: 0px 1px 2px #ac1000;
+}
+
+.restore,
+.registration {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  align-items: center;
+  color: #323232;
+  text-decoration: underline;
+}
+
+.sign-in-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.restore {
+}
+
+.registration {
 }

@@ -134,34 +134,34 @@
       </article>
 
       <div class="banners">
-      <section class="banner" id="first-banner">
-        <h3>Малинка даром!</h3>
+        <section class="banner" id="first-banner">
+          <h3>Малинка даром!</h3>
 
-        <p class="banner-text">
-          При покупке 2 кг любого фруктового мороженого, добавим
-          <br />
-          в ваш заказ банку малинового варенья бесплатно.
-        </p>
+          <p class="banner-text">
+            При покупке 2 кг любого фруктового мороженого, добавим
+            <br />
+            в ваш заказ банку малинового варенья бесплатно.
+          </p>
 
-        <div class="banner__button" >
-          <button type="button">Хочу варенье!</button>
-        </div>
-      </section>
+          <div class="banner__button">
+            <button type="button">Хочу варенье!</button>
+          </div>
+        </section>
 
-      <section class="banner" id="second-banner">
-        <h3>Шоколадки даром!</h3>
+        <section class="banner" id="second-banner">
+          <h3>Шоколадки даром!</h3>
 
-        <p class="banner-text">
-          При покупке 2 кг пломбира, добавим в ваш заказ упаковку
-          <br />
-          вкуснейшей шоколадной присыпки совершенно бесплатно.
-        </p>
+          <p class="banner-text">
+            При покупке 2 кг пломбира, добавим в ваш заказ упаковку
+            <br />
+            вкуснейшей шоколадной присыпки совершенно бесплатно.
+          </p>
 
-        <div class="banner__button">
-          <button  type="button">Хочу шоколадки!</button>
-        </div>
-      </section>
-    </div>
+          <div class="banner__button">
+            <button type="button">Хочу шоколадки!</button>
+          </div>
+        </section>
+      </div>
 
       <section class="hits">
         <ul>
@@ -337,16 +337,22 @@
 
     <section class="modal modal-login">
       <form class="login-form">
-        <label
-          ><input class="login" type="email" placeholder="email@example.com"
+        <label class="login"
+          ><input type="email" placeholder="email@example.com"
         /></label>
-        <label><input class="password" type="password" /></label>
-        <button class="button-sign-in" type="submit">Войти</button>
 
-        <ul>
-          <li><a class="restore" href="">Забыли пароль?</a></li>
-          <li><a href="">Новая регистрация</a></li>
-        </ul>
+        <label class="password"
+          ><input type="password" placeholder="********"
+        /></label>
+
+        <div class="sign-in-container">
+          <button class="button-sign-in" type="submit">Войти</button>
+
+          <ul>
+            <li><a class="restore" href="">Забыли пароль?</a></li>
+            <li><a class="registration" href="">Новая регистрация</a></li>
+          </ul>
+        </div>
       </form>
     </section>
   </body>

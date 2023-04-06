@@ -31,10 +31,10 @@ body {
   background-repeat: no-repeat;
 }
 
-.container {
+/* .container {
   margin: 0;
   padding: 0;
-}
+} */
 
 input {
   background: #ffffff;
@@ -440,7 +440,9 @@ a {
 
 /* Хиты */
 .hits {
+  display: flex;
   text-align: center;
+  margin: 0;
 }
 
 .hits a {
@@ -450,14 +452,59 @@ a {
   text-decoration: underline;
 }
 
+.hits li {
+  margin: 0;
+  padding-bottom: 24px;
+}
+
 .hit-icon {
+  position: absolute;
+}
+
+.hit-photo {
+  padding: 0;
+  margin: 0;
+}
+
+.hit-item {
   text-align: left;
 }
 
 .price {
+  margin: 0;
+  padding: 0;
   text-align: left;
+  position: relative;
+  bottom: 46px;
+
+  font-style: normal;
+  font-weight: 700;
   font-size: 45px;
   line-height: 13px;
+  color: #ffffff;
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+}
+
+.unit-monetary {
+  margin: 0;
+  padding: 0;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 13px;
+  color: #ffffff;
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+}
+
+.ice-cream-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
 }
 
 .SEO {
@@ -607,7 +654,7 @@ a {
 
   margin-left: -139px;
 
-  /* display: none; */
+  display: none;
 }
 
 .modal-login a {

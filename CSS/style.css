@@ -472,10 +472,25 @@ a {
 
 .price {
   margin: 0;
-  padding: 0;
+  /* padding: 0; */
   text-align: left;
   position: relative;
   bottom: 46px;
+  right: 1px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 13px;
+  color: #ffffff;
+  text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+}
+
+.rub {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  right: 6px;
 
   font-style: normal;
   font-weight: 700;
@@ -488,6 +503,8 @@ a {
 .unit-monetary {
   margin: 0;
   padding: 0;
+  position: relative;
+  right: 17px;
 
   font-style: normal;
   font-weight: 700;
@@ -565,9 +582,10 @@ a {
   font-size: 14px;
   line-height: 20px;
 
-  background-image: url("IMG/Map.png");
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-color: #71cd99;
+  /* background-image: url("IMG/Map.png"); */
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
   color: #000000;
 }
 

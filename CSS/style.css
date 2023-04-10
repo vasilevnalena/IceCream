@@ -13,8 +13,9 @@
 }
 
 body {
-  /* min-width: 960px; */
-  max-width: 1200px;
+  /* min-width: 960px;
+  max-width: 1200px; */
+  width: 1200px;
   margin: 0 auto;
   padding: 0;
 
@@ -30,11 +31,6 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
 }
-
-/* .container {
-  margin: 0;
-  padding: 0;
-} */
 
 input {
   background: #ffffff;
@@ -108,6 +104,7 @@ a {
   text-decoration: none;
 }
 
+
 /* Шапка */
 .main-header {
   display: flex;
@@ -124,6 +121,7 @@ a {
   margin: 0;
 }
 
+
 .main-navigation {
   display: flex;
   margin: 0;
@@ -139,6 +137,7 @@ a {
   margin: 0;
   padding-top: 3px;
 }
+
 
 .site-navigation {
   display: flex;
@@ -196,6 +195,7 @@ a {
   line-height: 18px;
   align-items: center;
 }
+
 
 .user-navigation {
   display: flex;
@@ -301,6 +301,7 @@ a {
   box-shadow: inset 0px 2px 1px #696969;
 }
 
+
 .working-time {
   margin: 0;
   display: flex;
@@ -315,6 +316,7 @@ a {
   font-size: 22px;
   line-height: 24px;
 }
+
 
 /* Спецпредложения */
 .special-offer {
@@ -362,6 +364,7 @@ a {
   color: #ffffff;
 }
 
+
 /* Баннеры */
 .banners {
   padding: 0;
@@ -369,14 +372,13 @@ a {
 
   display: flex;
   justify-content: space-between;
-  /* flex-wrap: wrap; */
   align-items: center;
 }
 
 .banner {
-  width: 560px;
-  margin-top: 41px;
-  padding: 16px 34px 23px 18px;
+  margin: 41px 0 0 0;
+  /* padding: 16px 34px 23px 18px; */
+  padding: 16px 21px 23px 21px;
 
   display: flex;
   flex-direction: column;
@@ -388,7 +390,8 @@ a {
 }
 
 .banner h3 {
-  margin: 0 0 15px 0;
+  /* margin: 0 0 15px 0; */
+  margin: 0;
   padding: 0;
 
   font-style: normal;
@@ -400,8 +403,9 @@ a {
 }
 
 .banner .banner-text {
-  margin: 0;
-  padding: 0 0 0 1px;
+  margin: 15px 0 0 0;
+  padding: 0;
+  /* padding: 0 0 0 1px; */
 
   font-style: normal;
   font-weight: 700;
@@ -421,17 +425,14 @@ a {
   background-size: 100% 100%;
 }
 
-/* задать собственный отступ справа */
-.banner__button {
+.banner .banner__button {
   display: flex;
   justify-content: flex-end;
   padding: 0;
-  margin: 45px 0 0 0;
+  margin: 44px 0 0 0;
 }
 
-/*  */
 .banner button {
-  /* margin: 0 0 23px 0; */
   margin: 0;
   padding: 10px 24px 12px 22px;
 
@@ -464,9 +465,10 @@ a {
   box-shadow: inset 0px 2px 2px #942718;
 }
 
+
 /* Хиты */
 .hits-container {
-  margin: 0;
+  margin-top: 40px;
   padding: 0;
   /* display: flex; */
   /* justify-content: space-between;  */

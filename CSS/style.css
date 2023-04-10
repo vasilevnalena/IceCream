@@ -13,9 +13,9 @@
 }
 
 body {
-  /* min-width: 960px;
-  max-width: 1200px; */
-  width: 1200px;
+  min-width: 960px;
+  max-width: 1200px;
+  /* width: 1200px; */
   margin: 0 auto;
   padding: 0;
 
@@ -368,7 +368,7 @@ a {
 /* Баннеры */
 .banners {
   padding: 0;
-  margin: 0 27px;
+  margin: 0 14px 0;
 
   display: flex;
   justify-content: space-between;
@@ -376,9 +376,9 @@ a {
 }
 
 .banner {
-  margin: 41px 0 0 0;
-  /* padding: 16px 34px 23px 18px; */
-  padding: 16px 21px 23px 21px;
+  width: 560px;
+  margin: 41px 13px 0 13px;
+  padding: 16px 21px 24px 19px;
 
   display: flex;
   flex-direction: column;
@@ -390,7 +390,6 @@ a {
 }
 
 .banner h3 {
-  /* margin: 0 0 15px 0; */
   margin: 0;
   padding: 0;
 
@@ -405,7 +404,6 @@ a {
 .banner .banner-text {
   margin: 15px 0 0 0;
   padding: 0;
-  /* padding: 0 0 0 1px; */
 
   font-style: normal;
   font-weight: 700;
@@ -434,7 +432,7 @@ a {
 
 .banner button {
   margin: 0;
-  padding: 10px 24px 12px 22px;
+  padding: 10px 23px 11px 21px;
 
   font-weight: 700;
   font-size: 18px;
@@ -468,31 +466,27 @@ a {
 
 /* Хиты */
 .hits-container {
-  margin-top: 40px;
+  margin: 40px 13px 0;
   padding: 0;
-  /* display: flex; */
-  /* justify-content: space-between;  */
+  display: flex;
 }
 
-.hits-list {
-  display: flex;
-  flex-direction: row;
-  /* align-items: center; */
-  text-align: center;
-  /* justify-content: space-between; */
+.hits {
   margin: 0;
   padding: 0;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  /* justify-content: space-between; */
 }
 
-.hits-list li {
+.hits li {
   margin: 0;
   padding: 0;
 }
 
 .hits a {
-  /* margin: 0;
-  padding: 0; */
-
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
@@ -502,7 +496,6 @@ a {
 .hits li {
   margin: 0;
   padding: 0;
-  /* padding-bottom: 24px; */
 }
 
 .hit-icon {
@@ -517,15 +510,23 @@ a {
 }
 
 .hit-item {
+  margin: 0 13px 0 13px;
   padding: 0;
-  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  
   /* text-align: center; */
 }
 
 /* ломается положение цены при раздвигании экрана!!! */
-.price {
+.hit-item .price {
+  position: relative;
+  bottom: 44px;
   margin: 0;
   padding: 0;
+
+  display: flex;
   text-align: left;
 
   font-style: normal;
@@ -536,7 +537,7 @@ a {
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
 
-.rub {
+.price .rub {
   margin: 0;
   padding: 0;
 
@@ -548,7 +549,7 @@ a {
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
 
-.unit-monetary {
+.price .unit-monetary {
   margin: 0;
   padding: 0;
 
@@ -560,7 +561,7 @@ a {
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
 
-.ice-cream-name {
+.hit-item .ice-cream-name {
   margin: 0;
   padding: 0;
 
@@ -572,6 +573,7 @@ a {
   text-align: center;
   color: #ffffff;
 }
+
 
 .SEO {
   text-align: left;

@@ -538,7 +538,7 @@ a {
 }
 
 .price .rub {
-  margin: 0;
+  margin-left: 4px;
   padding: 0;
 
   font-style: normal;
@@ -550,7 +550,7 @@ a {
 }
 
 .price .unit-monetary {
-  margin: 0;
+  margin-top: 5px;
   padding: 0;
 
   font-style: normal;
@@ -564,6 +564,8 @@ a {
 .hit-item .ice-cream-name {
   margin: 0;
   padding: 0;
+  position: relative;
+  bottom: 6px;
 
   font-style: normal;
   font-weight: 500;

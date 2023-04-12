@@ -2,6 +2,8 @@
   --color-background1: #849d8f;
   --color-background2: #8996a6;
   --color-background3: #9d8b84;
+
+  --color-backround-default: #a3a2a2;
 }
 
 @font-face {
@@ -84,11 +86,6 @@ li {
   list-style: none;
 }
 
-img {
-  /* max-width: 100%;
-  height: auto; */
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -103,7 +100,6 @@ img {
 a {
   text-decoration: none;
 }
-
 
 /* Шапка */
 .main-header {
@@ -121,7 +117,6 @@ a {
   margin: 0;
 }
 
-
 .main-navigation {
   display: flex;
   margin: 0;
@@ -137,7 +132,6 @@ a {
   margin: 0;
   padding-top: 3px;
 }
-
 
 .site-navigation {
   display: flex;
@@ -195,7 +189,6 @@ a {
   line-height: 18px;
   align-items: center;
 }
-
 
 .user-navigation {
   display: flex;
@@ -301,7 +294,6 @@ a {
   box-shadow: inset 0px 2px 1px #696969;
 }
 
-
 .working-time {
   margin: 0;
   display: flex;
@@ -317,12 +309,10 @@ a {
   line-height: 24px;
 }
 
-
 /* Спецпредложения */
 .special-offer {
   display: flex;
   flex-direction: column;
-  /* justify-items: space-between; */
 
   font-size: 60px;
   line-height: 60px;
@@ -351,11 +341,8 @@ a {
 }
 
 .special-offer button {
-  margin: 0;
-  margin-top: 31px;
+  margin: 31px 0 0 0;
   padding: 10px 40px;
-  /* position: relative; */
-  /* bottom: 30px; */
 
   font-size: 32px;
   line-height: 44px;
@@ -364,14 +351,13 @@ a {
   color: #ffffff;
 }
 
-
 /* Баннеры */
 .banners {
   padding: 0;
   margin: 0 14px 0;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -413,13 +399,13 @@ a {
   color: #ffffff;
 }
 
-#first-banner {
-  background: url(IMG/Raspberry_background.svg) no-repeat;
+#first-banner.banner {
+  background: url(IMG/Raspberry_background.png) no-repeat;
   background-size: 100% 100%;
 }
 
-#second-banner {
-  background: url(IMG/Chocolate_background.svg) no-repeat;
+#second-banner.banner {
+  background: url(IMG/Chocolate_background.png) no-repeat;
   background-size: 100% 100%;
 }
 
@@ -463,7 +449,6 @@ a {
   box-shadow: inset 0px 2px 2px #942718;
 }
 
-
 /* Хиты */
 .hits-container {
   margin: 40px 13px 0;
@@ -478,7 +463,6 @@ a {
   display: flex;
   align-items: center;
   text-align: center;
-  /* justify-content: space-between; */
 }
 
 .hits li {
@@ -515,11 +499,8 @@ a {
 
   display: flex;
   flex-direction: column;
-  
-  /* text-align: center; */
 }
 
-/* ломается положение цены при раздвигании экрана!!! */
 .hit-item .price {
   position: relative;
   bottom: 44px;
@@ -576,21 +557,81 @@ a {
   color: #ffffff;
 }
 
-
+/* SEO */
 .SEO {
-  text-align: left;
+  /* display: flex;
+  flex-direction: column; */
+
+  padding: 26px 20px 24px;
+  margin: 31px 27px 0;
+
+  background-color: var(--color-backround-default);
+  background: url(IMG/Waffle_background.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.SEO h3 {
+  padding: 0;
+  margin: 0;
+
+  font-style: normal;
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
+  align-items: center;
   color: #323232;
 }
 
-.SEO ul {
+.SEO .SEO-container {
+  padding: 0;
+  margin: 0;
+}
+
+.SEO-list {
+  padding: 0;
+  margin: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 28px;
+  grid-row-gap: 2px;
+}
+
+.SEO-list li {
+  display: flex;
+
+  /* margin-bottom: 23px; */
+  margin: 0;
+  padding: 0;
+}
+
+.SEO-list .SEO-icon {
+  margin-right: 8px;
+}
+
+#first-row.SEO-icon {
+  position: relative;
+  bottom: 11px;
+}
+
+#second-row.SEO-icon {
+  position: relative;
+  bottom: 22px;
+}
+
+.SEO-list p {
+  padding-top: 20px;
+  margin: 0;
+
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  align-items: center;
+  color: #323232;
 }
 
+/* Новости */
 .news {
   text-align: left;
 }

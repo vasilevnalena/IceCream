@@ -691,8 +691,6 @@ a {
 
   background-color: var(--color-backround-default);
   background: url(IMG/Mailing.png) no-repeat;
-  /* background-size: 100% auto; */
-  /* border-radius: 10px; */
   background-size: 100% 100%;
 }
 

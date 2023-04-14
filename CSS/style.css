@@ -638,7 +638,6 @@ a {
   display: flex;
 }
 
-
 /* Новости */
 .news {
   margin: 0;
@@ -741,39 +740,80 @@ a {
 
 /* Карта */
 .map {
-  text-align: left;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  /* flex-direction: row; */
 
   background-color: #71cd99;
-  /* background-image: url("IMG/Map.png"); */
-  /* background-size: contain; */
-  /* background-repeat: no-repeat; */
   color: #000000;
 }
 
-.address {
-  /* background: rgba(255, 255, 255, 0.98); */
+.map-container {
+  position: absolute;
+  z-index: 1;
 }
 
-.map :nth-child(2) {
+.address {
+  /* margin: 62px 27px 0 0; */
+  padding: 33px 25px 31px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+
+  position: absolute;
+  z-index: 2;
+
+  font-style: normal;
+  color: #323232;
+  background: rgba(255, 255, 255, 0.98);
+  border-radius: 10px;
+}
+
+.address h5 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  align-items: center;
+}
+
+.address .contacts-container {
+}
+
+.contacts-container :nth-child(1) {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  align-items: center;
 }
 
-.map :nth-child(4) {
+.contacts-container :nth-child(2) {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  align-items: center;
+}
+
+.contacts-container :nth-child(3) {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
+  align-items: center;
 }
 
-.map :nth-child(5) {
-  line-height: 20px;
+.contacts-container :nth-child(4) {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  align-items: center;
 }
 
 .map button {
+  margin: 0;
+  padding: 14px 28px;
+
   text-align: center;
   font-weight: 700;
   font-size: 18px;

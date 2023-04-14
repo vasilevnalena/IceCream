@@ -630,20 +630,19 @@ a {
   color: #323232;
 }
 
-
 /* Контейнер новости+рассылка */
-.news-mailing-container{
-margin: 40px 27px;
-padding: 0;
+.news-mailing-container {
+  margin: 40px 27px 35px;
+  padding: 0;
 
-display: flex;
-flex-direction: row;
+  display: flex;
 }
+
 
 /* Новости */
 .news {
   margin: 0;
-  padding: 23px 254px 81px 19px;
+  padding: 23px 260px 50px 19px;
 
   text-align: left;
 
@@ -665,7 +664,8 @@ flex-direction: row;
 }
 
 .news a {
-  margin-right: 50px;
+  margin: 0;
+  margin-right: 135px;
   padding: 0;
 
   font-style: normal;
@@ -682,24 +682,66 @@ flex-direction: row;
 
 /* Рассылка */
 .mailing {
-  text-align: center;
+  margin: 0;
+  margin-left: 26px;
+  padding: 35px 26px 40px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--color-backround-default);
+  background: url(IMG/Mailing.png) no-repeat;
+  /* background-size: 100% auto; */
+  /* border-radius: 10px; */
+  background-size: 100% 100%;
+}
+
+.mailing p {
+  margin: 0;
+  padding: 0;
+
+  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  align-items: center;
   color: #5a5a5a;
 }
 
+.email-form-container {
+  margin: 0;
+  margin-top: 35px;
+  padding: 0;
+
+  display: flex;
+  /* align-items: center; */
+}
+
 .mailing input {
-  text-align: left;
+  min-width: 335px;
+  padding: 8px 15px;
+  margin: 0 14px 0 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 24px;
+  color: #999999;
+
+  background: #ffffff;
+  border: 1px solid rgba(178, 178, 178, 0.52);
 }
 
 .mailing button {
+  margin: 0;
+  padding: 9px 17px 10px 17px;
+
   font-size: 18px;
   line-height: 24px;
   color: #fefefe;
 }
 
+/* Карта */
 .map {
   text-align: left;
   font-weight: 400;

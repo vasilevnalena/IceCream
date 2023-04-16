@@ -739,32 +739,37 @@ a {
 }
 
 /* Карта */
-.map {
+.map-container {
+  position: relative;
+  /* display: flex; */
+
   margin: 0;
   padding: 0;
-
-  display: flex;
-  /* flex-direction: row; */
 
   background-color: #71cd99;
   color: #000000;
 }
-
-.map-container {
-  position: absolute;
+.map {
+  position: relative;
   z-index: 1;
+
+  margin: 0;
+  padding: 0;
 }
 
 .address {
-  /* margin: 62px 27px 0 0; */
-  padding: 33px 25px 31px;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: right;
+  /* width: 302px; */
+  /* height: auto; */
 
   position: absolute;
   z-index: 2;
+  right: 62px;
+  top: 27px;
+
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 29px 26px 31px;
 
   font-style: normal;
   color: #323232;
@@ -773,6 +778,9 @@ a {
 }
 
 .address h5 {
+  margin: 0;
+  width: 155px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -783,6 +791,9 @@ a {
 }
 
 .contacts-container :nth-child(1) {
+  margin: 1px 0 0;
+  width: 250px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -790,6 +801,9 @@ a {
 }
 
 .contacts-container :nth-child(2) {
+  margin: 18px 0 0;
+  width: 201px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -797,6 +811,9 @@ a {
 }
 
 .contacts-container :nth-child(3) {
+  margin: 5px 0 0;
+  width: 182px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
@@ -804,15 +821,18 @@ a {
 }
 
 .contacts-container :nth-child(4) {
+  margin: 2px 0 0;
+  width: 182px;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
   align-items: center;
 }
 
-.map button {
-  margin: 0;
-  padding: 14px 28px;
+.map-container button {
+  margin: 23px 0 0;
+  padding: 9px 24px 11px;
 
   text-align: center;
   font-weight: 700;

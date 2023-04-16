@@ -632,7 +632,7 @@ a {
 
 /* Контейнер новости+рассылка */
 .news-mailing-container {
-  margin: 40px 27px 35px;
+  margin: 40px 27px 40px;
   padding: 0;
 
   display: flex;
@@ -641,7 +641,7 @@ a {
 /* Новости */
 .news {
   margin: 0;
-  padding: 23px 260px 41px 19px;
+  padding: 23px 260px 40px 19px;
 
   text-align: left;
 
@@ -683,7 +683,7 @@ a {
 .mailing {
   margin: 0;
   margin-left: 26px;
-  padding: 35px 26px 41px;
+  padding: 34px 26px 40px;
 
   display: flex;
   flex-direction: column;
@@ -707,17 +707,14 @@ a {
 
 .email-form-container {
   margin: 0;
-  margin-top: 35px;
-  padding: 0;
-
+  margin-top: 33px;
   display: flex;
-  /* align-items: center; */
 }
 
 .mailing input {
-  min-width: 335px;
-  padding: 8px 15px;
-  margin: 0 14px 0 0;
+  width: 335px;
+  padding: 9px 18px 9px 13px;
+  margin: 3px 13px 0 0;
 
   font-style: normal;
   font-weight: 400;
@@ -727,11 +724,12 @@ a {
 
   background: #ffffff;
   border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 5px;
 }
 
 .mailing button {
-  margin: 0;
-  padding: 9px 17px 10px 17px;
+  margin:  0 0 1px;
+  padding: 1px 17px;
 
   font-size: 18px;
   line-height: 24px;
@@ -741,13 +739,12 @@ a {
 /* Карта */
 .map-container {
   position: relative;
-  /* display: flex; */
 
   margin: 0;
   padding: 0;
 
-  background-color: #71cd99;
-  color: #000000;
+  background-color: #be187c;
+  /* color: #000000; */
 }
 .map {
   position: relative;
@@ -758,13 +755,10 @@ a {
 }
 
 .address {
-  /* width: 302px; */
-  /* height: auto; */
-
   position: absolute;
   z-index: 2;
-  right: 62px;
-  top: 27px;
+  right: 27px;
+  top: 62px;
 
   display: flex;
   flex-direction: column;

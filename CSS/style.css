@@ -744,8 +744,8 @@ a {
   padding: 0;
 
   background-color: #be187c;
-  /* color: #000000; */
 }
+
 .map {
   position: relative;
   z-index: 1;
@@ -778,7 +778,7 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  align-items: center;
+  align-items: center; 
 }
 
 .address .contacts-container {
@@ -837,13 +837,17 @@ a {
 
 /* Подвал */
 .main-footer {
-  margin-top: 65px; /*   из примера    */
-  padding: 60px 0; /*   из примера    */
+  margin: 0;
+  padding: 0;
 
   text-align: left;
 }
 
 .social-media {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+
 }
 
 .menu-footer-first-column {

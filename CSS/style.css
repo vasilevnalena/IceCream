@@ -839,7 +839,7 @@ a {
 
 /* Подвал */
 .main-footer {
-  margin: 18px 27px 25px 26px;
+  margin: 18px 25px 25px 28px;
   padding: 0;
 
   display: flex;
@@ -847,34 +847,48 @@ a {
 
 /* Соцсети */
 .social-media {
+  display: flex;
+  justify-content: center;
+
+  gap: 11px;
+  margin-top: 13px;
 }
 
 .social-media li {
-  display: inline-flex;
-  gap: 30px;
+  display: flex;
+  align-items: center;
 }
 
+.social-media svg {
+  /* mix-blend-mode: normal; */
+  /* opacity: 0.8; */
+}
+
+/* Исправить прозрачность иконок, вывести слой за картинку(обводка) */
 .social-media-link {
+  all: unset;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: #ffffff; */
+  mix-blend-mode: normal;
+  /* opacity: 0.5; */
+  border-radius: 50%;
 }
-/* .social-media button { */
-/* all: unset; */
-/* background: rgba(255, 255, 255, 0.5); */
-/* border-radius: 50%; */
-/* border: 1px solid #ffffff; 
-}*/
 
+/* Меню подвала */
 .footer-menu-list {
   padding: 0;
-  margin: 0 323px 0 100px;
+  margin: 17px 231px 0 214px;
 
   text-decoration: underline solid 1px;
   text-decoration-color: rgba(255, 255, 255, 0.2);
 
   display: grid;
-  /* align-items: baseline; */
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 32px;
-  grid-row-gap: 8px;
+  grid-template-columns: repeat(3, max-content);
+  grid-template-rows: repeat(2, max-content);
 
   font-weight: 400;
   font-size: 13px;
@@ -884,22 +898,25 @@ a {
 }
 
 .footer-menu-list .heart-icon {
-  padding: 0;
   margin-right: 7px;
-}
+  margin-top: 2px;
 
-.footer-menu-list li:nth-child(1) {
-  list-style-image: url(IMG/heart.svg);
-  font-weight: 700;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .footer-menu-list li:nth-child(2) {
-  /* padding-left: 22px; */
+  font-weight: 700;
+  margin-right: 32px;
+  margin-bottom: 6px;
 }
 
+.footer-menu-list li:nth-child(2) {
+}
+
+/* Кем создано */
 .created-by {
-  margin: 0;
-  padding: 0;
+  /* width: 190px; */
 
   font-weight: 400;
   font-size: 12px;
@@ -907,8 +924,18 @@ a {
   color: #fefefe;
 }
 
+.created-by img {
+  margin-left: 1px;
+}
+
 .created-by p {
   margin: 0;
+  margin-top: 2px;
+}
+
+/* Подчеркивание ссылке добавить! */
+.created-by a {
+ 
 }
 
 /* Всплывающее окно входа */

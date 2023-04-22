@@ -679,7 +679,7 @@ a {
 
 /* Рассылка */
 .mailing {
-  margin: 0;
+  /* margin: 0; */
   margin-left: 26px;
   padding: 34px 26px 40px;
 
@@ -704,15 +704,15 @@ a {
 }
 
 .email-form-container {
-  margin: 0;
-  margin-top: 33px;
+  margin-top: 31px;
   display: flex;
+  align-items: center;
 }
 
-.mailing input {
+.email-form-container input {
   width: 335px;
   padding: 9px 18px 9px 13px;
-  margin: 3px 13px 0 0;
+  margin-top: 5px;
 
   font-style: normal;
   font-weight: 400;
@@ -725,12 +725,15 @@ a {
   border-radius: 5px;
 }
 
-.mailing button {
-  margin: 0 0 1px;
-  padding: 1px 17px;
+.email-form-container button {
+  margin-top: 3px;
+  margin-left: 12px;
+  padding: 9px 18px 11px;
 
+  font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  align-items: center;
   color: #fefefe;
 }
 
@@ -783,9 +786,6 @@ a {
   align-items: center;
 }
 
-.address .contacts-container {
-}
-
 .contacts-container :nth-child(1) {
   margin: 1px 0 0;
   width: 250px;
@@ -826,7 +826,7 @@ a {
   align-items: center;
 }
 
-.map-container button {
+.address button {
   margin: 23px 0 0;
   padding: 9px 24px 11px;
 
@@ -843,6 +843,7 @@ a {
   padding: 0;
 
   display: flex;
+  justify-content: space-between;
 }
 
 /* Соцсети */
@@ -873,18 +874,19 @@ a {
   align-items: center;
   justify-content: center;
   /* background: #ffffff; */
-  mix-blend-mode: normal;
   /* opacity: 0.5; */
   border-radius: 50%;
 }
 
 /* Меню подвала */
 .footer-menu-list {
-  padding: 0;
-  margin: 17px 231px 0 214px;
+  /* margin: 17px 231px 0 214px; */
+  margin-top: 17px;
+  /* margin: 0; */
 
-  text-decoration: underline solid 1px;
-  text-decoration-color: rgba(255, 255, 255, 0.2);
+  text-decoration: underline 1px solid rgba(255, 255, 255, 0.2);
+  text-decoration-skip-ink: none;
+  text-underline-offset: 3px;
 
   display: grid;
   grid-template-columns: repeat(3, max-content);
@@ -916,8 +918,6 @@ a {
 
 /* Кем создано */
 .created-by {
-  /* width: 190px; */
-
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -933,9 +933,10 @@ a {
   margin-top: 2px;
 }
 
-/* Подчеркивание ссылке добавить! */
 .created-by a {
- 
+  text-decoration: underline 1px solid rgba(255, 255, 255, 0.2);
+  text-decoration-skip-ink: none;
+  text-underline-offset: 3px;
 }
 
 /* Всплывающее окно входа */

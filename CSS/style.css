@@ -557,9 +557,6 @@ a {
 
 /* SEO */
 .SEO {
-  /* display: flex;
-  flex-direction: column; */
-
   padding: 26px 20px 24px;
   margin: 31px 27px 0;
 
@@ -679,7 +676,6 @@ a {
 
 /* Рассылка */
 .mailing {
-  /* margin: 0; */
   margin-left: 26px;
   padding: 34px 26px 40px;
 
@@ -849,7 +845,6 @@ a {
 .social-media-and-menu-container {
   display: flex;
   gap: 214px;
-  /* justify-content: space-between; */
 }
 
 /* Соцсети */
@@ -859,17 +854,11 @@ a {
 
   gap: 11px;
   margin-top: 13px;
-  /* margin-left: 11px; */
 }
 
 .social-media li {
   display: flex;
   align-items: center;
-}
-
-.social-media svg {
-  /* mix-blend-mode: normal; */
-  /* opacity: 0.8; */
 }
 
 .social-media-link {
@@ -878,12 +867,22 @@ a {
   align-items: center;
   justify-content: center;
   border: 3px solid rgba(255, 255, 255, 0.5);
+  opacity: 0.8;
   border-radius: 50%;
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+  border: 3px solid rgba(255, 255, 255, 0.7);
+  opacity: 1;
+}
+
+.social-media-link:active path {
+  fill: #e9e9e9;
 }
 
 /* Меню подвала */
 .footer-menu-list {
-  /* margin: 17px 231px 0 214px; */
   margin-top: 17px;
 
   text-decoration: underline 1px solid rgba(255, 255, 255, 0.2);
@@ -915,13 +914,14 @@ a {
   margin-bottom: 6px;
 }
 
-.footer-menu-list li:nth-child(2) {
+.footer-menu-list li:hover,
+.footer-menu-list li:focus,
+.footer-menu-list li:active {
+  color: #ffbc9e;
 }
 
 /* Кем создано */
 .created-by {
-  /* margin-right: 1px; */
-
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;

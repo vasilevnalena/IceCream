@@ -839,11 +839,17 @@ a {
 
 /* Подвал */
 .main-footer {
-  margin: 18px 25px 25px 28px;
+  margin: 18px 26px 25px 28px;
   padding: 0;
 
   display: flex;
   justify-content: space-between;
+}
+
+.social-media-and-menu-container {
+  display: flex;
+  gap: 214px;
+  /* justify-content: space-between; */
 }
 
 /* Соцсети */
@@ -853,6 +859,7 @@ a {
 
   gap: 11px;
   margin-top: 13px;
+  /* margin-left: 11px; */
 }
 
 .social-media li {
@@ -865,16 +872,12 @@ a {
   /* opacity: 0.8; */
 }
 
-/* Исправить прозрачность иконок, вывести слой за картинку(обводка) */
 .social-media-link {
   all: unset;
-  width: 38px;
-  height: 38px;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: #ffffff; */
-  /* opacity: 0.5; */
+  border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
 }
 
@@ -882,7 +885,6 @@ a {
 .footer-menu-list {
   /* margin: 17px 231px 0 214px; */
   margin-top: 17px;
-  /* margin: 0; */
 
   text-decoration: underline 1px solid rgba(255, 255, 255, 0.2);
   text-decoration-skip-ink: none;
@@ -918,6 +920,8 @@ a {
 
 /* Кем создано */
 .created-by {
+  /* margin-right: 1px; */
+
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
@@ -938,6 +942,8 @@ a {
   text-decoration-skip-ink: none;
   text-underline-offset: 3px;
 }
+
+/* Hidden */
 
 /* Всплывающее окно входа */
 .modal {

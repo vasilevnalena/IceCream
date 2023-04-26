@@ -63,7 +63,8 @@ button {
   border: none;
   background: linear-gradient(0deg, #e74a35 0%, #f26843 100%);
   box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
-  border-radius: 50vh;
+  /* border-radius: 50vh; */
+  border-radius: 40px;
 }
 
 button:hover,
@@ -183,8 +184,8 @@ a {
 .site-navigation a {
   padding: 8px 14px 9px 14px;
   margin: 0;
-  border-radius: 50vh;
 
+  border-radius: 40px;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -194,17 +195,10 @@ a {
 
 .user-navigation {
   display: flex;
-  flex-wrap: wrap;
-  width: 246px;
+  /* width: 246px; */
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
   align-items: center;
-}
-
-.user-navigation button,
-.user-navigation a {
-  height: 30px;
+  gap: 10px;
 }
 
 .site-navigation a,
@@ -215,10 +209,13 @@ a {
 }
 
 .user-navigation .search__button {
+  width: 32px;
+  height: 32px;
   display: flex;
-  padding: 9px 9px 9px 9px;
-  margin: 0;
-  align-items: center;
+
+  /* align-items: center; */
+  justify-content: center;
+  padding-right: 1px;
   box-shadow: none;
   background: #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
@@ -226,30 +223,35 @@ a {
 
 .user-navigation .login-link {
   display: flex;
-  margin: 0;
-  border-radius: 50vh;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 16px;
+  border-radius: 40px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   text-align: right;
-  align-items: center;
   box-shadow: none;
   background: #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* #заменить теги на классы */
 .login-link svg {
-  padding: 8px 8px 8px 15px;
-}
-
-.login-link div {
-  padding: 10px 17px 9px 0;
+  margin-right: 8px;
 }
 
 .user-navigation .basket__button {
   display: flex;
-  margin: 0;
+  height: 32px;
+  padding-left: 16px;
+  padding-right: 17px;
+
+  justify-items: center;
+  justify-content: space-between;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -260,13 +262,7 @@ a {
 }
 
 .basket__button svg {
-  padding: 6px 7px 6px 16px;
-  margin: 0;
-}
-
-.basket__button div {
-  padding: 10px 16px 9px 0;
-  margin: 0;
+  padding-right: 7px;
 }
 
 .user-navigation button:hover path,

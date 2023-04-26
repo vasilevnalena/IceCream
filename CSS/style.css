@@ -674,6 +674,12 @@ a {
   text-underline-offset: 3px;
 }
 
+.news a:hover,
+.news a:focus,
+.news a:active {
+  color: #e84d37;
+}
+
 /* Рассылка */
 .mailing {
   margin-left: 26px;
@@ -941,6 +947,12 @@ a {
   text-decoration: underline 1px solid rgba(255, 255, 255, 0.2);
   text-decoration-skip-ink: none;
   text-underline-offset: 3px;
+}
+
+.created-by a:hover,
+.created-by a:focus,
+.created-by a:active {
+  color: #ffbc9e;
 }
 
 /* Hidden */

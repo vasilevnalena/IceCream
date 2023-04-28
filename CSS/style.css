@@ -474,25 +474,21 @@ a {
 
 /* Хиты */
 .hits-container {
-  margin: 40px 13px 0;
-  display: flex;
+  /* margin: 40px 13px 0; */
 }
 
 .hits-container .hits {
+  margin: 40px 27px 0;
+
   display: flex;
+  justify-content: space-between;
+  gap: 26px;
+
   align-items: center;
   text-align: center;
 }
 
-.hits a {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
-  text-decoration: underline;
-}
-
 .hits .hit-item {
-  margin: 0 13px;
   display: flex;
   flex-direction: column;
 }
@@ -503,7 +499,8 @@ a {
 
 .hit-item .price {
   position: relative;
-  bottom: 44px;
+  bottom: 42px;
+  right: 1px;
   margin: 0;
   display: flex;
 
@@ -517,7 +514,7 @@ a {
 }
 
 .price .rub {
-  margin-left: 4px;
+  margin-left: 5px;
 
   font-style: normal;
   font-weight: 700;
@@ -540,7 +537,7 @@ a {
 
 .hit-item .ice-cream-name {
   position: relative;
-  bottom: 6px;
+  bottom: 5px;
 
   font-style: normal;
   font-weight: 500;
@@ -549,12 +546,13 @@ a {
   align-items: center;
   text-align: center;
   color: #ffffff;
+  text-decoration: underline;
 }
 
 /* SEO */
 .SEO {
   padding: 26px 20px 24px;
-  margin: 31px 27px 0;
+  margin: 33px 27px 0;
 
   background-color: var(--color-backround-default);
   background: url(/IMG/Waffle_background.png) no-repeat;

@@ -29,7 +29,7 @@ body {
   color: #ffffff;
 
   background-color: var(--color-background1);
-  background-image: url(IMG/IceCreams_1.png);
+  background-image: url(/IMG/IceCreams_1.png);
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -109,38 +109,34 @@ a {
   display: flex;
   flex-direction: column;
 
-  padding-right: 28px;
-  padding-bottom: 214px;
-  margin: 0;
+  margin: 0 27px 214px 27px;
   color: #ffffff;
-}
 
-.main-header-logo {
-  padding: 9px 9px 0 27px;
-  margin: 0;
+  /* background-color: #2c7437; */
 }
 
 .main-navigation {
   display: flex;
-  margin: 0;
-  padding: 0;
-  height: 74px;
+  /* height: 74px; */
   align-items: center;
+  margin-top: 1px;
 }
 
-.main-navigation .container {
+.main-navigation .main-header-logo {
+  margin-top: 8px;
+  margin-right: 10px;
+}
+
+.main-navigation .menu-container {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin: 0;
-  padding-top: 3px;
 }
 
-.site-navigation {
+.menu-container .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
+
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -193,7 +189,7 @@ a {
   align-items: center;
 }
 
-.user-navigation {
+.menu-container .user-navigation {
   display: flex;
   /* width: 246px; */
   justify-content: space-between;
@@ -213,8 +209,8 @@ a {
   height: 32px;
   display: flex;
 
-  /* align-items: center; */
   justify-content: center;
+  padding-bottom: 1px;
   padding-right: 1px;
   box-shadow: none;
   background: #ffffff;
@@ -225,7 +221,7 @@ a {
   display: flex;
   height: 32px;
   align-items: center;
-  justify-content: center;
+
   padding-left: 15px;
   padding-right: 16px;
   border-radius: 40px;
@@ -240,6 +236,7 @@ a {
 }
 
 .login-link svg {
+  margin-bottom: 1px;
   margin-right: 8px;
 }
 
@@ -289,13 +286,17 @@ a {
   box-shadow: inset 0px 2px 1px #696969;
 }
 
-.working-time {
-  margin: 0;
+.main-header .working-time {
+  /* margin-right: 1px; */
+  /* margin-top: 3px; */
+
   display: flex;
   flex-direction: column;
   align-items: end;
   font-size: 14px;
   line-height: 16px;
+
+  /* background-color: #ac1000; */
 }
 
 .working-time li:nth-child(2) {
@@ -395,12 +396,12 @@ a {
 }
 
 #first-banner.banner {
-  background: url(IMG/Raspberry_background.png) no-repeat;
+  background: url(/IMG/Raspberry_background.png) no-repeat;
   background-size: 100% 100%;
 }
 
 #second-banner.banner {
-  background: url(IMG/Chocolate_background.png) no-repeat;
+  background: url(/IMG/Chocolate_background.png) no-repeat;
   background-size: 100% 100%;
 }
 
@@ -557,7 +558,7 @@ a {
   margin: 31px 27px 0;
 
   background-color: var(--color-backround-default);
-  background: url(IMG/Waffle_background.png) no-repeat;
+  background: url(/IMG/Waffle_background.png) no-repeat;
   background-size: 100% 100%;
 }
 
@@ -637,7 +638,7 @@ a {
   text-align: left;
 
   background-color: var(--color-backround-default);
-  background: url(IMG/Strawberry_background.png) no-repeat;
+  background: url(/IMG/Strawberry_background.png) no-repeat;
   background-size: 100% 100%;
 }
 
@@ -685,7 +686,7 @@ a {
   flex-direction: column;
 
   background-color: var(--color-backround-default);
-  background: url(IMG/Mailing.png) no-repeat;
+  background: url(/IMG/Mailing.png) no-repeat;
   background-size: 100% 100%;
 }
 

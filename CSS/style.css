@@ -560,8 +560,8 @@ a {
 }
 
 .SEO h3 {
-  padding: 0;
   margin: 0;
+  margin-top: -1px;
 
   font-style: normal;
   font-weight: 500;
@@ -571,45 +571,39 @@ a {
   color: #323232;
 }
 
-.SEO .SEO-container {
-  padding: 0;
-  margin: 0;
-}
-
 .SEO-list {
-  padding: 0;
-  margin: 0;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 28px;
-  grid-row-gap: 2px;
+  grid-column-gap: 25px;
+  grid-row-gap: 1px;
 }
 
 .SEO-list li {
   display: flex;
-
-  margin: 0;
-  padding: 0;
 }
 
 .SEO-list .SEO-icon {
-  margin-right: 8px;
+  margin-right: 7px;
 }
 
-#first-row.SEO-icon {
-  position: relative;
-  bottom: 11px;
+.SEO-list li:nth-child(1) .SEO-icon,
+.SEO-list li:nth-child(2) .SEO-icon{
+  margin-bottom: 22px;
 }
 
-#second-row.SEO-icon {
-  position: relative;
-  bottom: 22px;
+.SEO-list li:nth-child(3) .SEO-icon ,
+.SEO-list li:nth-child(4) .SEO-icon {
+  margin-bottom: 44px;
+}
+
+.SEO-list li:nth-child(2) .SEO-icon ,
+.SEO-list li:nth-child(4) .SEO-icon {
+    margin-right: 9px;
 }
 
 .SEO-list p {
-  padding-top: 20px;
   margin: 0;
+  margin-top: 21px;
 
   font-style: normal;
   font-weight: 400;
@@ -622,14 +616,11 @@ a {
 /* Контейнер новости+рассылка */
 .news-mailing-container {
   margin: 40px 27px 40px;
-  padding: 0;
-
   display: flex;
 }
 
 /* Новости */
 .news {
-  margin: 0;
   padding: 23px 260px 40px 19px;
 
   text-align: left;
@@ -641,7 +632,6 @@ a {
 
 .news h4 {
   margin: 0 0 4px;
-  padding: 0;
 
   font-style: normal;
   font-weight: 500;
@@ -654,7 +644,7 @@ a {
 .news a {
   margin: 0;
   margin-right: 135px;
-  padding: 0;
+  /* padding: 0; */
 
   font-style: normal;
   font-weight: 700;
@@ -689,7 +679,6 @@ a {
 
 .mailing p {
   margin: 0;
-  padding: 0;
 
   font-style: normal;
   font-weight: 400;
@@ -737,18 +726,12 @@ a {
 .map-container {
   position: relative;
 
-  margin: 0;
-  padding: 0;
-
   background-color: var(--color-backround-default);
 }
 
 .map {
   position: relative;
   z-index: 1;
-
-  margin: 0;
-  padding: 0;
 }
 
 .yandex-map {
@@ -763,7 +746,7 @@ a {
 
   display: flex;
   flex-direction: column;
-  margin: 0;
+  /* margin: 0; */
   padding: 29px 26px 31px;
 
   font-style: normal;

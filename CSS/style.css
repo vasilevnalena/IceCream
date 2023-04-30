@@ -63,7 +63,6 @@ button {
   border: none;
   background: linear-gradient(0deg, #e74a35 0%, #f26843 100%);
   box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
-  /* border-radius: 50vh; */
   border-radius: 40px;
 }
 
@@ -188,7 +187,6 @@ a {
 
 .menu-container .user-navigation {
   display: flex;
-  /* width: 246px; */
   justify-content: space-between;
   align-items: center;
   gap: 10px;
@@ -367,6 +365,16 @@ a {
   background: url("/IMG/radio-button-off.svg");
 }
 
+[type="radio"] + img:hover,
+[type="radio"] + img:focus {
+  opacity: 0.4;
+}
+
+[type="radio"]:checked + img:hover,
+[type="radio"]:checked + img:focus {
+  opacity: 1;
+}
+
 .special-offer button {
   padding: 9px 40px 11px;
 
@@ -473,9 +481,6 @@ a {
 }
 
 /* Хиты */
-.hits-container {
-  /* margin: 40px 13px 0; */
-}
 
 .hits-container .hits {
   margin: 40px 27px 0;
@@ -511,6 +516,12 @@ a {
   line-height: 13px;
   color: #ffffff;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
+}
+
+.hit-item .ice-cream-name:hover,
+.hit-item .ice-cream-name:focus,
+.hit-item .ice-cream-name:active {
+  color: #ffbc9e;
 }
 
 .price .rub {
@@ -587,18 +598,18 @@ a {
 }
 
 .SEO-list li:nth-child(1) .SEO-icon,
-.SEO-list li:nth-child(2) .SEO-icon{
+.SEO-list li:nth-child(2) .SEO-icon {
   margin-bottom: 22px;
 }
 
-.SEO-list li:nth-child(3) .SEO-icon ,
+.SEO-list li:nth-child(3) .SEO-icon,
 .SEO-list li:nth-child(4) .SEO-icon {
   margin-bottom: 44px;
 }
 
-.SEO-list li:nth-child(2) .SEO-icon ,
+.SEO-list li:nth-child(2) .SEO-icon,
 .SEO-list li:nth-child(4) .SEO-icon {
-    margin-right: 9px;
+  margin-right: 9px;
 }
 
 .SEO-list p {

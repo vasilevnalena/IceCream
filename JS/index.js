@@ -1,15 +1,20 @@
-var link = document.querySelector(".login-link");
-var popup = document.querySelector(".modal-login");
+let loginLink = document.querySelector(".login-link");
+let modalLogin = document.querySelector(".modal-login");
 
-link.addEventListener("click", (evt) => {
+loginLink.addEventListener("click", (evt) => {
   evt.preventDefault();
-  popup.classList.add("modal-show");
+  modalLogin.classList.add("modal-show");
 });
 
 window.addEventListener("keydown", (evt) => {
-  console.log(evt.key);
-  if (evt.key === 'Escape') {
+  if (evt.key === "Escape") {
     evt.preventDefault();
-    popup.classList.remove("modal-show");
+    modalLogin.classList.remove("modal-show");
+  }
+});
+
+window.addEventListener("click", (evt) => {
+  if (!loginLink.contains(evt.target)) {
+    modalLogin.classList.remove("modal-show");
   }
 });

@@ -40,12 +40,15 @@ input {
   line-height: 24px;
   font-size: 16px;
 }
+
 input:hover {
   border: 2px solid rgba(154, 154, 154, 0.52);
 }
+
 input:focus {
   border: 2px solid rgba(46, 136, 228, 0.52);
 }
+
 input:active {
   border: 1px solid rgba(178, 178, 178, 0.52);
 }
@@ -101,7 +104,14 @@ ul {
 
 a {
   text-decoration: none;
+  cursor: default;
 }
+
+a:hover,
+a:focus,
+a:active {
+  color: #ffbc9e;
+} 
 
 /* Шапка */
 .main-header {
@@ -112,24 +122,24 @@ a {
   color: #ffffff;
 }
 
-.main-header .main-navigation {
+.main-navigation {
   display: flex;
   align-items: center;
   margin-top: 1px;
 }
 
-.main-navigation .main-header-logo {
+.main-header-logo {
   margin-top: 8px;
   margin-right: 10px;
 }
 
-.main-navigation .menu-container {
+.menu-container {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
 
-.menu-container .site-navigation {
+.site-navigation {
   display: flex;
   flex-wrap: wrap;
 
@@ -158,21 +168,6 @@ a {
   text-decoration-color: rgba(255, 255, 255, 0.2);
 }
 
-.site-navigation button:hover,
-.site-navigation button:focus,
-.site-navigation a:hover,
-.site-navigation a:focus {
-  background: #f7f6f3;
-  color: #000000;
-}
-
-.site-navigation button:active,
-.site-navigation a:active {
-  color: #000000;
-  background: linear-gradient(0deg, #ededed, #ededed), rgba(248, 247, 244, 0.99);
-  box-shadow: inset 0px 2px 1px #696969;
-}
-
 .site-navigation a {
   padding: 8px 14px 9px 14px;
   margin: 0;
@@ -185,7 +180,7 @@ a {
   align-items: center;
 }
 
-.menu-container .user-navigation {
+.user-navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -199,7 +194,7 @@ a {
   color: inherit;
 }
 
-.user-navigation .search__button {
+.search__button {
   width: 32px;
   height: 32px;
   display: flex;
@@ -212,7 +207,7 @@ a {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.user-navigation .login-link {
+.login-link {
   display: flex;
   height: 32px;
   align-items: center;
@@ -235,7 +230,7 @@ a {
   margin-right: 8px;
 }
 
-.user-navigation .basket__button {
+.basket__button {
   display: flex;
   height: 32px;
   padding-left: 16px;
@@ -266,14 +261,21 @@ a {
   fill: #000000;
 }
 
+.site-navigation button:hover,
+.site-navigation button:focus,
+.site-navigation a:hover,
+.site-navigation a:focus,
 .user-navigation button:hover,
 .user-navigation button:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
   background: #f7f6f3;
   color: #000000;
+  box-shadow: none;
 }
 
+.site-navigation button:active,
+.site-navigation a:active,
 .user-navigation button:active,
 .user-navigation a:active {
   color: #000000;
@@ -281,7 +283,7 @@ a {
   box-shadow: inset 0px 2px 1px #696969;
 }
 
-.main-header .working-time {
+.working-time {
   margin-right: 1px;
   margin-top: -4px;
 
@@ -313,8 +315,7 @@ a {
   align-items: center;
 }
 
-.special-offer .offer-text {
-  /* margin-top: 31px; */
+.offer-text {
   margin-right: 3px;
   margin-bottom: 30px;
 
@@ -419,7 +420,7 @@ a {
   color: #ffffff;
 }
 
-.banner .banner-text {
+.banner-text {
   margin: 15px 0 0;
   padding: 0;
 
@@ -441,7 +442,7 @@ a {
   background-size: 100% 100%;
 }
 
-.banner .banner__button {
+.banner__button {
   display: flex;
   justify-content: flex-end;
   padding: 0;
@@ -463,7 +464,7 @@ a {
   box-shadow: 0px 2px 2px rgba(85, 8, 0, 0.54);
 }
 
-.banner button:focus,
+/* .banner button:focus,
 .banner button:hover {
   background: linear-gradient(
       0deg,
@@ -478,11 +479,11 @@ a {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
     linear-gradient(0deg, #f26843 0%, #e74a35 100%);
   box-shadow: inset 0px 2px 2px #942718;
-}
+} */
 
 /* Хиты */
 
-.hits-container .hits {
+.hits {
   margin: 40px 27px 0;
 
   display: flex;
@@ -493,16 +494,16 @@ a {
   text-align: center;
 }
 
-.hits .hit-item {
+.hit-item {
   display: flex;
   flex-direction: column;
 }
 
-.hit-item .hit-icon {
+.hit-icon {
   position: absolute;
 }
 
-.hit-item .price {
+.price {
   position: relative;
   bottom: 42px;
   right: 1px;
@@ -518,13 +519,13 @@ a {
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
 
-.hit-item .ice-cream-name:hover,
-.hit-item .ice-cream-name:focus,
-.hit-item .ice-cream-name:active {
+/* .ice-cream-name:hover,
+.ice-cream-name:focus,
+.ice-cream-name:active {
   color: #ffbc9e;
-}
+} */
 
-.price .rub {
+.rub {
   margin-left: 5px;
 
   font-style: normal;
@@ -535,7 +536,7 @@ a {
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
 
-.price .unit-monetary {
+.unit-monetary {
   margin-top: 5px;
 
   font-style: normal;
@@ -546,7 +547,7 @@ a {
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
 
-.hit-item .ice-cream-name {
+.ice-cream-name {
   position: relative;
   bottom: 5px;
 
@@ -593,7 +594,7 @@ a {
   display: flex;
 }
 
-.SEO-list .SEO-icon {
+.SEO-icon {
   margin-right: 7px;
 }
 
@@ -655,7 +656,6 @@ a {
 .news a {
   margin: 0;
   margin-right: 135px;
-  /* padding: 0; */
 
   font-style: normal;
   font-weight: 700;
@@ -757,7 +757,6 @@ a {
 
   display: flex;
   flex-direction: column;
-  /* margin: 0; */
   padding: 29px 26px 31px;
 
   font-style: normal;
@@ -776,7 +775,11 @@ a {
   align-items: center;
 }
 
-.contacts-container :nth-child(1) {
+/* .contacts-container p{
+  margin: 0;
+} */
+
+.contacts-container li:nth-child(1) {
   margin: 1px 0 0;
   width: 250px;
 
@@ -786,7 +789,7 @@ a {
   align-items: center;
 }
 
-.contacts-container :nth-child(2) {
+.contacts-container li:nth-child(2) {
   margin: 18px 0 0;
   width: 201px;
 
@@ -796,7 +799,7 @@ a {
   align-items: center;
 }
 
-.contacts-container :nth-child(3) {
+.contacts-container li:nth-child(3) {
   margin: 5px 0 0;
   width: 182px;
 
@@ -806,7 +809,7 @@ a {
   align-items: center;
 }
 
-.contacts-container :nth-child(4) {
+.contacts-container li:nth-child(4) {
   margin: 2px 0 0;
   width: 182px;
 
@@ -894,7 +897,7 @@ a {
   color: #ffffff;
 }
 
-.footer-menu-list .heart-icon {
+.heart-icon {
   margin-right: 7px;
   margin-top: 2px;
 
@@ -908,11 +911,11 @@ a {
   margin-bottom: 6px;
 }
 
-.footer-menu-list li:hover,
+/* .footer-menu-list li:hover,
 .footer-menu-list li:focus,
 .footer-menu-list li:active {
   color: #ffbc9e;
-}
+} */
 
 /* Кем создано */
 .created-by {
@@ -937,17 +940,16 @@ a {
   text-underline-offset: 3px;
 }
 
-.created-by a:hover,
+/* .created-by a:hover,
 .created-by a:focus,
 .created-by a:active {
   color: #ffbc9e;
-}
+} */
 
 /* Hidden */
 
 .modal {
   position: fixed;
-  /* background-position: 0 0; */
 
   background: #f8f7f4;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
@@ -956,22 +958,20 @@ a {
 
 /* Всплывающее окно входа */
 .modal-login {
-  top: 58px;
-  left: 50%;
-  margin-left: -139px;
+  top: 59px;
+  right: 17%;
+  margin-right: 5px;
 
   border-radius: 5px;
-display: none;
+  display: none;
 }
 
 .modal-show {
   display: block;
 }
 
-.modal-login .login-form {
-  /* width: 280px; */
-  /* margin: 20px 17px 20px 19px; */
-  margin: 20px 17px 21px 19px;
+.login-form {
+  margin: 20px 18px 22px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -979,53 +979,53 @@ display: none;
   align-items: left;
 }
 
-.login-form .login,
-.login-form .password {
+.login,
+.password {
   background: #ffffff;
 }
-
 
 .login input,
 .password input {
   box-sizing: border-box;
   padding: 9px 14px;
-  width: 239px;
+  width: 241px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   color: #999999;
   border-radius: 5px;
-  border: 1px solid #D3D3D2;
+  border: 1px solid #d3d3d2;
 }
 
-.login-form .sign-in-container {
+.sign-in-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  margin-left: 1px;
   gap: 16px;
+
+  text-underline-offset: 2px;
 }
 
-.sign-in-container .button-sign-in {
-  padding: 10px 25px 10px 26px;
+.button-sign-in {
+  padding: 11px 25px 9px 24px;
 
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   align-items: center;
   color: #fefefe;
-  border-radius: 40px;
+  border-radius: 20px;
 
   background: linear-gradient(0deg, #e74a35 0%, #f26843 100%), #e84d37;
   box-shadow: 0px 1px 2px #ac1000;
 }
 
-.sign-in-container .registration-container{
-/* display: flex;
-flex-direction: column; */
+.registration-container {
+  margin-top: 1px;
+  margin-left: 4px;
 }
 
-.registration-container .restore,
-.registration-container .registration {
+.restore,
+.registration {
   font-weight: 400;
   font-size: 13px;
   line-height: 16px;
@@ -1034,6 +1034,8 @@ flex-direction: column; */
   text-decoration: underline;
 }
 
-.registration-container .restore {
-  /* margin-bottom: 8px; */
+.registration {
+  position: relative;
+  top: 3px;
 }
+

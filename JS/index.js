@@ -2,7 +2,6 @@ let loginLink = document.querySelector(".login-link");
 let modalLogin = document.querySelector(".modal-login");
 
 loginLink.addEventListener("click", (evt) => {
-  evt.preventDefault();
   modalLogin.classList.add("modal-show");
 });
 
@@ -14,7 +13,7 @@ window.addEventListener("keydown", (evt) => {
 });
 
 window.addEventListener("click", (evt) => {
-  if (!loginLink.contains(evt.target)) {
+  if (!loginLink.contains(evt.target)&&!modalLogin.contains(evt.target)) {
     modalLogin.classList.remove("modal-show");
   }
 });

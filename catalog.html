@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <link href="CSS/normalize.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
     <title>Каталог</title>
   </head>
   <body>
@@ -112,13 +114,61 @@
       <h4>Цена:</h4>
       <p>100 руб.-500 руб.</p>
       <!-- Ползунок с фильтром -->
+      <form class="price-filter">
+        <input
+          type="range"
+          max="1000"
+          value="50"
+        />
+      </form>
 
       <h4>Жирность:</h4>
-      <!-- Радиобаттон с % -->
+      <form class="fat content">
+        <label>
+          <input type="radio" name="fat content" />
+          0%
+          <!-- <img src="IMG/radio-button-off.svg" alt="ice-cream-offer-1" /> -->
+        </label>
+        <label>
+          <input type="radio" name="fat content" />
+          до 10%
+        </label>
+        <label>
+          <input type="radio" name="fat content" />
+          до 30%
+        </label>
+        <label>
+          <input type="radio" name="fat content" />
+          выше 30%
+        </label>
+      </form>
 
-      
       <h4>Наполнители:</h4>
-      <!-- Чекбоксы с наполнителями -->
+      <form class="fillers">
+        <label>
+          <input type="checkbox" name="fillers" />
+          шоколадные
+          <!-- <img src="IMG/radio-button-off.svg" alt="ice-cream-offer-1" /> -->
+        </label>
+
+        <label>
+          <input type="checkbox" name="fillers" />
+          сахарные присыпки
+        </label>
+
+        <label>
+          <input type="checkbox" name="fillers" />
+          фрукты
+        </label>
+        <label>
+          <input type="checkbox" name="fillers" />
+          сиропы
+        </label>
+        <label>
+          <input type="checkbox" name="fillers" />
+          джемы
+        </label>
+      </form>
       <button type="button">Применить</button>
     </main>
 

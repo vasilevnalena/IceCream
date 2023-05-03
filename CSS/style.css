@@ -29,7 +29,7 @@ body {
   color: #ffffff;
 
   background-color: var(--color-background1);
-  background-image: url(/IMG/IceCreams_1.png);
+  background-image: url("../IMG/IceCreams_1.png");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -357,12 +357,12 @@ a {
 
 /* checked style */
 [type="radio"]:checked + img {
-  background: url("/IMG/radio-button-on.svg");
+  background: url("../IMG/radio-button-on.svg");
 }
 
 /* unchecked style */
 [type="radio"] + img {
-  background: url("/IMG/radio-button-off.svg");
+  background: url("../IMG/radio-button-off.svg");
 }
 
 [type="radio"] + img:hover,
@@ -432,12 +432,12 @@ a {
 }
 
 #first-banner.banner {
-  background: url(/IMG/Raspberry_background.png) no-repeat;
+  background: url("../IMG/Raspberry_background.png") no-repeat;
   background-size: 100% 100%;
 }
 
 #second-banner.banner {
-  background: url(/IMG/Chocolate_background.png) no-repeat;
+  background: url("../IMG/Chocolate_background.png") no-repeat;
   background-size: 100% 100%;
 }
 
@@ -566,7 +566,7 @@ a {
   margin: 33px 27px 0;
 
   background-color: var(--color-backround-default);
-  background: url(/IMG/Waffle_background.png) no-repeat;
+  background: url("../IMG/Waffle_background.png") no-repeat;
   background-size: 100% 100%;
 }
 
@@ -637,7 +637,7 @@ a {
   text-align: left;
 
   background-color: var(--color-backround-default);
-  background: url(/IMG/Strawberry_background.png) no-repeat;
+  background: url("../IMG/Strawberry_background.png") no-repeat;
   background-size: 100% 100%;
 }
 
@@ -684,7 +684,7 @@ a {
   flex-direction: column;
 
   background-color: var(--color-backround-default);
-  background: url(/IMG/Mailing.png) no-repeat;
+  background: url("../IMG/Mailing.png") no-repeat;
   background-size: 100% 100%;
 }
 

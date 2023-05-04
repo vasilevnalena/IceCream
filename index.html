@@ -48,7 +48,7 @@
               </button>
             </li>
             <li>
-              <button class="login-link">
+              <button class="login__button" type="button">
                 <svg
                   width="21"
                   height="19"
@@ -470,6 +470,7 @@
     </footer>
 
     <section class="modal modal-login">
+      <h6 class="visually-hidden">Login window</h6>
       <form class="login-form">
         <label class="login"
           ><input type="email" placeholder="email@example.com"
@@ -487,6 +488,38 @@
             <li><a class="registration" href="#">Новая регистрация</a></li>
           </ul>
         </div>
+      </form>
+    </section>
+
+    <section class="modal modal-catalog-menu">
+      <form class="catalog-menu">
+        <h6 class="visually-hidden">Catalog menu</h6>
+        <ul class="new-products">
+          <li>Новинки</li>
+          <li><!-- разделитель - картинка --></li>
+          <li>Сливочное</li>
+          <li>Щербеты</li>
+          <li>Фруктовый лед</li>
+          <li>Мелорин</li>
+        </ul>
+      </form>
+    </section>
+
+    <section class="modal modal-search">
+      <form class="search">
+        <h6 class="visually-hidden">Search</h6>
+        <label><input class="input-search" type="search" placeholder="Крем-брюле" /></label>
+      </form>
+    </section>
+
+    <section class="modal modal-feedback">
+      <form class="feedback">
+        <h6 class="visually-hidden">Feedback form</h6>
+        <p>Мы обязательно вам ответим!</p>
+        <label><input type="text" placeholder="Имя Фамилия" /></label>
+        <label><input type="email" placeholder="email@example.com" /></label>
+        <label><input type="text" placeholder="В свободной форме" /></label>
+        <button type="submit">Отправить</button>
       </form>
     </section>
 

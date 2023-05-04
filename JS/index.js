@@ -1,19 +1,27 @@
-let loginLink = document.querySelector(".login-link");
+let loginButton = document.querySelector(".login__button");
 let modalLogin = document.querySelector(".modal-login");
 
-loginLink.addEventListener("click", (evt) => {
-  modalLogin.classList.add("modal-show");
-});
+let buttonSearch = document.querySelector(".search__button");
+let modalSearch = document.querySelector(".modal-search");
 
-window.addEventListener("keydown", (evt) => {
-  if (evt.key === "Escape") {
-    evt.preventDefault();
-    modalLogin.classList.remove("modal-show");
-  }
-});
+function handleElementEvents(element, modalClass, showModalWindow) {
+  element.addEventListener("click", () => {
+    modalClass.classList.add(showModalWindow);
+  });
 
-window.addEventListener("click", (evt) => {
-  if (!loginLink.contains(evt.target)&&!modalLogin.contains(evt.target)) {
-    modalLogin.classList.remove("modal-show");
-  }
-});
+  window.addEventListener("keydown", (evt) => {
+    if (evt.key === "Escape") {
+      evt.preventDefault();
+      modalClass.classList.remove(showModalWindow);
+    }
+  });
+
+  window.addEventListener("click", (evt) => {
+    if (!element.contains(evt.target) && !modalClass.contains(evt.target)) {
+      modalClass.classList.remove(showModalWindow);
+    }
+  });
+}
+
+handleElementEvents(loginButton, modalLogin, "modal-show");
+handleElementEvents(buttonSearch, modalSearch, "modal-show");

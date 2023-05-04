@@ -111,7 +111,7 @@ a:hover,
 a:focus,
 a:active {
   color: #ffbc9e;
-} 
+}
 
 /* Шапка */
 .main-header {
@@ -207,7 +207,7 @@ a:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.login-link {
+.login__button {
   display: flex;
   height: 32px;
   align-items: center;
@@ -225,7 +225,7 @@ a:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.login-link svg {
+.login__button svg {
   margin-bottom: 1px;
   margin-right: 8px;
 }
@@ -966,10 +966,6 @@ a:active {
   display: none;
 }
 
-.modal-show {
-  display: block;
-}
-
 .login-form {
   margin: 20px 18px 22px;
   display: flex;
@@ -1039,3 +1035,52 @@ a:active {
   top: 3px;
 }
 
+/* Меню каталога */
+.modal-catalog-menu {
+  top: 59px;
+  /* right: 17%; */
+  /* margin-right: 5px; */
+
+  border-radius: 5px;
+  display: none;
+}
+
+/* Окно поиска */
+.modal-search {
+  top: 59px;
+  right: 24%;
+  margin-right: 9px;
+  border-radius: 5px;
+  display: none;
+}
+
+.input-search {
+  margin: 20px 15px;
+  box-sizing: border-box;
+  padding: 9px 13px;
+  width: 311px;
+  border-radius: 5px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #999999;
+  background: #ffffff;
+  border: 1px solid #d3d3d2;
+}
+
+/* Форма обратной связи */
+.modal-feedback {
+  top: 250px;
+  right: 25%;
+  /* margin-right: 5px; */
+
+  border-radius: 5px;
+  display: none;
+}
+
+/* Отобразить модальное окно */
+.modal-show {
+  display: block;
+}

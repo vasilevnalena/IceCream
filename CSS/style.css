@@ -1037,12 +1037,42 @@ a:active {
 
 /* Меню каталога */
 .modal-catalog-menu {
+  padding: 11px 21px;
   top: 59px;
   /* right: 17%; */
   /* margin-right: 5px; */
 
   border-radius: 5px;
-  display: none;
+  /* display: none; */
+}
+
+.new-products{
+  display: flex;
+flex-direction: column;
+/* justify-items: center; */
+/* align-content: center; */
+}
+
+.new-products li {
+  height: 28px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #323232;
+}
+
+.new-products li:nth-child(1) {
+  font-weight: 700;
+  line-height: 16px;
+  align-items: center;
+}
+
+.new-products li:nth-child(2) {
+  height: 1px;
+  background: rgba(0, 0, 0, 0.0001);
+  opacity: 0.2;
+  border-bottom: solid 1px;
 }
 
 /* Окно поиска */

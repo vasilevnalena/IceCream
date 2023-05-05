@@ -55,7 +55,7 @@ body {
 
 .picture-offer-1,
 .picture-offer-2,
-.picture-offer-3{
+.picture-offer-3 {
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -128,9 +128,11 @@ ul {
   overflow: hidden;
 }
 
-a {
+a,
+a:visited {
   text-decoration: none;
   cursor: default;
+  color: inherit;
 }
 
 a:hover,
@@ -213,13 +215,6 @@ a:active {
   gap: 10px;
 }
 
-.site-navigation a,
-.user-navigation a,
-.hits a,
-.main-footer a {
-  color: inherit;
-}
-
 .search__button {
   width: 32px;
   height: 32px;
@@ -278,32 +273,24 @@ a:active {
   padding-right: 7px;
 }
 
-.user-navigation button:hover path,
-.user-navigation button:focus path,
-.user-navigation a:hover path,
-.user-navigation a:focus path,
-.user-navigation button:hover g,
-.user-navigation button:focus g {
+.user-navigation-button:hover path,
+.user-navigation-button:focus path,
+.user-navigation-button:hover g,
+.user-navigation-button:focus g {
   fill: #000000;
 }
 
-.site-navigation button:hover,
-.site-navigation button:focus,
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation button:hover,
-.user-navigation button:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
+.site-navigation-button:hover,
+.site-navigation-button:focus,
+.user-navigation-button:hover,
+.user-navigation-button:focus {
   background: #f7f6f3;
   color: #000000;
   box-shadow: none;
 }
 
-.site-navigation button:active,
-.site-navigation a:active,
-.user-navigation button:active,
-.user-navigation a:active {
+.site-navigation-button:active,
+.user-navigation-button:active {
   color: #000000;
   background: linear-gradient(0deg, #ededed, #ededed), rgba(248, 247, 244, 0.99);
   box-shadow: inset 0px 2px 1px #696969;
@@ -468,7 +455,7 @@ a:active {
   background-size: 100% 100%;
 }
 
-.banner__button {
+.banner-container {
   display: flex;
   justify-content: flex-end;
   padding: 0;
@@ -490,8 +477,8 @@ a:active {
   box-shadow: 0px 2px 2px rgba(85, 8, 0, 0.54);
 }
 
-/* .banner button:focus,
-.banner button:hover {
+.banner__button:focus,
+.banner__button:hover {
   background: linear-gradient(
       0deg,
       rgba(255, 255, 255, 0.2),
@@ -501,11 +488,11 @@ a:active {
   box-shadow: 0px 1px 2px #ac1000;
 }
 
-.banner button:active {
+.banner__button:active {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
     linear-gradient(0deg, #f26843 0%, #e74a35 100%);
   box-shadow: inset 0px 2px 2px #942718;
-} */
+}
 
 /* Хиты */
 
@@ -544,12 +531,6 @@ a:active {
   color: #ffffff;
   text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
 }
-
-/* .ice-cream-name:hover,
-.ice-cream-name:focus,
-.ice-cream-name:active {
-  color: #ffbc9e;
-} */
 
 .rub {
   margin-left: 5px;
@@ -695,9 +676,9 @@ a:active {
   text-underline-offset: 3px;
 }
 
-.news a:hover,
-.news a:focus,
-.news a:active {
+.news-link:hover,
+.news-link a:focus,
+.news-link a:active {
   color: #e84d37;
 }
 
@@ -800,10 +781,6 @@ a:active {
   line-height: 20px;
   align-items: center;
 }
-
-/* .contacts-container p{
-  margin: 0;
-} */
 
 .contacts-container li:nth-child(1) {
   margin: 1px 0 0;
@@ -937,12 +914,6 @@ a:active {
   margin-bottom: 6px;
 }
 
-/* .footer-menu-list li:hover,
-.footer-menu-list li:focus,
-.footer-menu-list li:active {
-  color: #ffbc9e;
-} */
-
 /* Кем создано */
 .created-by {
   font-weight: 400;
@@ -965,12 +936,6 @@ a:active {
   text-decoration-skip-ink: none;
   text-underline-offset: 3px;
 }
-
-/* .created-by a:hover,
-.created-by a:focus,
-.created-by a:active {
-  color: #ffbc9e;
-} */
 
 /* Hidden */
 
@@ -1061,6 +1026,7 @@ a:active {
   top: 3px;
 }
 
+/* Текст при выделении исправить(сливается) */
 /* Меню каталога */
 .modal-catalog-menu {
   padding: 11px 9px 8px 6px;

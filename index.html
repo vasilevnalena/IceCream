@@ -22,17 +22,17 @@
         <div class="menu-container">
           <ul class="site-navigation">
             <li>
-              <button class="catalog__button" type="button">Каталог</button>
+              <button class="catalog__button site-navigation-button" type="button">Каталог</button>
             </li>
             <li>
-              <a href="">Доставка и оплата</a>
+              <a class="site-navigation-button" href="">Доставка и оплата</a>
             </li>
-            <li><a href="">О Компании</a></li>
+            <li><a class="site-navigation-button" href="">О Компании</a></li>
           </ul>
 
           <ul class="user-navigation">
             <li>
-              <button class="search__button" type="button">
+              <button class="search__button user-navigation-button" type="button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -48,7 +48,7 @@
               </button>
             </li>
             <li>
-              <button class="login__button" type="button">
+              <button class="login__button user-navigation-button" type="button">
                 <svg
                   width="21"
                   height="19"
@@ -69,7 +69,7 @@
               </button>
             </li>
             <li>
-              <button class="basket__button" type="button">
+              <button class="basket__button user-navigation-button" type="button">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -128,6 +128,7 @@
         <button type="button">Давайте оба!</button>
       </article>
 
+      <!-- Добавить смену текста при переключении -->
       <article class="special-offer visually-hidden">
         <p>
           Шоколадный пломбир
@@ -158,8 +159,8 @@
             в ваш заказ банку малинового варенья бесплатно.
           </p>
 
-          <div class="banner__button">
-            <button type="button">Хочу варенье!</button>
+          <div class="banner-container">
+            <button class="banner__button" type="button">Хочу варенье!</button>
           </div>
         </section>
 
@@ -172,8 +173,8 @@
             вкуснейшей шоколадной присыпки совершенно бесплатно.
           </p>
 
-          <div class="banner__button">
-            <button type="button">Хочу шоколадки!</button>
+          <div class="banner-container">
+            <button class="banner__button" type="button">Хочу шоколадки!</button>
           </div>
         </section>
       </div>
@@ -304,7 +305,7 @@
       <div class="news-mailing-container">
         <article class="news">
           <h4>Новое в нашем блоге</h4>
-          <a href="">10 способов сервировки фруктовых щербетов к столу</a>
+          <a class="news-link" href="">10 способов сервировки фруктовых щербетов к столу</a>
         </article>
 
         <section class="mailing">

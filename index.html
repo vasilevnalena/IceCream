@@ -8,7 +8,7 @@
     <link href="CSS/style.css" rel="stylesheet" />
   </head>
 
-  <body>
+  <body class="background-offer-1 picture-offer-1">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
@@ -22,7 +22,7 @@
         <div class="menu-container">
           <ul class="site-navigation">
             <li>
-              <button type="button">Каталог</button>
+              <button class="catalog__button" type="button">Каталог</button>
             </li>
             <li>
               <a href="">Доставка и оплата</a>
@@ -110,17 +110,17 @@
 
         <form class="choise-offer-radio-button">
           <label>
-            <input type="radio" name="offers" checked />
+            <input type="radio" name="offers" id="radio-offer-1" checked />
             <img src="IMG/radio-button-off.svg" alt="ice-cream-offer-1" />
           </label>
 
           <label>
-            <input type="radio" name="offers" />
+            <input type="radio" name="offers" id="radio-offer-2"/>
             <img src="IMG/radio-button-off.svg" alt="ice-cream-offer-2" />
           </label>
 
           <label>
-            <input type="radio" name="offers" />
+            <input type="radio" name="offers" id="radio-offer-3"/>
             <img src="IMG/radio-button-off.svg" alt="ice-cream-offer-3" />
           </label>
         </form>
@@ -492,10 +492,10 @@
     </section>
 
     <section class="modal modal-catalog-menu">
+      <h6 class="visually-hidden">Catalog menu</h6>
       <form class="catalog-menu-form">
-        <h6 class="visually-hidden">Catalog menu</h6>
+        <p>Новинки</p>
         <ul class="new-products">
-          <li>Новинки</li>
           <li><!-- разделитель--></li>
           <li>Сливочное</li>
           <li>Щербеты</li>
@@ -506,8 +506,8 @@
     </section>
 
     <section class="modal modal-search">
+      <h6 class="visually-hidden">Search</h6>
       <form class="search-form">
-        <h6 class="visually-hidden">Search</h6>
         <label
           ><input class="input-search" type="search" placeholder="Крем-брюле"
         /></label>
@@ -515,8 +515,8 @@
     </section>
 
     <section class="modal modal-feedback">
+      <h6 class="visually-hidden">Feedback form</h6>
       <form class="feedback-form">
-        <h6 class="visually-hidden">Feedback form</h6>
         <p>Мы обязательно вам ответим!</p>
         <label><input type="text" placeholder="Имя Фамилия" /></label>
         <label><input type="email" placeholder="email@example.com" /></label>

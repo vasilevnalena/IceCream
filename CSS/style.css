@@ -27,9 +27,35 @@ body {
   font-weight: 700;
   font-style: normal;
   color: #ffffff;
+}
 
+.background-offer-1 {
   background-color: var(--color-background1);
-  background-image: url("../IMG/IceCreams_1.png");
+}
+
+.background-offer-2 {
+  background-color: var(--color-background2);
+}
+
+.background-offer-3 {
+  background-color: var(--color-background3);
+}
+
+.picture-offer-1 {
+  background-image: url(../IMG/IceCreams_1.png);
+}
+
+.picture-offer-2 {
+  background-image: url(../IMG/IceCreams_2.png);
+}
+
+.picture-offer-3 {
+  background-image: url(../IMG/IceCreams_3.png);
+}
+
+.picture-offer-1,
+.picture-offer-2,
+.picture-offer-3{
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -1041,8 +1067,9 @@ a:active {
   top: 60px;
   left: 20%;
   margin-left: 11px;
-
   border-radius: 5px;
+
+  display: none;
 }
 
 .new-products {
@@ -1051,7 +1078,8 @@ a:active {
   gap: 3px;
 }
 
-.new-products li {
+.new-products li,
+.catalog-menu-form p {
   height: 28px;
   padding-left: 14px;
 
@@ -1061,28 +1089,29 @@ a:active {
   color: #323232;
 }
 
-.new-products li:nth-child(1) {
+.catalog-menu-form p {
+  margin: 0;
   font-weight: 700;
   line-height: 16px;
   align-items: center;
-  margin-bottom: -5px;
+  margin-bottom: -2px;
 }
 
-.new-products li:nth-child(2) {
+.new-products li:nth-child(1) {
   height: 1px;
   width: 114px;
   background: rgba(0, 0, 0, 0.0001);
   opacity: 0.2;
   border-bottom: solid 1px;
 }
-/* Сделать новинки и разделитель другими элементами! */
+
 .new-products li:hover,
-.new-products li:focus{
-  background: #FBDED7;
+.new-products li:focus {
+  background: #fbded7;
 }
 
-.new-products li:active{
-background: #F6B5A5;
+.new-products li:active {
+  background: #f6b5a5;
 }
 
 /* Окно поиска */

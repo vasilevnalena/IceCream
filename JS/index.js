@@ -8,10 +8,9 @@ let buttonLogin = document.querySelector(".login__button");
 let modalLogin = document.querySelector(".modal-login");
 
 let bodyPage = document.querySelector("body");
-let radioButtonOffer1 = document.querySelector("#radio-offer-1");
-let radioButtonOffer2 = document.querySelector("#radio-offer-2");
-let radioButtonOffer3 = document.querySelector("#radio-offer-3");
-
+let radioOffer1 = document.querySelector("#radio-offer-1");
+let radioOffer2 = document.querySelector("#radio-offer-2");
+let radioOffer3 = document.querySelector("#radio-offer-3");
 
 function modalWindowActions(element, modalClass, showModalWindow) {
   element.addEventListener("click", () => {
@@ -32,20 +31,11 @@ function modalWindowActions(element, modalClass, showModalWindow) {
   });
 }
 
-function offerSwitchRadioButton() {
-  radioButtonOffer1.addEventListener("click", () => {
-    bodyPage.classList.add("background-offer-1");
-    bodyPage.classList.add("picture-offer-1");
-  });
-
-  radioButtonOffer2.addEventListener("click", () => {
-    bodyPage.classList.add("background-offer-2");
-    bodyPage.classList.add("picture-offer-2");
-  });
-
-  radioButtonOffer3.addEventListener("click", () => {
-    bodyPage.classList.add("background-offer-3");
-    bodyPage.classList.add("picture-offer-3");
+function offerSwitchRadioButton(radioOffer, backgroundOffer, pictureOffer) {
+  radioOffer.addEventListener("click", () => {
+    bodyPage.classList = "";
+    bodyPage.classList.add(backgroundOffer);
+    bodyPage.classList.add(pictureOffer);
   });
 }
 
@@ -53,4 +43,6 @@ modalWindowActions(buttonLogin, modalLogin, "modal-show");
 modalWindowActions(buttonSearch, modalSearch, "modal-show");
 modalWindowActions(buttonMainMenu, modalMainMenu, "modal-show");
 
-offerSwitchRadioButton();
+offerSwitchRadioButton(radioOffer1, "background-offer-1", "picture-offer-1");
+offerSwitchRadioButton(radioOffer2, "background-offer-2", "picture-offer-2");
+offerSwitchRadioButton(radioOffer3, "background-offer-3", "picture-offer-3");

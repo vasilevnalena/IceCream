@@ -9,7 +9,7 @@
   <body class="background-offer-1">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo"  href="index.html">
+        <a class="main-header-logo" href="index.html">
           <img
             src="IMG/logo.svg"
             width="154"
@@ -20,17 +20,25 @@
         <div class="menu-container">
           <ul class="site-navigation">
             <li>
-              <button class="catalog__button" type="button">Каталог</button>
+              <button
+                class="catalog__button site-navigation-button"
+                type="button"
+              >
+                Каталог
+              </button>
             </li>
             <li>
-              <a href="">Доставка и оплата</a>
+              <a class="site-navigation-button" href="">Доставка и оплата</a>
             </li>
-            <li><a href="">О Компании</a></li>
+            <li><a class="site-navigation-button" href="">О Компании</a></li>
           </ul>
 
           <ul class="user-navigation">
             <li>
-              <button class="search__button" type="button">
+              <button
+                class="search__button user-navigation-button"
+                type="button"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -46,7 +54,10 @@
               </button>
             </li>
             <li>
-              <button class="login__button" type="button">
+              <button
+                class="login__button user-navigation-button"
+                type="button"
+              >
                 <svg
                   width="21"
                   height="19"
@@ -67,7 +78,10 @@
               </button>
             </li>
             <li>
-              <button class="basket__button" type="button">
+              <button
+                class="basket__button user-navigation-button"
+                type="button"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -114,11 +128,7 @@
       <h4>Цена:</h4>
       <p>100 руб.-500 руб.</p>
       <form class="price-filter">
-        <input
-          type="range"
-          max="1000"
-          value="50"
-        />
+        <input type="range" max="1000" value="50" />
       </form>
 
       <h4>Жирность:</h4>
@@ -170,6 +180,142 @@
       </form>
       <button type="button">Применить</button>
     </main>
+
+    <!-- Перенести данные в JSON -->
+    <ul class="tastes-creamy">
+      <li class="tastes-item">
+        <img src="IMG/Taste_1.png" alt="Мороженое 1" />
+        <p class="price">
+          310
+          <span class="rub">₽</span>
+          <span class="unit-monetary">/кг</span>
+        </p>
+
+        <a class="ice-cream-name" href=""
+          >Сливочное с апельсиновым джемом и цитрусовой стружкой</a
+        >
+      </li>
+
+      <li class="tastes-item">
+        <img src="IMG/Taste_2.png" alt="Мороженое 2" />
+        <p class="price">
+          380
+          <span class="rub">₽</span>
+          <span class="unit-monetary">/кг</span>
+        </p>
+
+        <a class="ice-cream-name" href=""
+          >Сливочно-кофейное с кусочками шоколада</a
+        >
+      </li>
+
+      <li class="tastes-item">
+        <img src="IMG/Taste_3.png" alt="Мороженое 3" />
+        <p class="price">
+          355
+          <span class="rub">₽</span>
+          <span class="unit-monetary">/кг</span>
+        </p>
+        <a class="ice-cream-name" href=""
+          >Сливочно-клубничное с присыпкой из белого шоколада</a
+        >
+      </li>
+
+      <li class="tastes-item">
+        <img src="IMG/Taste_4.png" alt="Мороженое 4" />
+        <p class="price">
+          415
+          <span class="rub">₽</span>
+          <span class="unit-monetary">/кг</span>
+        </p>
+        <a class="ice-cream-name" href=""
+          >Сливочное крем-брюле с карамельной подливкой</a
+        >
+      </li>
+
+      <li class="tastes-item">
+        <img src="IMG/Taste_5.png" alt="Мороженое 5" />
+        <p class="price">
+          325
+          <span class="rub">₽</span>
+          <span class="unit-monetary">/кг</span>
+        </p>
+        <a class="ice-cream-name" href="">Сливочное с брусничным джемом</a>
+      </li>
+
+      <li class="tastes-item">
+        <img src="IMG/Taste_6.png" alt="Мороженое 6" />
+        <p class="price">
+          410
+          <span class="rub">₽</span>
+          <span class="unit-monetary">/кг</span>
+        </p>
+        <a class="ice-cream-name" href=""
+          >Сливочно-черничное с цельными ягодами черники</a
+        >
+      </li>
+
+      <li class="tastes-item">
+        <img src="IMG/Taste_7.png" alt="Мороженое 7" />
+        <p class="price">
+          375
+          <span class="rub">₽</span>
+          <span class="unit-monetary">/кг</span>
+        </p>
+        <a class="ice-cream-name" href=""
+          >Сливочно-лимонное с карамельной присыпкой</a
+        >
+      </li>
+
+      <li class="tastes-item">
+        <img src="IMG/Taste_8.png" alt="Мороженое 8" />
+        <p class="price">
+          320
+          <span class="rub">₽</span>
+          <span class="unit-monetary">/кг</span>
+        </p>
+        <a class="ice-cream-name" href="">Сливочное с шоколадной стружкой</a>
+      </li>
+
+      <li class="tastes-item">
+        <img src="IMG/Taste_9.png" alt="Мороженое 9" />
+        <p class="price">
+          440
+          <span class="rub">₽</span>
+          <span class="unit-monetary">/кг</span>
+        </p>
+        <a class="ice-cream-name" href=""
+          >Сливочно-ванильное с кусочками шоколада</a
+        >
+      </li>
+      <li class="tastes-item">
+        <img src="IMG/Taste_10.png" alt="Мороженое 10" />
+        <p class="price">
+          435
+          <span class="rub">₽</span>
+          <span class="unit-monetary">/кг</span>
+        </p>
+        <a class="ice-cream-name" href="">Сливочноe с ментоловым сиропом</a>
+      </li>
+      <li class="tastes-item">
+        <img src="IMG/Taste_11.png" alt="Мороженое 11" />
+        <p class="price">
+          355
+          <span class="rub">₽</span>
+          <span class="unit-monetary">/кг</span>
+        </p>
+        <a class="ice-cream-name" href="">Сливочное с кусочками черного шоколада</a>
+      </li>
+      <li class="tastes-item">
+        <img src="IMG/Taste_12.png" alt="Мороженое 12" />
+        <p class="price">
+          420
+          <span class="rub">₽</span>
+          <span class="unit-monetary">/кг</span>
+        </p>
+        <a class="ice-cream-name" href="">Сливочное с мятным сиропом</a>
+      </li>
+    </ul>
 
     <footer class="main-footer">
       <span class="social-media-and-menu-container">
@@ -310,7 +456,9 @@
         <p>Новинки</p>
         <ul class="new-products">
           <li><!-- разделитель--></li>
-          <li>Сливочное</li>
+          <li class="creamy__button">
+            <a class="creamy__button" href="catalog.html">Сливочное</a>
+          </li>
           <li>Щербеты</li>
           <li>Фруктовый лед</li>
           <li>Мелорин</li>

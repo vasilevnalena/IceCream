@@ -29,14 +29,16 @@
                 Каталог
               </button>
             </li>
+
             <li>
               <a class="site-navigation-button" href="">Доставка и оплата</a>
             </li>
+
             <li><a class="site-navigation-button" href="">О Компании</a></li>
           </ul>
 
           <ul class="user-navigation">
-            <li>
+            <li class="search-button-container">
               <button
                 class="search__button user-navigation-button"
                 type="button"
@@ -54,7 +56,20 @@
                   />
                 </svg>
               </button>
+
+              <section class="modal modal-search">
+                <h6 class="visually-hidden">Search</h6>
+                <form class="search-form">
+                  <label
+                    ><input
+                      class="input-search"
+                      type="search"
+                      placeholder="Крем-брюле"
+                  /></label>
+                </form>
+              </section>
             </li>
+
             <li>
               <button
                 class="login__button user-navigation-button"
@@ -79,6 +94,7 @@
                 Вход
               </button>
             </li>
+
             <li>
               <button
                 class="basket__button user-navigation-button"
@@ -196,7 +212,6 @@
       </div>
 
       <section class="hits-container">
-
         <ul class="hits">
           <li class="tastes-item">
             <div class="hit-container">
@@ -271,7 +286,7 @@
             </button>
           </li>
 
-           <!-- <li class="tastes-item">
+          <!-- <li class="tastes-item">
             <div class="hit-container">
               <img class="hit-icon" src="IMG/hit.svg" alt="Хит" />
               <img src="IMG/Taste_3.png" alt="Мороженое 3" />
@@ -288,7 +303,7 @@
               Быстрый просмотр
             </button>
           </li> -->
-         </ul>
+        </ul>
       </section>
 
       <section class="SEO">
@@ -563,15 +578,6 @@
           <li>Фруктовый лед</li>
           <li>Мелорин</li>
         </ul>
-      </form>
-    </section>
-
-    <section class="modal modal-search">
-      <h6 class="visually-hidden">Search</h6>
-      <form class="search-form">
-        <label
-          ><input class="input-search" type="search" placeholder="Крем-брюле"
-        /></label>
       </form>
     </section>
 

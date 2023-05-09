@@ -60,11 +60,18 @@ body {
   background-repeat: no-repeat;
 }
 
+/* Почему пляшут элементы при наведении на input??? зафиксировать размер */
 input {
   background: #ffffff;
   border: 1px solid rgba(178, 178, 178, 0.52);
   line-height: 24px;
   font-size: 16px;
+  color: #323232;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: #999999;
 }
 
 input:hover,
@@ -494,14 +501,13 @@ a:active {
 }
 
 /* Хиты */
-
+/* Макет и стайлгайд различаются, карточки-хиты оформляла по макету, не по стайлгайду */
 .hits,
 .tastes-creamy {
-  margin: 40px 27px 0;
+  margin: 34px 27px 0;
 
   display: flex;
-  /* justify-content: space-between; */
-  gap: 26px;
+  justify-content: space-between;
   flex-wrap: wrap;
   text-align: center;
 }
@@ -514,13 +520,19 @@ a:active {
   align-items: center;
 }
 
+.hit-container {
+  margin-top: 6px;
+}
+
 .hit-icon {
   position: absolute;
 }
 
 .hidden-button {
-  /* display: none; */
+  display: none;
   width: 200px;
+  padding: 9px 9px 10px;
+  margin-top: 7px;
 
   font-weight: 700;
   font-size: 18px;
@@ -528,18 +540,15 @@ a:active {
   align-items: center;
   text-align: center;
   color: #fefefe;
-
-  padding: 9px 9px 10px;
-
 }
 
 .tastes-item:hover .hidden-button {
-  /* display: block; */
+  display: block;
 }
 
-/* .tastes-item:hover { */
-  .tastes-item{
-  /* width: 296px; */
+.tastes-item:hover {
+/* .tastes-item { */
+  width: 293px;
   height: 408px;
 
   background: rgba(248, 247, 244, 0.2);
@@ -550,8 +559,9 @@ a:active {
 .price {
   position: relative;
   bottom: 42px;
-  right: 1px;
   margin: 0;
+  margin-top: -4px;
+  margin-left: -1px;
   display: flex;
 
   text-align: left;
@@ -586,8 +596,11 @@ a:active {
 }
 
 .ice-cream-name {
+  display: flex;
   position: relative;
   bottom: 5px;
+  width: 267px;
+
 
   font-style: normal;
   font-weight: 500;
@@ -602,7 +615,7 @@ a:active {
 /* SEO */
 .SEO {
   padding: 26px 20px 24px;
-  margin: 33px 27px 0;
+  margin: 39px 27px 0;
 
   background-color: var(--color-backround-default);
   background: url("../IMG/Waffle_background.png") no-repeat;
@@ -715,6 +728,8 @@ a:active {
 
 /* Рассылка */
 .mailing {
+  /* width: 560px; */
+  /* height: 220px; */
   margin-left: 26px;
   padding: 34px 26px 40px;
 
@@ -752,11 +767,11 @@ a:active {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #999999;
+  /* color: #999999; */
 
-  background: #ffffff;
-  border: 1px solid rgba(178, 178, 178, 0.52);
-  border-radius: 5px;
+  /* background: #ffffff; */
+  /* border: 1px solid rgba(178, 178, 178, 0.52); */
+  /* border-radius: 5px; */
 }
 
 .email-form-container button {
@@ -1010,9 +1025,8 @@ a:active {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: #999999;
-  border-radius: 5px;
-  border: 1px solid #d3d3d2;
+  /* color: #999999; */
+  /* border: 1px solid #d3d3d2; */
 }
 
 .sign-in-container {
@@ -1149,9 +1163,9 @@ a:active {
   font-size: 14px;
   line-height: 24px;
 
-  color: #999999;
-  background: #ffffff;
-  border: 1px solid #d3d3d2;
+  /* color: #999999; */
+  /* background: #ffffff; */
+  /* border: 1px solid #d3d3d2; */
 }
 
 /* Форма обратной связи */

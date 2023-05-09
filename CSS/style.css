@@ -424,7 +424,6 @@ a:active {
 
 .banner h3 {
   margin: 0;
-
   font-style: normal;
   font-weight: 700;
   font-size: 35px;
@@ -496,25 +495,56 @@ a:active {
 
 /* Хиты */
 
-.hits, .tastes-creamy {
+.hits,
+.tastes-creamy {
   margin: 40px 27px 0;
 
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   gap: 26px;
   flex-wrap: wrap;
   text-align: center;
 }
 
-.hit-item, .tastes-item {
+.tastes-item {
   width: 267px;
   height: 329px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.hit-icon, .taste-icon {
+.hit-icon {
   position: absolute;
+}
+
+.hidden-button {
+  /* display: none; */
+  width: 200px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  color: #fefefe;
+
+  padding: 9px 9px 10px;
+
+}
+
+.tastes-item:hover .hidden-button {
+  /* display: block; */
+}
+
+/* .tastes-item:hover { */
+  .tastes-item{
+  /* width: 296px; */
+  height: 408px;
+
+  background: rgba(248, 247, 244, 0.2);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
 }
 
 .price {

@@ -6,6 +6,7 @@
     <link href="IMG/ice-cream.svg" rel="icon" type="image/png" />
     <link href="CSS/normalize.css" rel="stylesheet" />
     <link href="CSS/style.css" rel="stylesheet" />
+    <link rel="import" href="product-cards.html" />
   </head>
 
   <body class="background-offer-1 picture-offer-1">
@@ -22,7 +23,12 @@
         <div class="menu-container">
           <ul class="site-navigation">
             <li>
-              <button class="catalog__button site-navigation-button" type="button">Каталог</button>
+              <button
+                class="catalog__button site-navigation-button"
+                type="button"
+              >
+                Каталог
+              </button>
             </li>
             <li>
               <a class="site-navigation-button" href="">Доставка и оплата</a>
@@ -32,7 +38,10 @@
 
           <ul class="user-navigation">
             <li>
-              <button class="search__button user-navigation-button" type="button">
+              <button
+                class="search__button user-navigation-button"
+                type="button"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -48,7 +57,10 @@
               </button>
             </li>
             <li>
-              <button class="login__button user-navigation-button" type="button">
+              <button
+                class="login__button user-navigation-button"
+                type="button"
+              >
                 <svg
                   width="21"
                   height="19"
@@ -69,7 +81,10 @@
               </button>
             </li>
             <li>
-              <button class="basket__button user-navigation-button" type="button">
+              <button
+                class="basket__button user-navigation-button"
+                type="button"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="21"
@@ -174,67 +189,112 @@
           </p>
 
           <div class="banner-container">
-            <button class="banner__button" type="button">Хочу шоколадки!</button>
+            <button class="banner__button" type="button">
+              Хочу шоколадки!
+            </button>
           </div>
         </section>
       </div>
 
       <section class="hits-container">
-        <ul class="hits">
-          <li class="hit-item">
-            <img class="hit-icon" src="IMG/hit.svg" alt="Хит" />
-            <img src="IMG/Taste_1.png" alt="Мороженое 1" />
-            <p class="price">
-              310
-              <span class="rub">₽</span>
-              <span class="unit-monetary">/кг</span>
-            </p>
-
-            <a class="ice-cream-name" href=""
-              >Сливочное с апельсиновым джемом и цитрусовой стружкой</a
-            >
+        <div data-src="product-cards.html"></div>
+<script>
+  var link = document.querySelector("link[rel=import]");
+  var content = link.import.querySelector("hits");
+  document.body.appendChild(content.cloneNode(true));
+</script>
+        <!-- <ul class="hits">
+          <li class="tastes-item">
+            <div class="hit-container">
+              <img class="hit-icon" src="IMG/hit.svg" alt="Хит" />
+              <img src="IMG/Taste_1.png" alt="Мороженое 1" />
+              <p class="price">
+                310
+                <span class="rub">₽</span>
+                <span class="unit-monetary">/кг</span>
+              </p>
+              <a class="ice-cream-name" href=""
+                >Сливочное с апельсиновым джемом и цитрусовой стружкой</a
+              >
+            </div>
+            <button class="hidden-button" type="button">
+              Быстрый просмотр
+            </button>
           </li>
 
-          <li class="hit-item">
-            <img class="hit-icon" src="IMG/hit.svg" alt="Хит" />
-            <img src="IMG/Taste_2.png" alt="Мороженое 2" />
-            <p class="price">
-              380
-              <span class="rub">₽</span>
-              <span class="unit-monetary">/кг</span>
-            </p>
+          <li class="tastes-item">
+            <div class="hit-container">
+              <img class="hit-icon" src="IMG/hit.svg" alt="Хит" />
+              <img src="IMG/Taste_2.png" alt="Мороженое 2" />
+              <p class="price">
+                380
+                <span class="rub">₽</span>
+                <span class="unit-monetary">/кг</span>
+              </p>
 
-            <a class="ice-cream-name" href=""
-              >Сливочно-кофейное с кусочками шоколада</a
-            >
+              <a class="ice-cream-name" href=""
+                >Сливочно-кофейное с кусочками шоколада</a
+              >
+            </div>
+            <button class="hidden-button" type="button">
+              Быстрый просмотр
+            </button>
           </li>
 
-          <li class="hit-item">
-            <img class="hit-icon" src="IMG/hit.svg" alt="Хит" />
-            <img src="IMG/Taste_3.png" alt="Мороженое 3" />
-            <p class="price">
-              355
-              <span class="rub">₽</span>
-              <span class="unit-monetary">/кг</span>
-            </p>
-            <a class="ice-cream-name" href=""
-              >Сливочно-клубничное с присыпкой из белого шоколада</a
-            >
+          <li class="tastes-item">
+            <div class="hit-container">
+              <img class="hit-icon" src="IMG/hit.svg" alt="Хит" />
+              <img src="IMG/Taste_3.png" alt="Мороженое 3" />
+              <p class="price">
+                355
+                <span class="rub">₽</span>
+                <span class="unit-monetary">/кг</span>
+              </p>
+              <a class="ice-cream-name" href=""
+                >Сливочно-клубничное с присыпкой из белого шоколада</a
+              >
+            </div>
+            <button class="hidden-button" type="button">
+              Быстрый просмотр
+            </button>
           </li>
 
-          <li class="hit-item">
-            <img class="hit-icon" src="IMG/hit.svg" alt="Хит" />
-            <img src="IMG/Taste_4.png" alt="Мороженое 4" />
-            <p class="price">
-              415
-              <span class="rub">₽</span>
-              <span class="unit-monetary">/кг</span>
-            </p>
-            <a class="ice-cream-name" href=""
-              >Сливочное крем-брюле с карамельной подливкой</a
-            >
+          <li class="tastes-item">
+            <div class="hit-container">
+              <img class="hit-icon" src="IMG/hit.svg" alt="Хит" />
+              <img src="IMG/Taste_4.png" alt="Мороженое 4" />
+              <p class="price">
+                415
+                <span class="rub">₽</span>
+                <span class="unit-monetary">/кг</span>
+              </p>
+              <a class="ice-cream-name" href=""
+                >Сливочное крем-брюле с карамельной подливкой</a
+              >
+            </div>
+            <button class="hidden-button" type="button">
+              Быстрый просмотр
+            </button>
           </li>
-        </ul>
+
+           <li class="hit-item">
+            <div class="hit-container">
+              <img class="hit-icon" src="IMG/hit.svg" alt="Хит" />
+              <img src="IMG/Taste_3.png" alt="Мороженое 3" />
+              <p class="price">
+                355
+                <span class="rub">₽</span>
+                <span class="unit-monetary">/кг</span>
+              </p>
+              <a class="ice-cream-name" href=""
+                >Сливочно-клубничное с присыпкой из белого шоколада</a
+              >
+            </div>
+            <button class="hidden-button" type="button">
+              Быстрый просмотр
+            </button>
+          </li> -->
+        <!-- </ul> -->
       </section>
 
       <section class="SEO">
@@ -305,7 +365,9 @@
       <div class="news-mailing-container">
         <article class="news">
           <h4>Новое в нашем блоге</h4>
-          <a class="news-link" href="">10 способов сервировки фруктовых щербетов к столу</a>
+          <a class="news-link" href=""
+            >10 способов сервировки фруктовых щербетов к столу</a
+          >
         </article>
 
         <section class="mailing">
@@ -498,7 +560,11 @@
         <p>Новинки</p>
         <ul class="new-products">
           <li><!-- разделитель--></li>
-          <li ><a class="creamy-ice-cream__button" href="catalog.html">Сливочное</a></li>
+          <li>
+            <a class="creamy-ice-cream__button" href="catalog.html"
+              >Сливочное</a
+            >
+          </li>
           <li>Щербеты</li>
           <li>Фруктовый лед</li>
           <li>Мелорин</li>
@@ -526,6 +592,6 @@
       </form>
     </section>
 
-    <script src="JS/index.js"></script>
+    <!-- <script src="JS/index.js"></script> -->
   </body>
 </html>

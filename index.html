@@ -70,7 +70,7 @@
               </section>
             </li>
 
-            <li>
+            <li class="login-button-container">
               <button
                 class="login__button user-navigation-button"
                 type="button"
@@ -93,6 +93,28 @@
                 </svg>
                 Вход
               </button>
+
+              <section class="modal modal-login">
+                <h6 class="visually-hidden">Login window</h6>
+                <form class="login-form">
+                  <label class="login"
+                    ><input class="login-input" type="email" placeholder="email@example.com"
+                  /></label>
+          
+                  <label class="password"
+                    ><input class="password-input" type="password" placeholder="••••••••"
+                  /></label>
+          
+                  <div class="sign-in-container">
+                    <button class="button-sign-in" type="submit">Войти</button>
+          
+                    <ul class="registration-container">
+                      <li><a class="restore" href="#">Забыли пароль?</a></li>
+                      <li><a class="registration" href="#">Новая регистрация</a></li>
+                    </ul>
+                  </div>
+                </form>
+              </section>
             </li>
 
             <li>
@@ -361,7 +383,7 @@
               alt="Доставка продукта в специальном термопаке"
               src="IMG/thermometer.svg"
             />
-
+<!--съехал предлог "в" после применения стиля -->
             <p>
               Доставка нашего мороженого до заказчиков осуществляется в
               специальном термопаке, который не дает мороженому растаять в пути
@@ -388,10 +410,10 @@
 
           <form class="email-form-container">
             <label>
-              <input type="email" placeholder="email@example.com" />
+              <input class="email-input" type="email" placeholder="email@example.com" />
             </label>
 
-            <button type="submit">Отправить</button>
+            <button class="send-button" type="submit">Отправить</button>
           </form>
         </section>
       </div>
@@ -540,28 +562,6 @@
         <p>Сделано в <a href="#">HTML Academy</a> © 2023</p>
       </div>
     </footer>
-
-    <section class="modal modal-login">
-      <h6 class="visually-hidden">Login window</h6>
-      <form class="login-form">
-        <label class="login"
-          ><input type="email" placeholder="email@example.com"
-        /></label>
-
-        <label class="password"
-          ><input type="password" placeholder="••••••••"
-        /></label>
-
-        <div class="sign-in-container">
-          <button class="button-sign-in" type="submit">Войти</button>
-
-          <ul class="registration-container">
-            <li><a class="restore" href="#">Забыли пароль?</a></li>
-            <li><a class="registration" href="#">Новая регистрация</a></li>
-          </ul>
-        </div>
-      </form>
-    </section>
 
     <section class="modal modal-catalog-menu">
       <h6 class="visually-hidden">Catalog menu</h6>

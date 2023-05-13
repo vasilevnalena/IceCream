@@ -74,6 +74,7 @@ body {
 .picture-offer-3 {
   background-position: top center;
   background-repeat: no-repeat;
+  transition: background-image 0.5s ease, background-color 0.3s ease;
 }
 
 /* Пляшут элементы при наведении на input, зафиксировать размер */
@@ -591,12 +592,11 @@ a:active {
   position: relative;
   bottom: 42px;
   margin: 0;
-  margin-top: -4px;
+  margin-top: -5px;
   margin-left: -1px;
   display: flex;
 
   text-align: left;
-  font-style: normal;
   font-weight: 700;
   font-size: 45px;
   line-height: 13px;
@@ -605,9 +605,9 @@ a:active {
 }
 
 .rub {
-  margin-left: 5px;
+  margin-left: 7px;
+  margin-right: 3px;
 
-  font-style: normal;
   font-weight: 700;
   font-size: 45px;
   line-height: 13px;
@@ -618,7 +618,6 @@ a:active {
 .unit-monetary {
   margin-top: 5px;
 
-  font-style: normal;
   font-weight: 700;
   font-size: 30px;
   line-height: 13px;
@@ -629,10 +628,9 @@ a:active {
 .ice-cream-name {
   display: flex;
   position: relative;
-  bottom: 5px;
+  bottom: 3px;
   width: 267px;
 
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
@@ -640,6 +638,7 @@ a:active {
   text-align: center;
   color: #ffffff;
   text-decoration: underline;
+  text-decoration-skip-ink: none;
 }
 
 /* SEO */
@@ -676,17 +675,21 @@ a:active {
 }
 
 .SEO-icon {
+  width: 49px;
+  height: 49px;
   margin-right: 7px;
 }
 
 .SEO-list li:nth-child(1) .SEO-icon,
 .SEO-list li:nth-child(2) .SEO-icon {
+  margin-top: 8px;
   margin-bottom: 22px;
 }
 
 .SEO-list li:nth-child(3) .SEO-icon,
 .SEO-list li:nth-child(4) .SEO-icon {
   margin-bottom: 44px;
+  margin-top: 8px;
 }
 
 .SEO-list li:nth-child(2) .SEO-icon,
@@ -695,10 +698,10 @@ a:active {
 }
 
 .SEO-list p {
+  width: 477px;
   margin: 0;
   margin-top: 21px;
 
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;

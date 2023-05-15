@@ -98,19 +98,27 @@
                 <h6 class="visually-hidden">Login window</h6>
                 <form class="login-form">
                   <label class="login"
-                    ><input class="login-input" type="email" placeholder="email@example.com"
+                    ><input
+                      class="login-input"
+                      type="email"
+                      placeholder="email@example.com"
                   /></label>
-          
+
                   <label class="password"
-                    ><input class="password-input" type="password" placeholder="••••••••"
+                    ><input
+                      class="password-input"
+                      type="password"
+                      placeholder="••••••••"
                   /></label>
-          
+
                   <div class="sign-in-container">
                     <button class="button-sign-in" type="submit">Войти</button>
-          
+
                     <ul class="registration-container">
                       <li><a class="restore" href="#">Забыли пароль?</a></li>
-                      <li><a class="registration" href="#">Новая регистрация</a></li>
+                      <li>
+                        <a class="registration" href="#">Новая регистрация</a>
+                      </li>
                     </ul>
                   </div>
                 </form>
@@ -177,7 +185,7 @@
           </label>
         </form>
 
-        <button  class="give-me-both-button" type="button">Давайте оба!</button>
+        <button class="give-me-both-button" type="button">Давайте оба!</button>
       </article>
 
       <!-- Добавить смену текста при переключении -->
@@ -383,7 +391,6 @@
               alt="Доставка продукта в специальном термопаке"
               src="IMG/thermometer.svg"
             />
-<!--съехал предлог "в" после применения стиля -->
             <p>
               Доставка нашего мороженого до заказчиков осуществляется в
               специальном термопаке, который не дает мороженому растаять в пути
@@ -395,26 +402,34 @@
 
       <div class="news-mailing-container">
         <article class="news">
-          <h4>Новое в нашем блоге</h4>
-          <a class="news-link" href=""
-            >10 способов сервировки фруктовых щербетов к столу</a
-          >
+          <div class="news-container">
+            <h4>Новое в нашем блоге</h4>
+            <a class="news-link" href=""
+              >10 способов сервировки фруктовых щербетов к столу</a
+            >
+          </div>
         </article>
 
         <section class="mailing">
-          <p>
-            Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
-            самого вкусного, что у нас происходит. Обещаем не спамить и не слать
-            всякой ненужной ерунды. Честно =)
-          </p>
+          <div class="mailing-container">
+            <p>
+              Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего
+              самого вкусного, что у нас происходит. Обещаем не спамить и не
+              слать всякой ненужной ерунды. Честно =)
+            </p>
 
-          <form class="email-form-container">
-            <label>
-              <input class="email-input" type="email" placeholder="email@example.com" />
-            </label>
+            <form class="email-form-container">
+              <label>
+                <input
+                  class="email-input"
+                  type="email"
+                  placeholder="email@example.com"
+                />
+              </label>
 
-            <button class="send-button" type="submit">Отправить</button>
-          </form>
+              <button class="send-button" type="submit">Отправить</button>
+            </form>
+          </div>
         </section>
       </div>
 

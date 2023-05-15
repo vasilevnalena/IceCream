@@ -306,6 +306,7 @@ a:active {
   background: #f7f6f3;
   color: #000000;
   box-shadow: none;
+  text-decoration: none;
 }
 
 .site-navigation-button:active,
@@ -713,18 +714,14 @@ a:active {
 .news-mailing-container {
   margin: 40px 27px 40px;
   display: flex;
-
-  /* width: 560px; */
+  gap: 26px;
   height: 220px;
 }
 
 /* Новости */
 .news {
   width: 560px;
-  /* height: 220px; */
-
-  padding: 23px 260px 40px 19px;
-
+  display: flex;
   text-align: left;
 
   background-color: var(--color-backround-default);
@@ -732,10 +729,14 @@ a:active {
   background-size: 100% 100%;
 }
 
+.news-container {
+  width: 280px;
+  margin: 23px 20px;
+}
+
 .news h4 {
   margin: 0 0 4px;
 
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
@@ -744,13 +745,12 @@ a:active {
 }
 
 .news a {
+  width: 280px;
   margin: 0;
-  margin-right: 135px;
 
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 29px;
   align-items: center;
   color: #323232;
 
@@ -768,10 +768,6 @@ a:active {
 /* Рассылка */
 .mailing {
   width: 560px;
-  /* height: 220px; */
-  margin-left: 26px;
-  padding: 34px 26px 40px;
-
   display: flex;
   flex-direction: column;
 
@@ -780,10 +776,13 @@ a:active {
   background-size: 100% 100%;
 }
 
+.mailing-container {
+  margin: 34px 27px 40px 26px;
+}
+
 .mailing p {
   margin: 0;
 
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -792,29 +791,26 @@ a:active {
 }
 
 .email-form-container {
-  margin-top: 31px;
   display: flex;
-  align-items: center;
+  margin-top: 36px;
+  gap: 12px;
 }
 
 .email-input {
-  /* width: 335px; */
-  width: 366px;
-  /* height: 42px; */
-  /* padding: 9px 18px 9px 13px; */
-  padding: 9px 18px 9px 13px;
-  /* margin-top: 5px; */
+  width: 368px;
+  box-sizing: border-box;
+  padding: 9px 13px 9px 13px;
 
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
 }
 
 .send-button {
-  margin-top: 3px;
-  margin-left: 12px;
-  padding: 9px 18px 11px;
+  margin-top: -1px;
+  width: 127px;
+  height: 44px;
+  padding-bottom: 4px;
 
   font-weight: 700;
   font-size: 18px;
@@ -826,7 +822,6 @@ a:active {
 /* Карта */
 .map-container {
   position: relative;
-
   background-color: var(--color-backround-default);
 }
 
@@ -849,10 +844,9 @@ a:active {
   flex-direction: column;
   padding: 29px 26px 31px;
 
-  font-style: normal;
   color: #323232;
   background: rgba(255, 255, 255, 0.98);
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 .address h5 {

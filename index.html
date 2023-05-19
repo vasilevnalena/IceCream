@@ -598,13 +598,35 @@
 
     <section class="modal modal-feedback">
       <h6 class="visually-hidden">Feedback form</h6>
+      <svg class="close-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="18"
+        height="17"
+        viewBox="0 0 18 17"
+      >
+        <path
+          fill="#231F20"
+          d="M17.454 1.46L16.04.046 9 7.086 1.96.046.546 1.46l7.04 7.04-7.04 7.04 1.414 1.414L9 9.914l7.04 7.04 1.414-1.414-7.04-7.04z"
+        />
+      </svg>
       <form class="feedback-form">
-        <p class="feedback-text">Мы обязательно вам ответим!</p>
-        <!-- крестик иконка -->
-        <label ><input class="feedback-name" type="text" placeholder="Имя Фамилия" /></label>
-        <label ><input class="feedback-email" type="email" placeholder="email@example.com" /></label>
-        <label ><textarea class="feedback-textarea" placeholder="В свободной форме"></textarea></label>
-        <button class="feedback-send-button" type="submit">Отправить</button>
+        <div class="inputs-container">
+          <p class="feedback-text">Мы обязательно вам ответим!</p>
+          <!-- крестик иконка -->
+          <input class="feedback-name" type="text" placeholder="Имя Фамилия" />
+          <input
+            class="feedback-email"
+            type="email"
+            placeholder="email@example.com"
+          />
+          <textarea
+            class="feedback-textarea"
+            placeholder="В свободной форме"
+          ></textarea>
+        </div>
+        <div class="send-button-container">
+          <button class="feedback-send-button" type="submit">Отправить</button>
+        </div>
       </form>
     </section>
 

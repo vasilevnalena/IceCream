@@ -81,6 +81,7 @@ input,
 textarea {
   background: #ffffff;
   border: 1px solid rgba(178, 178, 178, 0.52);
+
   line-height: 24px;
   font-size: 16px;
   color: #323232;
@@ -807,7 +808,7 @@ a:active {
 .email-input {
   width: 368px;
   box-sizing: border-box;
-  padding: 9px 13px 9px 13px;
+  padding: 9px 13px;
 
   font-weight: 400;
   font-size: 16px;
@@ -1230,12 +1231,18 @@ a:active {
   /* display: none; */
 }
 
+.close-icon {
+  position: absolute;
+  top: 15px;
+  right: 16px;
+}
+
 .feedback-form {
   display: flex;
   flex-direction: column;
+  /* gap: 20px; */
   /* padding: 16px 26px 96px 24px; */
   padding: 16px 26px 27px 24px;
-  gap: 20px;
 }
 
 .feedback-text {
@@ -1249,17 +1256,21 @@ a:active {
   align-items: center;
 }
 
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .feedback-name,
 .feedback-email {
   box-sizing: border-box;
   width: 267px;
   height: 44px;
-  padding: 0 13px;
+  padding: 2px 13px 0;
 }
 
 .feedback-textarea {
-  /* display: flex;
-  flex-wrap: wrap; */
   width: 398px;
   /* width: 422px; */
   height: 137px;
@@ -1267,10 +1278,20 @@ a:active {
   resize: none;
 }
 
+.send-button-container {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  bottom: 27px;
+  right: 26px;
+}
+
 .feedback-send-button {
   width: 137px;
   height: 44px;
   padding-bottom: 4px;
+  margin-right: -1px;
+  margin-top: 5px;
 
   font-weight: 700;
   font-size: 18px;

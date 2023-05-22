@@ -30,6 +30,12 @@
     url("/fonts/web/robotomedium.woff") format("woff");
 }
 
+html {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 body {
   min-width: 960px;
   max-width: 1200px;
@@ -43,6 +49,7 @@ body {
   font-weight: 700;
   font-style: normal;
   color: #ffffff;
+  /* z-index: 1; */
 }
 
 .background-offer-1 {
@@ -69,6 +76,7 @@ body {
   background-image: url(../IMG/IceCreams_3.png);
 }
 
+/* В мобильной версии картинку выровнять на фоне */
 .picture-offer-1,
 .picture-offer-2,
 .picture-offer-3 {
@@ -97,6 +105,8 @@ input:hover,
 input:focus,
 textarea:hover,
 textarea:focus {
+  /* padding-top: -1px;
+  padding-bottom: -1px; */
   border: 2px solid rgba(154, 154, 154, 0.52);
 }
 
@@ -480,7 +490,7 @@ a:active {
 }
 
 #second-banner {
-  margin-top: -1px;
+  /* margin-top: -1px; */
 
   background: url("../IMG/Chocolate_background.png") no-repeat;
   background-size: 100% 100%;
@@ -544,6 +554,7 @@ a:active {
 
 /* Хиты */
 /* Макет и стайлгайд различаются, карточки-хиты оформляла по макету, не по стайлгайду */
+
 .hits,
 .tastes-creamy {
   margin: 34px 27px 0;
@@ -555,8 +566,6 @@ a:active {
 }
 
 .tastes-item {
-  width: 267px;
-  height: 329px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -584,18 +593,34 @@ a:active {
   color: #fefefe;
 }
 
-.tastes-item:hover .hidden-button {
-  display: block;
+/* .hit-container:hover {
+  max-width: 293px;
+} */
+
+.hits:hover {
+  height: 408px;
 }
 
-.tastes-item:hover {
-  /* .tastes-item { */
+.tastes-item:hover,
+.tastes-item:focus,
+.tastes-item:active {
   width: 293px;
-  height: 408px;
 
   background: rgba(248, 247, 244, 0.2);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
+}
+
+.hits:hover,
+.hits:focus,
+.hits:active {
+   justify-content: space-between;
+}
+
+.tastes-item:hover .hidden-button,
+.tastes-item:focus .hidden-button,
+.tastes-item:active .hidden-button {
+  display: block;
 }
 
 .price {
@@ -654,7 +679,7 @@ a:active {
 /* SEO */
 .SEO {
   padding: 26px 20px 24px;
-  margin: 39px 27px 0;
+  margin: 35px 27px 0;
 
   background-color: var(--color-backround-default);
   background: url("../IMG/Waffle_background.png") no-repeat;
@@ -1217,19 +1242,35 @@ a:active {
   color: #e84d37;
 }
 
-/* +затемнение */
 /* Форма обратной связи */
 .modal-feedback {
-  position: relative;
+  position: fixed;
+  z-index: 3;
   width: 477px;
   height: 442px;
-  bottom: 235vh;
-  /* top: 250px;*/
-  left: 30%;
-  /* margin-right: 5px; */
 
-  /* display: none; */
+  left: 50%;
+  margin-left: 2px;
+  top: 2px;
+  transform: translate(-50%, 76%);
+
+  border-radius: 10px;
+  display: none;
 }
+
+/* затемнение */
+/* .darkness {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: gray;
+  background: url(../IMG/Overlay.png);
+  opacity: 0.3;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.0001);
+} */
 
 .close-icon {
   position: absolute;
@@ -1272,7 +1313,6 @@ a:active {
 
 .feedback-textarea {
   width: 398px;
-  /* width: 422px; */
   height: 137px;
   padding: 8px 14px;
   resize: none;

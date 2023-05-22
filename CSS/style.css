@@ -49,7 +49,6 @@ body {
   font-weight: 700;
   font-style: normal;
   color: #ffffff;
-  /* z-index: 1; */
 }
 
 .background-offer-1 {
@@ -105,8 +104,6 @@ input:hover,
 input:focus,
 textarea:hover,
 textarea:focus {
-  /* padding-top: -1px;
-  padding-bottom: -1px; */
   border: 2px solid rgba(154, 154, 154, 0.52);
 }
 
@@ -336,7 +333,6 @@ a:active {
 }
 
 .working-time {
-  /* margin-right: 1px; */
   margin-top: -4px;
 
   display: flex;
@@ -349,7 +345,6 @@ a:active {
 .working-time li:nth-child(2) {
   margin-top: 4px;
   margin-right: -2px;
-  /* margin-right: 1px; */
   font-size: 22px;
   line-height: 24px;
 }
@@ -433,16 +428,6 @@ a:active {
   opacity: 1;
 }
 
-/* .special-offer button {
-  padding: 9px 40px 11px;
-
-  font-size: 32px;
-  line-height: 44px;
-  align-items: center;
-  text-align: center;
-  color: #ffffff;
-} */
-
 .give-me-both-button {
   height: 64px;
   padding: 7px 40px 11px;
@@ -453,7 +438,6 @@ a:active {
   margin: 41px 14px 0;
 
   display: flex;
-  /* justify-content: space-around; */
   align-items: center;
 }
 
@@ -495,8 +479,6 @@ a:active {
 }
 
 #second-banner {
-  /* margin-top: -1px; */
-
   background: url("../IMG/Chocolate_background.png") no-repeat;
   background-size: 100% 100%;
 }
@@ -511,7 +493,6 @@ a:active {
 .banner__button {
   margin: 0;
   height: 46px;
-  /* padding: 9px 23px 11px 21px; */
 
   font-weight: 700;
   font-size: 18px;
@@ -529,13 +510,10 @@ a:active {
 }
 
 #second-banner .banner__button {
-  /* padding: 11px 21px 11px 21px; */
   padding: 0 21px 5px 21px;
-  /* margin-bottom: 1px; */
 }
 
 #second-banner .banner-text {
-  /* margin: 16px 0 0; */
   margin-top: 15px;
   margin-bottom: 1px;
 }
@@ -858,6 +836,12 @@ a:active {
   line-height: 24px;
 }
 
+.email-input:hover,
+.email-input:focus,
+.email-input:active {
+  padding: 8px 12px;
+}
+
 .send-button {
   margin-top: -1px;
   width: 127px;
@@ -898,7 +882,6 @@ a:active {
 
   color: #323232;
   background: rgba(255, 255, 255, 0.98);
-  /* border-radius: 10px; */
 }
 
 .address h5 {
@@ -1067,7 +1050,6 @@ a:active {
 }
 
 /* Hidden */
-/* У всех модальных окон при смене размера экрана съезжает позиционирование!!! */
 .modal {
   position: fixed;
   border-radius: 5px;
@@ -1084,8 +1066,6 @@ a:active {
   padding: 11px 9px 8px 6px;
   margin-top: 6px;
   margin-left: -6px;
-
-  /* border-radius: 5px; */
 
   display: none;
 }
@@ -1146,10 +1126,6 @@ a:active {
   background: #d07058;
   color: #ffffff;
 }
-/* 
-.creamy__button:hover,
-.creamy__button:focus,
-.creamy__button:active */
 
 /* Окно поиска */
 .modal-search {
@@ -1171,6 +1147,12 @@ a:active {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+}
+
+.input-search:hover,
+.input-search:focus,
+.input-search:active {
+  padding: 8px 12px 9px;
 }
 
 /* Окно входа */
@@ -1201,13 +1183,22 @@ a:active {
 .login-input,
 .password-input {
   box-sizing: border-box;
-  padding: 0 13px 0 13px;
+  padding: 0 13px;
   width: 241px;
   height: 44px;
 
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
+}
+
+.login-input:hover,
+.login-input:focus,
+.login-input:active,
+.password-input:hover,
+.password-input:focus,
+.password-input:active {
+  padding: 0 12px;
 }
 
 .sign-in-container {
@@ -1284,7 +1275,7 @@ a:active {
   bottom: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.3);
-  
+
   z-index: 3;
   display: none;
 }
@@ -1323,7 +1314,16 @@ a:active {
   box-sizing: border-box;
   width: 267px;
   height: 44px;
-  padding: 2px 13px 0;
+  padding: 1px 13px 0;
+}
+
+.feedback-name:hover,
+.feedback-name:focus,
+.feedback-name:active,
+.feedback-email:hover,
+.feedback-email:focus,
+.feedback-email:active {
+  padding: 0 12px;
 }
 
 .feedback-textarea {
@@ -1331,6 +1331,12 @@ a:active {
   height: 137px;
   padding: 8px 14px;
   resize: none;
+}
+
+.feedback-textarea:hover,
+.feedback-textarea:focus,
+.feedback-textarea:active {
+  padding: 7px 13px;
 }
 
 .send-button-container {

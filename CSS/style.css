@@ -380,6 +380,11 @@ a:active {
   color: #ffffff;
 }
 
+#offer-text-2,
+#offer-text-3 {
+  display: none;
+}
+
 /* Радиокнопки */
 .choise-offer-radio-button {
   position: absolute;
@@ -427,6 +432,10 @@ a:active {
 [type="radio"]:checked + img:focus {
   opacity: 1;
 }
+
+/* #radio-offer-2:active #offer-text-2 {
+  display: block;
+} */
 
 /* .special-offer button {
   padding: 9px 40px 11px;
@@ -593,12 +602,17 @@ a:active {
   color: #fefefe;
 }
 
-/* .hit-container:hover {
-  max-width: 293px;
-} */
+.hit-container:hover,
+.hit-container:focus,
+.hit-container:active {
+  cursor: pointer;
+}
 
-.hits:hover {
+.hits:hover,
+.hits:focus,
+.hits:active {
   height: 408px;
+  justify-content: space-between;
 }
 
 .tastes-item:hover,
@@ -609,18 +623,26 @@ a:active {
   background: rgba(248, 247, 244, 0.2);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
-}
-
-.hits:hover,
-.hits:focus,
-.hits:active {
-   justify-content: space-between;
+  cursor: pointer;
 }
 
 .tastes-item:hover .hidden-button,
 .tastes-item:focus .hidden-button,
 .tastes-item:active .hidden-button {
   display: block;
+  cursor: pointer;
+}
+
+.tastes-item:hover .ice-cream-name,
+.tastes-item:focus .ice-cream-name,
+.tastes-item:active .ice-cream-name{
+  color: #ffbc9e;
+}
+
+.ice-cream-name:hover,
+.ice-cream-name:focus,
+.ice-cream-name:active {
+  cursor: pointer;
 }
 
 .price {
@@ -1339,7 +1361,7 @@ a:active {
   align-items: center;
 }
 
-/* Отобразить модальное окно */
-.modal-show {
+/* Отобразить скрытый элемент */
+.show-element {
   display: block;
 }

@@ -12,6 +12,8 @@ let radioOffer1 = document.querySelector("#radio-offer-1");
 let radioOffer2 = document.querySelector("#radio-offer-2");
 let radioOffer3 = document.querySelector("#radio-offer-3");
 
+let textOfferElement = document.querySelector(".offer-text");
+
 let feedbackButton = document.querySelector(".feedback-button");
 let closeButton = document.querySelector(".close-icon");
 // let darknessBackground = document.querySelector(".darkness");
@@ -36,11 +38,13 @@ function popupWindowActions(element, popupClass, showPopupWindow) {
   });
 }
 
-function offerSwitchRadioButton(radioOffer, backgroundOffer, pictureOffer) {
+function offerSwitchRadioButton(radioOffer, backgroundOffer, pictureOffer,offerText) {
   radioOffer.addEventListener("click", () => {
     bodyPage.classList = "";
     bodyPage.classList.add(backgroundOffer);
     bodyPage.classList.add(pictureOffer);
+
+    textOfferElement.innerHTML = offerText;
   });
 }
 
@@ -56,12 +60,10 @@ function offerSwitchRadioButton(radioOffer, backgroundOffer, pictureOffer) {
 //   });
 // }
 
-// modalWindowActions(feedbackButton, modalFeedback, "modal-show","darkness");
+popupWindowActions(buttonLogin, modalLogin, "show-element");
+popupWindowActions(buttonSearch, modalSearch, "show-element");
+popupWindowActions(buttonMainMenu, modalMainMenu, "show-element");
 
-popupWindowActions(buttonLogin, modalLogin, "modal-show");
-popupWindowActions(buttonSearch, modalSearch, "modal-show");
-popupWindowActions(buttonMainMenu, modalMainMenu, "modal-show");
-
-offerSwitchRadioButton(radioOffer1, "background-offer-1", "picture-offer-1");
-offerSwitchRadioButton(radioOffer2, "background-offer-2", "picture-offer-2");
-offerSwitchRadioButton(radioOffer3, "background-offer-3", "picture-offer-3");
+offerSwitchRadioButton(radioOffer1, "background-offer-1", "picture-offer-1","Крем-брюле и пломбир<br />с малиновым джемом");
+offerSwitchRadioButton(radioOffer2, "background-offer-2", "picture-offer-2","Шоколадный пломбир<br />и лимонный сорбет");
+offerSwitchRadioButton(radioOffer3, "background-offer-3", "picture-offer-3"," Пломбир с помадкой<br />и клубничный щербет");

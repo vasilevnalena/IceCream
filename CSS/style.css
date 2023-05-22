@@ -433,10 +433,6 @@ a:active {
   opacity: 1;
 }
 
-/* #radio-offer-2:active #offer-text-2 {
-  display: block;
-} */
-
 /* .special-offer button {
   padding: 9px 40px 11px;
 
@@ -635,7 +631,7 @@ a:active {
 
 .tastes-item:hover .ice-cream-name,
 .tastes-item:focus .ice-cream-name,
-.tastes-item:active .ice-cream-name{
+.tastes-item:active .ice-cream-name {
   color: #ffbc9e;
 }
 
@@ -1281,18 +1277,17 @@ a:active {
 }
 
 /* затемнение */
-/* .darkness {
+.darkness {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: gray;
-  background: url(../IMG/Overlay.png);
-  opacity: 0.3;
-  z-index: 2;
-  background: rgba(0, 0, 0, 0.0001);
-} */
+  background: rgba(0, 0, 0, 0.3);
+  
+  z-index: 3;
+  display: none;
+}
 
 .close-icon {
   position: absolute;
@@ -1303,8 +1298,6 @@ a:active {
 .feedback-form {
   display: flex;
   flex-direction: column;
-  /* gap: 20px; */
-  /* padding: 16px 26px 96px 24px; */
   padding: 16px 26px 27px 24px;
 }
 

@@ -2,10 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <link href="IMG/ice-cream.svg" rel="icon" type="image/png" />
     <link href="CSS/normalize.css" rel="stylesheet" />
     <link href="CSS/style.css" rel="stylesheet" />
     <title>Каталог</title>
   </head>
+
   <body class="background-offer-1">
     <header class="main-header">
       <nav class="main-navigation">
@@ -19,22 +21,42 @@
         </a>
         <div class="menu-container">
           <ul class="site-navigation">
-            <li>
+            <li class="catalog-button-container">
               <button
                 class="catalog__button site-navigation-button"
                 type="button"
               >
                 Каталог
               </button>
+
+              <section class="modal modal-catalog-menu">
+                <h6 class="visually-hidden">Catalog menu</h6>
+                <form class="catalog-menu-form">
+                  <p>Новинки</p>
+                  <ul class="new-products">
+                    <li><!-- разделитель--></li>
+                    <li>
+                      <a class="creamy-ice-cream__button" href="catalog.html"
+                        >Сливочное</a
+                      >
+                    </li>
+                    <li>Щербеты</li>
+                    <li>Фруктовый лед</li>
+                    <li>Мелорин</li>
+                  </ul>
+                </form>
+              </section>
             </li>
+
             <li>
               <a class="site-navigation-button" href="">Доставка и оплата</a>
             </li>
+
             <li><a class="site-navigation-button" href="">О Компании</a></li>
           </ul>
 
           <ul class="user-navigation">
-            <li>
+            <li class="search-button-container">
               <button
                 class="search__button user-navigation-button"
                 type="button"
@@ -52,8 +74,21 @@
                   />
                 </svg>
               </button>
+
+              <section class="modal modal-search">
+                <h6 class="visually-hidden">Search</h6>
+                <form class="search-form">
+                  <label
+                    ><input
+                      class="input-search"
+                      type="search"
+                      placeholder="Крем-брюле"
+                  /></label>
+                </form>
+              </section>
             </li>
-            <li>
+
+            <li class="login-button-container">
               <button
                 class="login__button user-navigation-button"
                 type="button"
@@ -76,7 +111,38 @@
                 </svg>
                 Вход
               </button>
+
+              <section class="modal modal-login">
+                <h6 class="visually-hidden">Login window</h6>
+                <form class="login-form">
+                  <label class="login"
+                    ><input
+                      class="login-input"
+                      type="email"
+                      placeholder="email@example.com"
+                  /></label>
+
+                  <label class="password"
+                    ><input
+                      class="password-input"
+                      type="password"
+                      placeholder="••••••••"
+                  /></label>
+
+                  <div class="sign-in-container">
+                    <button class="button-sign-in" type="submit">Войти</button>
+
+                    <ul class="registration-container">
+                      <li><a class="restore" href="#">Забыли пароль?</a></li>
+                      <li>
+                        <a class="registration" href="#">Новая регистрация</a>
+                      </li>
+                    </ul>
+                  </div>
+                </form>
+              </section>
             </li>
+
             <li>
               <button
                 class="basket__button user-navigation-button"
@@ -96,7 +162,7 @@
                     <circle cx="15.984" cy="18" r="2" />
                   </g>
                 </svg>
-                2 товара
+                Пусто
               </button>
             </li>
           </ul>
@@ -423,57 +489,10 @@
           height="38"
           alt="HTML Academy"
         />
-        <p>Сделано в <a href="">HTML Academy</a> © 2019</p>
+        <p>Сделано в <a href="#">HTML Academy</a> © 2023</p>
       </div>
     </footer>
 
-    <section class="modal modal-login">
-      <h6 class="visually-hidden">Login window</h6>
-      <form class="login-form">
-        <label class="login"
-          ><input type="email" placeholder="email@example.com"
-        /></label>
-
-        <label class="password"
-          ><input type="password" placeholder="••••••••"
-        /></label>
-
-        <div class="sign-in-container">
-          <button class="button-sign-in" type="submit">Войти</button>
-
-          <ul class="registration-container">
-            <li><a class="restore" href="#">Забыли пароль?</a></li>
-            <li><a class="registration" href="#">Новая регистрация</a></li>
-          </ul>
-        </div>
-      </form>
-    </section>
-
-    <section class="modal modal-catalog-menu">
-      <h6 class="visually-hidden">Catalog menu</h6>
-      <form class="catalog-menu-form">
-        <p>Новинки</p>
-        <ul class="new-products">
-          <li><!-- разделитель--></li>
-          <li class="creamy__button">
-            <a class="creamy__button" href="catalog.html">Сливочное</a>
-          </li>
-          <li>Щербеты</li>
-          <li>Фруктовый лед</li>
-          <li>Мелорин</li>
-        </ul>
-      </form>
-    </section>
-
-    <section class="modal modal-search">
-      <h6 class="visually-hidden">Search</h6>
-      <form class="search-form">
-        <label
-          ><input class="input-search" type="search" placeholder="Крем-брюле"
-        /></label>
-      </form>
-    </section>
-
-    <script src="JS/index.js"></script>
+    <script type="module" src="JS/catalog.js"></script>
   </body>
 </html>

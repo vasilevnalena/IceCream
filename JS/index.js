@@ -1,4 +1,4 @@
-import * as functions from "./functions.js";
+import * as functions from "./behaviourElements.js";
 
 let buttonMainMenu = document.querySelector(".catalog__button");
 let modalMainMenu = document.querySelector(".modal-catalog-menu");

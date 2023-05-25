@@ -294,7 +294,7 @@ a:active {
   margin-right: 8px;
 }
 
-.basket__button {
+.basket-button {
   display: flex;
   height: 32px;
   padding-left: 16px;
@@ -312,7 +312,7 @@ a:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.basket__button svg {
+.basket-button svg {
   padding-right: 7px;
 }
 
@@ -320,7 +320,7 @@ a:active {
 .user-navigation-button:focus path,
 .user-navigation-button:hover g,
 .user-navigation-button:focus g {
-  fill: #000000;
+  fill: #323232;
 }
 
 .site-navigation-button:hover,
@@ -328,7 +328,7 @@ a:active {
 .user-navigation-button:hover,
 .user-navigation-button:focus {
   background: #f7f6f3;
-  color: #000000;
+  color: #323232;
   box-shadow: none;
   text-decoration: none;
 }
@@ -339,6 +339,19 @@ a:active {
   background: linear-gradient(0deg, #ededed, #ededed), rgba(248, 247, 244, 0.99);
   box-shadow: inset 0px 2px 1px #696969;
 }
+
+.filled-basket{
+  color: #323232;
+  background: #f7f6f3;
+  box-shadow: none;
+  text-decoration: none;
+}
+
+.filled-basket:hover path:nth-child(1),
+.filled-basket:focus path:nth-child(1) {
+  fill: #E84D37;
+
+} 
 
 .working-time {
   margin-top: -4px;

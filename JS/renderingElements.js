@@ -30,7 +30,7 @@ const header = () => {
             <ul class="new-products">
               <li><!-- разделитель--></li>
               <li>
-                <a class="creamy-ice-cream__button" href="catalog.html"
+                <a class="creamy-ice-cream__button" href="catalog_creamy.html"
                   >Сливочное</a
                 >
               </li>

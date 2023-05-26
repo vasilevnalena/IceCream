@@ -9,54 +9,66 @@
   </head>
 
   <body class="background-offer-1">
-    <header class="main-header">
-    </header>
+    <header class="main-header"></header>
 
     <main>
-      <h1 class="visually-hidden">Catalog</h1>
+      <h1 class="visually-hidden">Catalog creamy</h1>
 
-      <h2 class="visually-hidden">Bread crumbs</h2>
-      <ul class="path">
-        <li>Главная</li>
-        <li>>></li>
-        <li>Каталог</li>
-        <li>>></li>
-        <li>Сливочное</li>
+      <ul class="bread-crumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li>»</li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li>»</li>
+        <li><a href="catalog_creamy.html">Сливочное</a></li>
       </ul>
 
-      <h3>Сливочное мороженое</h3>
+      <h2 class="creamy-header">Сливочное мороженое</h2>
 
-      <h4>Сортировка:</h4>
-      <!-- Выпадающий список -->
+      <section class="sorting">
+        <div>
+          <h3 class="header-sorting">Сортировка:</h3>
 
-      <h4>Цена:</h4>
-      <p>100 руб.-500 руб.</p>
-      <form class="price-filter">
-        <input type="range" max="1000" value="50" />
-      </form>
+          <select class="drop-down-list" id="select-by">
+            <option value="by-popularity">по популярности</option>
+            <option value="cheap-first">сначала недорогие</option>
+            <option value="dears-first ">сначала дорогие</option>
+            <option value="by-fat-content">по жирности</option>
+          </select>
+        </div>
 
-      <h4>Жирность:</h4>
-      <form class="fat content">
-        <label>
-          <input type="radio" name="fat content" />
-          0%
-          <!-- <img src="IMG/radio-button-off.svg" alt="ice-cream-offer-1" /> -->
-        </label>
-        <label>
-          <input type="radio" name="fat content" />
-          до 10%
-        </label>
-        <label>
-          <input type="radio" name="fat content" />
-          до 30%
-        </label>
-        <label>
-          <input type="radio" name="fat content" />
-          выше 30%
-        </label>
-      </form>
+        <div>
+          <h3>Цена:</h3>
+          <p>100 руб.-500 руб.</p>
+          <form class="price-filter">
+            <input type="range" max="1000" value="50" />
+          </form>
+        </div>
 
-      <h4>Наполнители:</h4>
+        <div>
+          <h3>Жирность:</h3>
+          <form class="fat content">
+            <label>
+              <input type="radio" name="fat content" />
+              0%
+              <!-- <img src="IMG/radio-button-off.svg" alt="ice-cream-offer-1" /> -->
+            </label>
+            <label>
+              <input type="radio" name="fat content" />
+              до 10%
+            </label>
+            <label>
+              <input type="radio" name="fat content" />
+              до 30%
+            </label>
+            <label>
+              <input type="radio" name="fat content" />
+              выше 30%
+            </label>
+          </form>
+        </div>
+      </section>
+
+      <h3>Наполнители:</h3>
       <form class="fillers">
         <label>
           <input type="checkbox" name="fillers" />
@@ -220,8 +232,7 @@
       </li>
     </ul> -->
 
-    <footer class="main-footer">
-    </footer>
+    <footer class="main-footer"></footer>
 
     <script src="JS/renderingElements.js"></script>
     <script type="module" src="JS/catalog.js"></script>

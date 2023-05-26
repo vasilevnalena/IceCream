@@ -187,7 +187,8 @@ a:active {
   display: flex;
   flex-direction: column;
 
-  margin: 0 27px 214px 27px;
+  /* margin: 0 27px 214px 27px; */
+  margin: 0 27px 0 27px;
   color: #ffffff;
 }
 
@@ -340,7 +341,7 @@ a:active {
   box-shadow: inset 0px 2px 1px #696969;
 }
 
-.filled-basket{
+.filled-basket {
   color: #323232;
   background: #f7f6f3;
   box-shadow: none;
@@ -349,9 +350,8 @@ a:active {
 
 .filled-basket:hover path:nth-child(1),
 .filled-basket:focus path:nth-child(1) {
-  fill: #E84D37;
-
-} 
+  fill: #e84d37;
+}
 
 .working-time {
   margin-top: -4px;
@@ -375,12 +375,13 @@ a:active {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-top: 214px;
 
   font-size: 60px;
   line-height: 60px;
   text-align: center;
-  margin: 0;
-  padding: 0;
   align-items: center;
 }
 
@@ -1384,4 +1385,85 @@ a:active {
 /* Отобразить скрытый элемент */
 .show-element {
   display: block;
+}
+
+/* стиль страницы "Сливочное мороженое" */
+.bread-crumbs {
+  position: absolute;
+  top: 99px;
+  margin-left: 28px;
+
+  display: flex;
+  gap: 7px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+}
+
+.bread-crumbs li:nth-child(1),
+.bread-crumbs li:nth-child(3) {
+  text-decoration: underline 1px;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+}
+
+.creamy-header {
+  margin: 0;
+  margin-top: 1px;
+  margin-left: 27px;
+
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 41px;
+  align-items: center;
+}
+
+.sorting {
+}
+
+.header-sorting {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+}
+
+.drop-down-list {
+  font-size: 16px;
+  line-height: 19px;
+  align-items: flex-end;
+
+  background: rgba(255, 255, 255, 0.2);
+}
+
+select {
+  font: inherit;
+  /* letter-spacing: inherit; */
+  /* word-spacing: inherit; */
+  /* -moz-appearance: none;
+  -webkit-appearance: none; */
+  appearance: none;
+  
+  color: #ffffff;
+  border-radius: 40px;
+}
+
+select:not([multiple]) {
+  /* padding-right: 1.2em; */
+  background-repeat: no-repeat;
+  background-position: calc(100% - 0.25em) 0.35em;
+  /* background-size: 0.85em auto; */
+  background-image: url(/IMG/select-arrow.svg);
+}
+
+select:focus,
+select:active {
+  color: #343434;
+}
+
+option {
+  color: #343434;
 }

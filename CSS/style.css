@@ -1432,38 +1432,38 @@ a:active {
 }
 
 .drop-down-list {
+  /* display: flex;
+  gap: 20px; */
+  max-width: 179px;
+  padding: 8px 16px 9px 15px;
+
+  font: inherit;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+
+  border-radius: 40px;
+  color: #ffffff;
+  font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  align-items: flex-end;
-
-  background: rgba(255, 255, 255, 0.2);
-}
-
-select {
-  font: inherit;
-  /* letter-spacing: inherit; */
-  /* word-spacing: inherit; */
-  /* -moz-appearance: none;
-  -webkit-appearance: none; */
-  appearance: none;
-  
-  color: #ffffff;
-  border-radius: 40px;
-}
-
-select:not([multiple]) {
-  /* padding-right: 1.2em; */
-  background-repeat: no-repeat;
-  background-position: calc(100% - 0.25em) 0.35em;
-  /* background-size: 0.85em auto; */
-  background-image: url(/IMG/select-arrow.svg);
+  background: rgba(255, 255, 255, 0.2) url(/IMG/icon-down-dir.svg) no-repeat
+    right;
+  background-size: 32% 29%;
 }
 
 select:focus,
 select:active {
   color: #343434;
 }
+/* 
+select:focus,
+select:active {
+  fill: #343434;
+} */
 
 option {
+  padding-right: 3px;
   color: #343434;
 }

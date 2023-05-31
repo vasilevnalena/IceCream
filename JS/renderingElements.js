@@ -158,7 +158,7 @@ const header = () => {
 };
 
 const footer = () => {
-    return `
+  return `
     <span class="social-media-and-menu-container">
       <ul class="social-media">
         <li>
@@ -274,4 +274,4 @@ const headerElement = document.querySelector(`.main-header`);
 const footerElement = document.querySelector(`.main-footer`);
 
 render(headerElement, header(), `beforeend`);
-render(footerElement, footer(),`beforeend`);
+render(footerElement, footer(), `beforeend`);

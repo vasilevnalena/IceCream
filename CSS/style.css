@@ -418,35 +418,36 @@ a:active {
   display: flex;
 }
 
-/* hide radio-button */
+/* choise-offer-radio-button style */
+/* -hide radio-button- */
 .choise-offer-radio-button [type="radio"] {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* image styles */
-[type="radio"] + img {
+/* -image styles- */
+.choise-offer-radio-button [type="radio"] + img {
   cursor: pointer;
 }
 
-/* checked style */
-[type="radio"]:checked + img {
+/* -checked style- */
+.choise-offer-radio-button [type="radio"]:checked + img {
   background: url("../IMG/radio-button-on.svg");
 }
 
-/* unchecked style */
-[type="radio"] + img {
+/* -unchecked style- */
+.choise-offer-radio-button [type="radio"] + img {
   background: url("../IMG/radio-button-off.svg");
 }
 
-[type="radio"] + img:hover,
-[type="radio"] + img:focus {
+.choise-offer-radio-button [type="radio"] + img:hover,
+.choise-offer-radio-button [type="radio"] + img:focus {
   opacity: 0.4;
 }
 
-[type="radio"]:checked + img:hover,
-[type="radio"]:checked + img:focus {
+.choise-offer-radio-button [type="radio"]:checked + img:hover,
+.choise-offer-radio-button [type="radio"]:checked + img:focus {
   opacity: 1;
 }
 
@@ -606,7 +607,10 @@ a:active {
 
 .hits:hover,
 .hits:focus,
-.hits:active {
+.hits:active,
+.tastes-creamy:hover,
+.tastes-creamy:focus,
+.tastes-creamy:active {
   height: 408px;
   justify-content: space-between;
 }
@@ -1090,6 +1094,7 @@ a:active {
   margin-left: -6px;
 
   display: none;
+  z-index: 10;
 }
 
 .new-products {
@@ -1158,6 +1163,8 @@ a:active {
   top: 36px;
   right: 1px;
   display: none;
+
+  z-index: 10;
 }
 
 .input-search {
@@ -1186,6 +1193,8 @@ a:active {
   top: 36px;
   right: -1px;
   display: none;
+
+  z-index: 10;
 }
 
 .login-form {
@@ -1421,7 +1430,8 @@ a:active {
   align-items: center;
 }
 
-.sorting {
+.sorting-container {
+  display: flex;
 }
 
 .header-sorting {
@@ -1431,11 +1441,10 @@ a:active {
   align-items: center;
 }
 
+/* !Скорректировать отступы */
 .drop-down-list {
-  /* display: flex;
-  gap: 20px; */
-  max-width: 179px;
-  padding: 8px 16px 9px 15px;
+  width: 192px;
+  padding: 8px 0 9px 15px;
 
   font: inherit;
   -moz-appearance: none;
@@ -1448,9 +1457,12 @@ a:active {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  background: rgba(255, 255, 255, 0.2) url(/IMG/icon-down-dir.svg) no-repeat
+  /* background: rgba(255, 255, 255, 0.2) url(/IMG/icon-down-dir.svg) no-repeat
     right;
-  background-size: 32% 29%;
+  background-size: 32% 29%; */
+  background: rgba(255, 255, 255, 0.2) url(/IMG/icon-down-dir.svg) no-repeat
+    calc(100% - 16px) 50%;
+  /* background-size: 10px; */
 }
 
 select:focus,
@@ -1466,4 +1478,139 @@ select:active {
 option {
   padding-right: 3px;
   color: #343434;
+}
+
+/* Цена: */
+.price-range {
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+}
+
+/* Жирность(радиобаттоны): */
+.fat-content {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+}
+
+/* fat-content radio-button: */
+/* -hide radio-button- */
+.fat-content [type="radio"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* -image styles- */
+.fat-content [type="radio"] + img {
+  cursor: pointer;
+}
+
+/* -checked style- */
+.fat-content [type="radio"]:checked + img {
+  background: url("../IMG/radio-on.svg") no-repeat;
+  background-size: 22px;
+}
+
+/* -unchecked style- */
+.fat-content [type="radio"] + img {
+  background: url("../IMG/radio-off.svg") no-repeat;
+  background-size: 22px;
+}
+
+.fat-content [type="radio"] + img:hover,
+.fat-content [type="radio"] + img:focus {
+  opacity: 0.4;
+}
+
+.fat-content [type="radio"]:checked + img:hover,
+.fat-content [type="radio"]:checked + img:focus {
+  opacity: 1;
+}
+
+/* Наполнители: */
+.fillers {
+}
+
+/* fillers checkboxes: */
+/* -hide checkbox- */
+.fillers [type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* .fillers img
+{
+    content: url("/IMG/checkbox-off.svg");
+} */
+
+/* -image styles- */
+.fillers [type="checkbox"] + img {
+  cursor: pointer;
+}
+
+/* -checked style- */
+.fillers [type="checkbox"]:checked + img {
+  content: url("/IMG/checkbox-on.svg");
+  width: 24px;
+
+  /* background: url("./IMG/checkbox-on.svg") no-repeat; */
+  /* background-size: 24px 20px; */
+}
+
+/* -unchecked style- */
+.fillers [type="checkbox"] + img {
+  content: url("/IMG/checkbox-off.svg");
+
+  /* background: url("./IMG/checkbox-off.svg") no-repeat; */
+  /* background-size: 20px; */
+}
+
+.fillers [type="checkbox"] + img:hover,
+.fillers [type="checkbox"] + img:focus {
+  opacity: 0.4;
+}
+
+.fillers [type="checkbox"]:checked + img:hover,
+.fillers [type="checkbox"]:checked + img:focus {
+  opacity: 1;
+}
+
+.fillers-container {
+  display: flex;
+}
+
+.apply-filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+  box-shadow: none;
+}
+
+.apply-filter-button:hover,
+.apply-filter-button:focus {
+  background: #ffffff;
+  color: #323232;
+  box-shadow: none;
+}
+
+.apply-filter-button:active {
+  background: #ededed;
+  box-shadow: inset 0px 2px 1px #696969;
+  color: #323232;
+}
+
+/* карточки с мороженым */
+.tastes-container{
+display: flex;
 }

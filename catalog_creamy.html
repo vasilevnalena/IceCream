@@ -36,14 +36,17 @@
           </select>
         </div>
 
-        <div class="price-filter-container">
-          <h3 class="header-sorting">Цена:</h3>
-          <p class="price-range">100 руб. – 500 руб.</p>
+        <section class="price-filter-container">
+          <div class="price-range">
+            <h3 class="header-sorting">Цена:</h3>
+            <p class="price-value">100 руб. – 500 руб.</p>
+          </div>
+
           <form class="price-filter">
             <input type="range" min="50" max="2000" value="50" />
             <!-- <input type="range" max="2000" value="50" /> -->
           </form>
-        </div>
+        </section>
 
         <div class="fat-content-container">
           <h3 class="header-sorting">Жирность:</h3>
@@ -98,10 +101,10 @@
       </section>
 
       <section class="fillers-container">
-        <h3 class="header-sorting">Наполнители:</h3>
+        <h3 class="header-sorting header-fillers">Наполнители:</h3>
         <div class="fillers-elements">
           <form class="fillers">
-            <label>
+            <label class="checkbox-element">
               <input type="checkbox" name="fillers" id="chocolate" />
               <img
                 src="IMG/checkbox-off.svg"
@@ -109,10 +112,10 @@
                 height="20"
                 alt="chocolate"
               />
-              шоколадные
+              <p>шоколадные</p>
             </label>
 
-            <label>
+            <label class="checkbox-element">
               <input type="checkbox" name="fillers" id="sugar-powders" />
               <img
                 src="IMG/checkbox-off.svg"
@@ -120,10 +123,10 @@
                 height="20"
                 alt="sugar powders"
               />
-              сахарные присыпки
+              <p>сахарные присыпки</p>
             </label>
 
-            <label>
+            <label class="checkbox-element">
               <input type="checkbox" name="fillers" id="fruits" />
               <img
                 src="IMG/checkbox-off.svg"
@@ -131,9 +134,9 @@
                 height="20"
                 alt="fruits"
               />
-              фрукты
+              <p>фрукты</p>
             </label>
-            <label>
+            <label class="checkbox-element">
               <input type="checkbox" name="fillers" id="syrups" />
               <img
                 src="IMG/checkbox-off.svg"
@@ -141,9 +144,9 @@
                 height="20"
                 alt="syrups"
               />
-              сиропы
+              <p>сиропы</p>
             </label>
-            <label>
+            <label class="checkbox-element">
               <input type="checkbox" name="fillers" id="jams" />
               <img
                 src="IMG/checkbox-off.svg"
@@ -151,7 +154,7 @@
                 height="20"
                 alt="jams"
               />
-              джемы
+              <p>джемы</p>
             </label>
           </form>
 

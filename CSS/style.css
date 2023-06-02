@@ -560,8 +560,9 @@ a:active {
 /* Hits */
 .hits,
 .tastes-creamy {
-  margin: 34px 27px 0;
+  min-height: 408px;
 
+  margin: 34px 27px 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -602,6 +603,7 @@ a:active {
   cursor: pointer;
 }
 
+/* Исправить отступы и прыгающие карточки на обеих страницах */
 .hits:hover,
 .hits:focus,
 .hits:active,
@@ -615,7 +617,7 @@ a:active {
 .tastes-item:hover,
 .tastes-item:focus,
 .tastes-item:active {
-  width: 293px;
+  min-width: 293px;
 
   background: rgba(248, 247, 244, 0.2);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
@@ -1396,7 +1398,7 @@ a:active {
 .bread-crumbs {
   position: absolute;
   top: 99px;
-  margin-left: 28px;
+  margin: 0 27px;
 
   display: flex;
   gap: 7px;
@@ -1416,9 +1418,7 @@ a:active {
 }
 
 .creamy-header {
-  margin: 0;
-  margin-top: 1px;
-  margin-left: 27px;
+  margin: 1px 26px 0;
 
   font-weight: 700;
   font-size: 35px;
@@ -1427,19 +1427,30 @@ a:active {
 }
 
 .sorting-container {
+  margin: 28px 27px 0;
   display: flex;
+  gap: 15px;
+  align-items: start;
 }
 
 .header-sorting {
+  margin: 0;
+  margin-left: 16px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-  align-items: center;
+}
+
+.price-value {
+  margin: 0;
+  margin-left: 3px;
 }
 
 .drop-down-list {
   width: 192px;
   padding: 8px 0 9px 15px;
+  margin-top: 6px;
 
   font: inherit;
   -moz-appearance: none;
@@ -1473,6 +1484,7 @@ option {
 }
 
 .price-range {
+  display: flex;
   margin: 0;
 
   font-weight: 500;
@@ -1542,22 +1554,29 @@ option {
 
 .percent-checkbox {
   display: flex;
-  /* gap: 10px; */
+  /* gap: 5px; */
 
   align-items: center;
 }
 
-
 /* Fillers: */
 .fillers-container {
+  margin: 9px 27px 0;
+}
+
+.header-fillers {
+  margin-left: 15px;
 }
 
 .fillers-elements {
   display: flex;
   flex-direction: row;
+  margin-top: 6px;
 }
 
 .fillers {
+  display: flex;
+  gap: 20px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 40px;
 }
@@ -1594,6 +1613,16 @@ option {
 .fillers [type="checkbox"]:checked + img:hover,
 .fillers [type="checkbox"]:checked + img:focus {
   opacity: 1;
+}
+
+.checkbox-element {
+  display: flex;
+  /* align-items: center; */
+  gap: 10px;
+}
+
+.checkbox-element p {
+  margin: 0;
 }
 
 .apply-filter-button {

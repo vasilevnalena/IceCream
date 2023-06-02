@@ -182,12 +182,11 @@ a:active {
   color: #ffbc9e;
 }
 
-/* Шапка */
+/* Header: */
 .main-header {
   display: flex;
   flex-direction: column;
 
-  /* margin: 0 27px 214px 27px; */
   margin: 0 27px 0 27px;
   color: #ffffff;
 }
@@ -256,9 +255,9 @@ a:active {
 }
 
 .search__button {
+  display: flex;
   width: 32px;
   height: 32px;
-  display: flex;
 
   justify-content: center;
   padding-bottom: 1px;
@@ -370,7 +369,7 @@ a:active {
   line-height: 24px;
 }
 
-/* Спецпредложения */
+/* Special offer: */
 .special-offer {
   position: relative;
   display: flex;
@@ -402,7 +401,7 @@ a:active {
   display: none;
 }
 
-/* Радиокнопки */
+/* Choise offer radiobuttons: */
 .choise-offer-radio-button {
   position: absolute;
   display: flex;
@@ -456,7 +455,7 @@ a:active {
   padding: 7px 40px 11px;
 }
 
-/* Баннеры */
+/* Banners: */
 .banners {
   margin: 41px 14px 0;
 
@@ -558,9 +557,7 @@ a:active {
   box-shadow: inset 0px 2px 2px #942718;
 }
 
-/* Хиты */
-/* Макет и стайлгайд различаются, карточки-хиты оформляла по макету, не по стайлгайду */
-
+/* Hits */
 .hits,
 .tastes-creamy {
   margin: 34px 27px 0;
@@ -611,7 +608,7 @@ a:active {
 .tastes-creamy:hover,
 .tastes-creamy:focus,
 .tastes-creamy:active {
-  height: 408px;
+  min-height: 408px;
   justify-content: space-between;
 }
 
@@ -766,7 +763,6 @@ a:active {
   color: #323232;
 }
 
-/* Контейнер новости+рассылка */
 .news-mailing-container {
   margin: 40px 27px 40px;
   display: flex;
@@ -774,7 +770,7 @@ a:active {
   height: 220px;
 }
 
-/* Новости */
+/* News: */
 .news {
   width: 560px;
   display: flex;
@@ -821,7 +817,7 @@ a:active {
   color: #e84d37;
 }
 
-/* Рассылка */
+/* Mailing: */
 .mailing {
   width: 560px;
   display: flex;
@@ -881,7 +877,7 @@ a:active {
   color: #fefefe;
 }
 
-/* Карта */
+/* Map: */
 .map-container {
   position: relative;
   background-color: var(--color-backround-default);
@@ -971,7 +967,7 @@ a:active {
   color: #fefefe;
 }
 
-/* Подвал */
+/* Footer: */
 .main-footer {
   margin: 18px 26px 25px 28px;
   padding: 0;
@@ -985,7 +981,7 @@ a:active {
   gap: 214px;
 }
 
-/* Соцсети */
+/* Social media: */
 .social-media {
   display: flex;
   justify-content: center;
@@ -1019,7 +1015,7 @@ a:active {
   fill: #e9e9e9;
 }
 
-/* Меню подвала */
+/* Footer menu: */
 .footer-menu-list {
   margin-top: 17px;
 
@@ -1052,7 +1048,7 @@ a:active {
   margin-bottom: 6px;
 }
 
-/* Кем создано */
+/* Created by: */
 .created-by {
   font-weight: 400;
   font-size: 12px;
@@ -1086,7 +1082,7 @@ a:active {
   border-radius: 5px;
 }
 
-/* Меню каталога */
+/* Catalog menu: */
 .modal-catalog-menu {
   position: absolute;
   padding: 11px 9px 8px 6px;
@@ -1154,7 +1150,7 @@ a:active {
   color: #ffffff;
 }
 
-/* Окно поиска */
+/* Search window: */
 .modal-search {
   position: absolute;
   width: 341px;
@@ -1184,7 +1180,7 @@ a:active {
   padding: 8px 12px 9px;
 }
 
-/* Окно входа */
+/* Enter window: */
 .modal-login {
   position: absolute;
   width: 277px;
@@ -1282,7 +1278,7 @@ a:active {
   color: #e84d37;
 }
 
-/* Форма обратной связи */
+/* Feedback form: */
 .modal-feedback {
   position: fixed;
   z-index: 3;
@@ -1298,8 +1294,8 @@ a:active {
   display: none;
 }
 
-/* затемнение */
-.darkness {
+/* Dark backdrop: */
+.dark-backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -1391,12 +1387,12 @@ a:active {
   align-items: center;
 }
 
-/* Отобразить скрытый элемент */
+/* Show hide element: */
 .show-element {
   display: block;
 }
 
-/* стиль страницы "Сливочное мороженое" */
+/* Style of page "Creamy ice cream": */
 .bread-crumbs {
   position: absolute;
   top: 99px;
@@ -1441,7 +1437,6 @@ a:active {
   align-items: center;
 }
 
-/* !Скорректировать отступы */
 .drop-down-list {
   width: 192px;
   padding: 8px 0 9px 15px;
@@ -1457,30 +1452,26 @@ a:active {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
-  /* background: rgba(255, 255, 255, 0.2) url(/IMG/icon-down-dir.svg) no-repeat
-    right;
-  background-size: 32% 29%; */
-  background: rgba(255, 255, 255, 0.2) url(/IMG/icon-down-dir.svg) no-repeat
-    calc(100% - 16px) 50%;
-  /* background-size: 10px; */
+  background: rgba(255, 255, 255, 0.2) url(/IMG/icon-down-dir-white.svg)
+    no-repeat calc(100% - 13px) 50%;
 }
 
 select:focus,
 select:active {
   color: #343434;
+  background: rgba(255, 255, 255, 0.2) url(/IMG/icon-down-dir-black.svg)
+    no-repeat calc(100% - 13px) 50%;
 }
-/* 
-select:focus,
-select:active {
-  fill: #343434;
-} */
 
 option {
   padding-right: 3px;
   color: #343434;
 }
 
-/* Цена: */
+/* Price: */
+.price-filter-container {
+}
+
 .price-range {
   margin: 0;
 
@@ -1490,12 +1481,28 @@ option {
   align-items: center;
 }
 
-/* Жирность(радиобаттоны): */
+.price-filter {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
+}
+
+/* Fat-content: */
+.fat-content-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .fat-content {
+  display: flex;
+  gap: 0px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   align-items: center;
+
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
 }
 
 /* fat-content radio-button: */
@@ -1533,8 +1540,26 @@ option {
   opacity: 1;
 }
 
-/* Наполнители: */
+.percent-checkbox {
+  display: flex;
+  /* gap: 10px; */
+
+  align-items: center;
+}
+
+
+/* Fillers: */
+.fillers-container {
+}
+
+.fillers-elements {
+  display: flex;
+  flex-direction: row;
+}
+
 .fillers {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 40px;
 }
 
 /* fillers checkboxes: */
@@ -1545,11 +1570,6 @@ option {
   height: 0;
 }
 
-/* .fillers img
-{
-    content: url("/IMG/checkbox-off.svg");
-} */
-
 /* -image styles- */
 .fillers [type="checkbox"] + img {
   cursor: pointer;
@@ -1559,17 +1579,11 @@ option {
 .fillers [type="checkbox"]:checked + img {
   content: url("/IMG/checkbox-on.svg");
   width: 24px;
-
-  /* background: url("./IMG/checkbox-on.svg") no-repeat; */
-  /* background-size: 24px 20px; */
 }
 
 /* -unchecked style- */
 .fillers [type="checkbox"] + img {
   content: url("/IMG/checkbox-off.svg");
-
-  /* background: url("./IMG/checkbox-off.svg") no-repeat; */
-  /* background-size: 20px; */
 }
 
 .fillers [type="checkbox"] + img:hover,
@@ -1580,10 +1594,6 @@ option {
 .fillers [type="checkbox"]:checked + img:hover,
 .fillers [type="checkbox"]:checked + img:focus {
   opacity: 1;
-}
-
-.fillers-container {
-  display: flex;
 }
 
 .apply-filter-button {
@@ -1610,7 +1620,21 @@ option {
   color: #323232;
 }
 
-/* карточки с мороженым */
-.tastes-container{
-display: flex;
+/* Ice-cream cards: */
+.tastes-container {
+  display: flex;
+}
+
+/* Page numbers: */
+.list-numbers {
+  display: flex;
+}
+
+#left-arrow-button {
+  opacity: 0.5;
+  transform: rotate(-180deg);
+}
+
+.split-line {
+  opacity: 0.3;
 }

@@ -1,7 +1,7 @@
 let bodyPage = document.querySelector("body");
 let textOfferElement = document.querySelector(".offer-text");
 let closeButton = document.querySelector(".close-icon");
-let darknessBackground = document.querySelector(".darkness");
+let darkBackdrop = document.querySelector(".dark-backdrop");
 
 export function popupWindowActions(element, popupClass) {
   element.addEventListener("click", () => {
@@ -40,11 +40,11 @@ export function offerSwitchRadioButton(
 export function modalWindowActions(callButton, modalClass) {
   callButton.addEventListener("click", () => {
     modalClass.classList.add("show-element");
-    darknessBackground.classList.add("show-element");
+    darkBackdrop.classList.add("show-element");
   });
 
   closeButton.addEventListener("click", () => {
     modalClass.classList.remove("show-element");
-    darknessBackground.classList.remove("show-element");
+    darkBackdrop.classList.remove("show-element");
   });
 }

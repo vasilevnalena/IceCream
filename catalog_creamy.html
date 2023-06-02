@@ -25,7 +25,7 @@
       <h2 class="creamy-header">Сливочное мороженое</h2>
 
       <section class="sorting-container">
-        <div>
+        <div class="drop-down-list-container">
           <h3 class="header-sorting">Сортировка:</h3>
 
           <select class="drop-down-list" id="select-by">
@@ -36,18 +36,19 @@
           </select>
         </div>
 
-        <div>
+        <div class="price-filter-container">
           <h3 class="header-sorting">Цена:</h3>
           <p class="price-range">100 руб. – 500 руб.</p>
           <form class="price-filter">
-            <input type="range" max="1000" value="50" />
+            <input type="range" min="50" max="2000" value="50" />
+            <!-- <input type="range" max="2000" value="50" /> -->
           </form>
         </div>
 
-        <div>
+        <div class="fat-content-container">
           <h3 class="header-sorting">Жирность:</h3>
           <form class="fat-content">
-            <label>
+            <label class="percent-checkbox">
               <input
                 type="radio"
                 name="fat-content"
@@ -62,7 +63,7 @@
               />
               0%
             </label>
-            <label>
+            <label class="percent-checkbox">
               <input type="radio" name="fat-content" id="fat-content-10" />
               <img
                 src="IMG/radio-off.svg"
@@ -72,7 +73,7 @@
               />
               до 10%
             </label>
-            <label>
+            <label class="percent-checkbox">
               <input type="radio" name="fat-content" id="fat-content-30" />
               <img
                 src="IMG/radio-off.svg"
@@ -82,7 +83,7 @@
               />
               до 30%
             </label>
-            <label>
+            <label class="percent-checkbox">
               <input type="radio" name="fat-content" id="fat-content-more-30" />
               <img
                 src="IMG/radio-off.svg"
@@ -98,57 +99,64 @@
 
       <section class="fillers-container">
         <h3 class="header-sorting">Наполнители:</h3>
-        <form class="fillers">
-          <label>
-            <input type="checkbox" name="fillers" id="chocolate" />
-            <img
-              src="IMG/checkbox-off.svg"
-              width="20"
-              height="20"
-              alt="chocolate"
-            />
-            шоколадные
-          </label>
+        <div class="fillers-elements">
+          <form class="fillers">
+            <label>
+              <input type="checkbox" name="fillers" id="chocolate" />
+              <img
+                src="IMG/checkbox-off.svg"
+                width="20"
+                height="20"
+                alt="chocolate"
+              />
+              шоколадные
+            </label>
 
-          <label>
-            <input type="checkbox" name="fillers" id="sugar-powders" />
-            <img
-              src="IMG/checkbox-off.svg"
-              width="20"
-              height="20"
-              alt="sugar powders"
-            />
-            сахарные присыпки
-          </label>
+            <label>
+              <input type="checkbox" name="fillers" id="sugar-powders" />
+              <img
+                src="IMG/checkbox-off.svg"
+                width="20"
+                height="20"
+                alt="sugar powders"
+              />
+              сахарные присыпки
+            </label>
 
-          <label>
-            <input type="checkbox" name="fillers" id="fruits" />
-            <img
-              src="IMG/checkbox-off.svg"
-              width="20"
-              height="20"
-              alt="fruits"
-            />
-            фрукты
-          </label>
-          <label>
-            <input type="checkbox" name="fillers" id="syrups" />
-            <img
-              src="IMG/checkbox-off.svg"
-              width="20"
-              height="20"
-              alt="syrups"
-            />
-            сиропы
-          </label>
-          <label>
-            <input type="checkbox" name="fillers" id="jams" />
-            <img src="IMG/checkbox-off.svg" width="20" height="20" alt="jams" />
-            джемы
-          </label>
-        </form>
+            <label>
+              <input type="checkbox" name="fillers" id="fruits" />
+              <img
+                src="IMG/checkbox-off.svg"
+                width="20"
+                height="20"
+                alt="fruits"
+              />
+              фрукты
+            </label>
+            <label>
+              <input type="checkbox" name="fillers" id="syrups" />
+              <img
+                src="IMG/checkbox-off.svg"
+                width="20"
+                height="20"
+                alt="syrups"
+              />
+              сиропы
+            </label>
+            <label>
+              <input type="checkbox" name="fillers" id="jams" />
+              <img
+                src="IMG/checkbox-off.svg"
+                width="20"
+                height="20"
+                alt="jams"
+              />
+              джемы
+            </label>
+          </form>
 
-        <button class="apply-filter-button" type="button">Применить</button>
+          <button class="apply-filter-button" type="button">Применить</button>
+        </div>
       </section>
 
       <section class="tastes-container">
@@ -356,6 +364,52 @@
           </li>
         </ul>
       </section>
+
+      <section class="page-numbers">
+        <ul class="list-numbers">
+          <li>
+            <a href=""
+              ><svg
+                class="arrow-button"
+                id="left-arrow-button"
+                xmlns="http://www.w3.org/2000/svg"
+                width="8"
+                height="12"
+                viewBox="0 0 8 12"
+              >
+                <path
+                  fill="#C1C6CE"
+                  d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li><a href="catalog_creamy.html">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li>
+            <a href="#"
+              ><svg
+                class="arrow-button"
+                id="right-arrow-button"
+                xmlns="http://www.w3.org/2000/svg"
+                width="8"
+                height="12"
+                viewBox="0 0 8 12"
+              >
+                <path
+                  fill="#C1C6CE"
+                  d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <hr class="split-line" />
     </main>
 
     <!--  прыгает футер при наведении на карточки-->

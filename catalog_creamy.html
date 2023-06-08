@@ -26,7 +26,7 @@
 
       <section class="sorting-container">
         <div class="drop-down-list-container">
-          <h3 class="header-sorting">Сортировка:</h3>
+          <h3 class="header-sorting header-sorting-style">Сортировка:</h3>
 
           <select class="drop-down-list" id="select-by">
             <option value="by-popularity">по популярности</option>
@@ -37,43 +37,40 @@
         </div>
 
         <section class="price-filter-container">
-          <div class="price-range">
+          <!-- <div class="range-price">
             <h3 class="header-sorting">Цена:</h3>
             <p class="price-value">100 руб. – 500 руб.</p>
+          </div> -->
+
+          <div class="range-price">
+            <h3 class="header-sorting price-header">Цена:</h3>
+            <input class="input-range-min" name="min" value="100" />
+            <h3 class="header-sorting price-header">руб. -</h3>
+            <input class="input-range-max" name="max" value="500" />
+            <h3 class="header-sorting price-header">руб.</h3>
           </div>
 
-          <!-- <form class="price-filter">
-            <input type="range" min="50" max="2000" value="50" />
-          </form> -->
           <form class="price-filter">
-            <div class="range">
-              <div class="range-slider">
-                <span class="range-selected"></span>
-              </div>
-              <div class="range-input">
-                <input
-                  type="range"
-                  class="min"
-                  min="0"
-                  max="1000"
-                  value="300"
-                  step="10"
-                />
-                <input
-                  type="range"
-                  class="max"
-                  min="0"
-                  max="1000"
-                  value="700"
-                  step="10"
-                />
-              </div>
-              <div class="range-price">
-                <label for="min">Min</label>
-                <input type="number" name="min" value="300" />
-                <label for="max">Max</label>
-                <input type="number" name="max" value="700" />
-              </div>
+            <div class="range-slider price-filter">
+              <span class="range-selected"></span>
+            </div>
+            <div class="range-input">
+              <input
+                type="range"
+                class="min"
+                min="0"
+                max="1000"
+                value="300"
+                step="10"
+              />
+              <input
+                type="range"
+                class="max"
+                min="0"
+                max="1000"
+                value="700"
+                step="10"
+              />
             </div>
           </form>
         </section>

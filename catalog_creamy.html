@@ -44,16 +44,18 @@
 
           <div class="range-price">
             <h3 class="header-sorting price-header">Цена:</h3>
-            <input class="input-range-min" name="min" value="100" />
+            <!-- <input class="input-range-min" name="min" value="100" readonly/> -->
+            <input type="text" class="input-range-min" name="min" value="300" readonly />
             <h3 class="header-sorting price-header">руб. -</h3>
-            <input class="input-range-max" name="max" value="500" />
+            <input class="input-range-max" name="max" value="700" readonly/>
             <h3 class="header-sorting price-header">руб.</h3>
           </div>
 
-          <form class="price-filter">
-            <div class="range-slider price-filter">
+          <div class="price-filter">
+            <div class="range-slider">
               <span class="range-selected"></span>
             </div>
+
             <div class="range-input">
               <input
                 type="range"
@@ -63,6 +65,7 @@
                 value="300"
                 step="10"
               />
+
               <input
                 type="range"
                 class="max"
@@ -72,7 +75,7 @@
                 step="10"
               />
             </div>
-          </form>
+          </div>
         </section>
 
         <div class="fat-content-container">

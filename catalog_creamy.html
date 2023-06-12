@@ -37,21 +37,12 @@
         </div>
 
         <section class="price-filter-container">
-          <!-- <div class="range-price">
-            <h3 class="header-sorting">Цена:</h3>
-            <p class="price-value">100 руб. – 500 руб.</p>
-          </div> -->
-
           <div class="range-price">
-            <h3 class="header-sorting price-header">Цена:</h3>
-            <span class="price-value-style min-price">300</span>
-            <span class="header-sorting price-header">руб. -</span>
-            <span class="price-value-style max-price">700</span>
+            <h3 class="header-sorting" id="price-text">Цена:</h3>   <!--class="header-sorting price-header"-->
+            <span class="price-value-style min-price">100</span>
+            <span class="header-sorting price-header" id="rub-text">руб. - </span>
+            <span class="price-value-style max-price">500</span>
             <span class="header-sorting price-header">руб.</span>
-            <!-- <input class="input-range-min" name="min" value="100" readonly/>
-            <h3 class="header-sorting price-header">руб. -</h3>
-            <input class="input-range-max" name="max" value="700" readonly/>
-            <h3 class="header-sorting price-header">руб.</h3> -->
           </div>
 
           <div class="price-filter">
@@ -59,6 +50,7 @@
               <span class="range-selected"></span>
             </div>
 
+            <!-- убрать focus со скрытых элементов инпутов(CSS) -->
             <div class="range-input">
               <input
                 type="range"

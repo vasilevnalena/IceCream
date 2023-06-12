@@ -1398,7 +1398,7 @@ a:active {
 .bread-crumbs {
   position: absolute;
   top: 99px;
-  margin: 0 27px;
+  margin: 0 28px;
 
   display: flex;
   gap: 7px;
@@ -1418,7 +1418,7 @@ a:active {
 }
 
 .creamy-header {
-  margin: 1px 26px 0;
+  margin: 1px 27px 0;
 
   font-weight: 700;
   font-size: 35px;
@@ -1434,8 +1434,6 @@ a:active {
 }
 
 .header-sorting {
-  /* margin: 0;
-  margin-left: 16px; */
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -1487,7 +1485,8 @@ option {
 .price-filter-container {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin-top:-1px;
+  margin-left: 2px;
 }
 
 .range-price {
@@ -1562,7 +1561,7 @@ option {
 }
 
 .price-header {
-  margin-right: 4px;
+  /* margin-right: 4px; */
 }
 
 .price-value-style {

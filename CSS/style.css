@@ -1562,32 +1562,15 @@ option {
 }
 
 .price-header {
-  margin: 0;
+  margin-right: 4px;
 }
 
-.input-range-min {
+.price-value-style {
   all: unset;
-}
-
-.input-range-max {
-  all: unset;
-}
-
-/* !прыгает инпут */
-.input-range-min,
-.input-range-max {
-  width: 35px;
 
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
-}
-
-.input-range-min:hover,
-.input-range-min:focus,
-.input-range-min:active {
-  /* width: 30px; */
-
 }
 
 /* Fat-content: */

@@ -1434,7 +1434,7 @@ a:active {
 }
 
 .header-sorting {
-  margin:0;
+  margin: 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -1581,13 +1581,15 @@ option {
   flex-direction: column;
 }
 
-.fat-content-header{
+.fat-content-header {
   margin-left: 15px;
   margin-bottom: 6px;
 }
 
 .fat-content {
   display: flex;
+  padding: 7px 16px 7px 9px;
+  gap: 14px;
 
   font-weight: 500;
   font-size: 16px;
@@ -1635,14 +1637,19 @@ option {
 
 .percent-checkbox {
   display: flex;
-  /* gap: 5px; */
+  gap: 5px;
 
   align-items: center;
 }
 
+.fat-content-value {
+  margin: 0;
+  margin-left: 4px;
+}
+
 /* Fillers: */
 .fillers-container {
-  margin: 9px 27px 0;
+  margin: 16px 27px 0;
 }
 
 .header-fillers {
@@ -1657,9 +1664,25 @@ option {
 
 .fillers {
   display: flex;
-  gap: 20px;
+  padding: 8px 16px 5px 12px;
+  margin-right: 14px;
+  align-items: center;
+
+  gap: 16px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 40px;
+}
+
+.checkbox-container {
+  margin: 0;
+}
+
+.checkbox-element {
+  display: flex;
+}
+
+.filler-text {
+  margin: 0;
 }
 
 /* fillers checkboxes: */
@@ -1679,11 +1702,13 @@ option {
 .fillers [type="checkbox"]:checked + img {
   content: url("/IMG/checkbox-on.svg");
   width: 24px;
+  margin-right: 7px;
 }
 
 /* -unchecked style- */
 .fillers [type="checkbox"] + img {
   content: url("/IMG/checkbox-off.svg");
+  margin-right: 14px;
 }
 
 .fillers [type="checkbox"] + img:hover,
@@ -1696,17 +1721,9 @@ option {
   opacity: 1;
 }
 
-.checkbox-element {
-  display: flex;
-  /* align-items: center; */
-  gap: 10px;
-}
-
-.checkbox-element p {
-  margin: 0;
-}
-
 .apply-filter-button {
+  padding: 7px 27px 7px 28px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;

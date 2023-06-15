@@ -1434,18 +1434,17 @@ a:active {
 }
 
 .header-sorting {
+  margin:0;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
 }
 
 .header-sorting-style {
-  margin: 0;
   margin-left: 16px;
 }
 
 .price-value {
-  margin: 0;
   margin-left: 3px;
 }
 
@@ -1485,22 +1484,38 @@ option {
 .price-filter-container {
   display: flex;
   flex-direction: column;
-  margin-top:-1px;
+  margin-top: -1px;
   margin-left: 2px;
+  min-width: 218px;
 }
 
 .range-price {
   display: flex;
-  margin: 0 0 7px;
+  margin: 1px 0 6px 14px;
   width: 100%;
-  min-width: 218px;
   max-height: 16px;
 
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   align-items: center;
-  justify-content: center;
+}
+
+.price-header {
+  margin-right: 3px;
+}
+
+.price-value-style {
+  all: unset;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.rub-text {
+  margin-left: 4px;
+  margin-right: 8px;
 }
 
 .price-filter {
@@ -1560,27 +1575,19 @@ option {
   -moz-appearance: none;
 }
 
-.price-header {
-  /* margin-right: 4px; */
-}
-
-.price-value-style {
-  all: unset;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-}
-
 /* Fat-content: */
 .fat-content-container {
   display: flex;
   flex-direction: column;
 }
 
+.fat-content-header{
+  margin-left: 15px;
+  margin-bottom: 6px;
+}
+
 .fat-content {
   display: flex;
-  /* gap: 0px; */
 
   font-weight: 500;
   font-size: 16px;

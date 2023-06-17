@@ -1664,11 +1664,11 @@ option {
 
 .fillers {
   display: flex;
-  padding: 8px 16px 5px 12px;
+  padding: 8px 16px 5px 13px;
   margin-right: 14px;
   align-items: center;
 
-  gap: 16px;
+  gap: 18px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 40px;
 }
@@ -1702,13 +1702,13 @@ option {
 .fillers [type="checkbox"]:checked + img {
   content: url("/IMG/checkbox-on.svg");
   width: 24px;
-  margin-right: 7px;
+  margin-right: 7px; /*чекбокс не должен ездить при снятии галочки(не менять!)*/
 }
 
 /* -unchecked style- */
 .fillers [type="checkbox"] + img {
   content: url("/IMG/checkbox-off.svg");
-  margin-right: 14px;
+  margin-right: 11px; /*чекбокс не должен ездить при снятии галочки(не менять!)*/
 }
 
 .fillers [type="checkbox"] + img:hover,

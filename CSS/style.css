@@ -557,15 +557,16 @@ a:active {
   box-shadow: inset 0px 2px 2px #942718;
 }
 
-/* Hits */
+/* Hits & Ice Cream Cards*/
 .hits,
 .tastes-creamy {
-  min-height: 408px;
+  /* min-height: 408px; */
 
   margin: 34px 27px 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  row-gap: 29px;
   text-align: center;
 }
 
@@ -630,6 +631,10 @@ a:active {
 .tastes-item:active .hidden-button {
   display: block;
   cursor: pointer;
+}
+
+.ice-cream-name {
+  justify-content: center;
 }
 
 .tastes-item:hover .ice-cream-name,
@@ -1748,9 +1753,6 @@ option {
 }
 
 /* Ice-cream cards: */
-.tastes-container {
-  display: flex;
-}
 
 /* Page numbers: */
 .list-numbers {

@@ -37,9 +37,9 @@ html {
 }
 
 body {
-  /* min-width: 960px;
-  min-width: 1200px; */
-  width: 1200px;
+  min-width: 960px;
+  max-width: 1200px;
+  /* width: 1200px; */
   margin: 0 auto;
   padding: 0;
 
@@ -558,10 +558,14 @@ a:active {
 }
 
 /* Hits & Ice Cream Cards*/
+.hits-container {
+  /* display: flex; */
+}
+
 .hits,
 .tastes-creamy {
   /* min-height: 408px; */
-
+  /* position: absolute; */
   margin: 34px 27px 0;
   display: flex;
   justify-content: space-between;
@@ -571,6 +575,7 @@ a:active {
 }
 
 .tastes-item {
+  /* position: absolute; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -619,6 +624,7 @@ a:active {
 .tastes-item:hover,
 .tastes-item:focus,
 .tastes-item:active {
+  /* position: absolute; */
   min-width: 293px;
   min-height: 408px;
 
@@ -1752,8 +1758,53 @@ option {
 /* Ice-cream cards: */
 
 /* Page numbers: */
+.page-numbers {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  align-items: center;
+  text-align: center;
+}
+
 .list-numbers {
   display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  align-items: center;
+}
+
+
+.list-numbers li:nth-child(2) {
+  color: #353535;
+}
+
+.list-numbers a:hover,
+.list-numbers a:focus {
+  display: flex;
+  width: 26px;
+  height: 26px;
+
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-numbers a:active{
+  
+}
+
+.page-1-button {
+
+  display: flex;
+  width: 26px;
+  height: 26px;
+  border-radius: 50px;
+  color: #353535;
+  background: #ffffff;
+  align-items: center;
+  justify-content: center;
 }
 
 #left-arrow-button {

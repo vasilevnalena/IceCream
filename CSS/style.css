@@ -560,13 +560,22 @@ a:active {
 /* Hits & Ice Cream Cards*/
 .hits-container {
   /* display: flex; */
+  margin: 34px 27px 0;
+
+  /* min-width: 293px; */
+  min-height: 333px;
+  position: relative;
 }
 
-.hits,
-.tastes-creamy {
-  /* min-height: 408px; */
-  /* position: absolute; */
-  margin: 34px 27px 0;
+.tastes-container {
+}
+
+.hits {
+  position: absolute;
+  /* min-width: 293px; */
+  width: 100%;
+  min-height: 408px;
+  /* margin: 34px 27px 0; */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -574,14 +583,22 @@ a:active {
   text-align: center;
 }
 
-.tastes-item {
-  /* position: absolute; */
+.tastes-creamy {
+}
+
+.hit-item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.hit-container {
+.tastes-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hit-item-container {
   margin-top: 6px;
 }
 
@@ -612,7 +629,12 @@ a:active {
 /* Исправить отступы и прыгающие карточки на обеих страницах */
 .hits:hover,
 .hits:focus,
-.hits:active,
+.hits:active {
+  min-width: 293px;
+  min-height: 408px;
+  justify-content: space-between;
+}
+
 .tastes-creamy:hover,
 .tastes-creamy:focus,
 .tastes-creamy:active {
@@ -621,13 +643,32 @@ a:active {
   justify-content: space-between;
 }
 
-.tastes-item:hover,
-.tastes-item:focus,
-.tastes-item:active {
-  /* position: absolute; */
+.hit-item:hover,
+.hit-item:focus,
+.hit-item:active {
   min-width: 293px;
   min-height: 408px;
 
+  background: rgba(52, 46, 46, 0.2);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hit-item:hover .hidden-button,
+.hit-item:focus .hidden-button,
+.hit-item:active .hidden-button {
+  display: block;
+  cursor: pointer;
+}
+
+.tastes-item:hover,
+.tastes-item:focus,
+.tastes-item:active {
+  min-width: 293px;
+  min-height: 408px;
+
+  /* background: rgba(248, 247, 244, 0.1); */
   background: rgba(248, 247, 244, 0.2);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
   border-radius: 5px;
@@ -1757,6 +1798,8 @@ option {
 
 /* Ice-cream cards: */
 
+/* ! 1)убрать выделение с первой кнопки при включении другой(возможно, использовать radiobutton?)
+   ! 2) убрать разъезжание кнопок при наведении(круглое выделение сделать отдельным div, вывести назад и сделать его absolute?) */
 /* Page numbers: */
 .page-numbers {
   font-weight: 500;
@@ -1769,10 +1812,9 @@ option {
 .list-numbers {
   display: flex;
   justify-content: flex-end;
-  gap: 30px;
+  gap: 20px;
   align-items: center;
 }
-
 
 .list-numbers li:nth-child(2) {
   color: #353535;
@@ -1791,12 +1833,7 @@ option {
   justify-content: center;
 }
 
-.list-numbers a:active{
-  
-}
-
-.page-1-button {
-
+.list-numbers a:active {
   display: flex;
   width: 26px;
   height: 26px;
@@ -1807,9 +1844,28 @@ option {
   justify-content: center;
 }
 
+.page-1-button {
+  display: flex;
+  width: 26px;
+  height: 26px;
+  border-radius: 50px;
+  color: #353535;
+  background: #ffffff;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-numbers button {
+  all: unset;
+}
+
 #left-arrow-button {
   opacity: 0.5;
   transform: rotate(-180deg);
+}
+
+#right-arrow-button path {
+  fill: #ffffff;
 }
 
 .split-line {

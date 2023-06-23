@@ -557,25 +557,26 @@ a:active {
   box-shadow: inset 0px 2px 2px #942718;
 }
 
-/* Hits & Ice Cream Cards*/
+/* Hits & Catalog cards*/
 .hits-container {
-  /* display: flex; */
   margin: 34px 27px 0;
-
-  /* min-width: 293px; */
   min-height: 333px;
   position: relative;
 }
 
 .tastes-container {
+  display: flex;
+  min-width: 1146px;
+  margin: 34px 27px 0;
+  min-height: 1060px;
+  position: relative;
 }
 
-.hits {
+.hits,
+.tastes-creamy {
   position: absolute;
-  /* min-width: 293px; */
   width: 100%;
   min-height: 408px;
-  /* margin: 34px 27px 0; */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -583,34 +584,48 @@ a:active {
   text-align: center;
 }
 
-.tastes-creamy {
-}
-
-.hit-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
+.hit-item,
 .tastes-item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.hit-item-container {
+.selected-element {
+  display: none;
+  position: absolute;
+  min-width: 293px;
+  min-height: 408px;
+  z-index: 0;
+
+  background: rgba(173, 173, 173, 0.437);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hit-item-container,
+.taste-item-container {
   margin-top: 6px;
+  cursor: pointer;
+  z-index: 2;
 }
 
 .hit-icon {
   position: absolute;
 }
 
+.ice-cream-name {
+  justify-content: center;
+}
+
 .hidden-button {
+  position: absolute;
   display: none;
   width: 200px;
   padding: 9px 9px 10px;
-  margin-top: 7px;
+  margin-top: 338px;
+  z-index: 1;
 
   font-weight: 700;
   font-size: 18px;
@@ -620,21 +635,9 @@ a:active {
   color: #fefefe;
 }
 
-.hit-container:hover,
-.hit-container:focus,
-.hit-container:active {
-  cursor: pointer;
-}
-
-/* Исправить отступы и прыгающие карточки на обеих страницах */
 .hits:hover,
 .hits:focus,
-.hits:active {
-  min-width: 293px;
-  min-height: 408px;
-  justify-content: space-between;
-}
-
+.hits:active,
 .tastes-creamy:hover,
 .tastes-creamy:focus,
 .tastes-creamy:active {
@@ -643,49 +646,34 @@ a:active {
   justify-content: space-between;
 }
 
-.hit-item:hover,
-.hit-item:focus,
-.hit-item:active {
-  min-width: 293px;
-  min-height: 408px;
-
-  background: rgba(52, 46, 46, 0.2);
-  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 .hit-item:hover .hidden-button,
 .hit-item:focus .hidden-button,
-.hit-item:active .hidden-button {
+.hit-item:active .hidden-button,
+.hit-item:hover .selected-element,
+.hit-item:focus .selected-element,
+.hit-item:active .selected-element,
+.tastes-item:hover .hidden-button,
+.tastes-item:focus .hidden-button,
+.tastes-item:active .hidden-button,
+.tastes-item:hover .selected-element,
+.tastes-item:focus .selected-element,
+.tastes-item:active .selected-element {
   display: block;
   cursor: pointer;
 }
 
+.hit-item:hover,
+.hit-item:focus,
+.hit-item:active,
 .tastes-item:hover,
 .tastes-item:focus,
 .tastes-item:active {
-  min-width: 293px;
-  min-height: 408px;
-
-  /* background: rgba(248, 247, 244, 0.1); */
-  background: rgba(248, 247, 244, 0.2);
-  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-  cursor: pointer;
+  z-index: 3;
 }
 
-.tastes-item:hover .hidden-button,
-.tastes-item:focus .hidden-button,
-.tastes-item:active .hidden-button {
-  display: block;
-  cursor: pointer;
-}
-
-.ice-cream-name {
-  justify-content: center;
-}
-
+.hit-item:hover .ice-cream-name,
+.hit-item:focus .ice-cream-name,
+.hit-item:active .ice-cream-name,
 .tastes-item:hover .ice-cream-name,
 .tastes-item:focus .ice-cream-name,
 .tastes-item:active .ice-cream-name {
@@ -735,6 +723,7 @@ a:active {
   position: relative;
   bottom: 3px;
   max-width: 267px;
+  z-index: 2;
 
   font-weight: 500;
   font-size: 16px;

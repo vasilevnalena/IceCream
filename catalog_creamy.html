@@ -437,13 +437,26 @@
               </svg>
             </button>
           </li>
-          <li>
+          <li class="num-button">
+            <div class="selected-num-button"></div>
             <a class="page-1-button" href="catalog_creamy.html">1</a>
           </li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
+          <li class="num-button">
+            <div class="selected-num-button"></div>
+            <a href="">2</a>
+          </li>
+          <li class="num-button">
+            <div class="selected-num-button"></div>
+            <a href="">3</a>
+          </li>
+          <li class="num-button">
+            <div class="selected-num-button"></div>
+            <a href="">4</a>
+          </li>
+          <li class="num-button">
+            <div class="selected-num-button"></div>
+            <a href="">5</a>
+          </li>
           <li>
             <button type="button">
               <svg
@@ -468,6 +481,56 @@
     </main>
 
     <footer class="main-footer"></footer>
+
+    <section class="modal popup-full-basket">
+      <ul class="products-in-basket">
+        <li class="product-item">
+          <div class="delete-product-container">
+            <button class="delete-product-button" type="button">
+              <img src="IMG/cross-small.svg" width="11" height="11" />
+            </button>
+          </div>
+          <div class="taste-image">
+            <img
+              src="IMG/Taste_1.png"
+              width="33"
+              height="33"
+              alt="Мороженое 1"
+            />
+          </div>
+          <div class="taste-text">Пломбир с апельсиновым джемом</div>
+          <div>1.5 кг х</div>
+          <div class="price-text">200 руб.</div>
+          <div>300 руб.</div>
+        </li>
+
+        <li class="product-item">
+          <div class="delete-product-container">
+            <button class="delete-product-button" type="button">
+              <img src="IMG/cross-small.svg" width="11" height="11" />
+            </button>
+          </div>
+          <div class="taste-image">
+            <img
+              src="IMG/Taste_3.png"
+              width="33"
+              height="33"
+              alt="Мороженое 3"
+            />
+          </div>
+          <div class="taste-text">Клубничный пломбир с присыпкой из белого шоколада</div>
+          <div>1.5 кг х</div>
+          <div class="price-text">300 руб.</div>
+          <div>450 руб.</div>
+        </li>
+      </ul>
+
+      <hr />
+
+      <p>Итого: 750 руб.</p>
+
+      <button class="place-an-order-button" type="button">Оформить заказ</button>
+    </section>
 
     <script src="JS/renderingElements.js"></script>
     <script type="module" src="JS/catalog.js"></script>

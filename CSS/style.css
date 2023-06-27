@@ -1791,6 +1791,8 @@ option {
    ! 2) убрать разъезжание кнопок при наведении(круглое выделение сделать отдельным div, вывести назад и сделать его absolute?) */
 /* Page numbers: */
 .page-numbers {
+  margin-top: 75px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -1805,11 +1807,40 @@ option {
   align-items: center;
 }
 
+.num-button {
+  position: relative;
+  /* z-index: 2; */
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.selected-num-button {
+  display: none;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  z-index: 0;
+  /* align-items: center;
+  justify-content: center; */
+
+  background: rgba(173, 173, 173, 0.437);
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.num-button:hover .selected-num-button,
+.num-button:focus .selected-num-button,
+.num-button:active .selected-num-button {
+  display: flex;
+  cursor: pointer;
+}
+
 .list-numbers li:nth-child(2) {
   color: #353535;
 }
 
-.list-numbers a:hover,
+/* .list-numbers a:hover,
 .list-numbers a:focus {
   display: flex;
   width: 26px;
@@ -1831,9 +1862,9 @@ option {
   background: #ffffff;
   align-items: center;
   justify-content: center;
-}
+} */
 
-.page-1-button {
+/* .page-1-button {
   display: flex;
   width: 26px;
   height: 26px;
@@ -1842,7 +1873,7 @@ option {
   background: #ffffff;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .list-numbers button {
   all: unset;
@@ -1859,4 +1890,65 @@ option {
 
 .split-line {
   opacity: 0.3;
+}
+
+/* Full backet window */
+.popup-full-basket {
+  position: fixed;
+  top: 50px;
+  left: 25%;
+  z-index: 3;
+
+  padding: 20px 16px 14px;
+}
+
+.product-item {
+  display: grid;
+  grid-template-columns: 12px 61px 217px 45px 50px 70px;
+}
+
+.product-item div {
+  margin: 0;
+}
+
+.delete-product-container {
+  display: flex;
+  /* justify-content: center; */
+}
+
+.delete-product-button {
+  all: unset;
+  /* display: flex; */
+  /* marging-right: 15px; */
+}
+
+.taste-image {
+  display: flex;
+  justify-content: center;
+}
+
+.taste-text {
+  display: flex;
+padding-top: 9px;
+
+}
+
+.popup-full-basket li {
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+.products-in-basket {
+  color: #323232;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: normal;
+}
+
+.place-an-order-button {
+  color: #fefefe;
+  font-size: 18px;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 24px;
 }

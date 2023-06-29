@@ -1900,13 +1900,15 @@ option {
   left: 20%;
   z-index: 3;
 
-  padding: 20px 16px 22px;
+  padding: 20px 16px 22px 15px;
 }
 
 .products-in-basket {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding-bottom: 8px;
+  padding-right: 18px;
 
   color: #323232;
   font-size: 13px;
@@ -1927,6 +1929,7 @@ option {
 .delete-product-container {
   width: 12px;
   padding-top: 9px;
+  padding-left: 1px;
 }
 
 .delete-product-button {
@@ -1947,24 +1950,37 @@ option {
 .weight-text {
   width: 45px;
   padding-top: 9px;
-  padding-left: 26px;
+  padding-left: 25px;
 }
 
 .price-text {
   width: 50px;
   padding-top: 9px;
-  padding-left: 1px;
-  
+  padding-left: 2px;
+
   color: #999999;
 }
 
 .final-sum {
   width: 50px;
   padding-top: 9px;
-  padding-left: 28px;
+  padding-left: 27px;
+}
+
+.popup-split-line {
+  margin-right: -1px;
+}
+
+.total-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: -11px;
 }
 
 .total-text {
+  margin-right: -2px;
+
   color: #323232;
   font-size: 15px;
   font-weight: 700;
@@ -1980,10 +1996,4 @@ option {
   line-height: 24px;
   justify-content: center;
   border-radius: 20px;
-}
-
-.total-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
 }

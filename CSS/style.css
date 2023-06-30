@@ -1427,11 +1427,6 @@ a:active {
   align-items: center;
 }
 
-/* Show hide element: */
-.show-element {
-  display: block;
-}
-
 /* Style of page "Creamy ice cream": */
 .bread-crumbs {
   position: absolute;
@@ -1893,13 +1888,14 @@ option {
 }
 
 /* Full backet window */
-.popup-full-basket {
+.popup-filled-basket {
   /* width: 540px; */
   position: fixed;
   top: 50px;
   left: 20%;
   z-index: 3;
-
+  display: none;
+  
   padding: 20px 16px 22px 15px;
 }
 
@@ -1996,4 +1992,9 @@ option {
   line-height: 24px;
   justify-content: center;
   border-radius: 20px;
+}
+
+/* Show hide element: */
+.show-element {
+  display: block;
 }

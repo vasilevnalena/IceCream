@@ -1,22 +1,19 @@
 import * as functions from "./behaviourElements.js";
 
-let buttonMainMenu = document.querySelector(".catalog__button");
-let modalMainMenu = document.querySelector(".modal-catalog-menu");
+const buttonMainMenu = document.querySelector(".catalog__button");
+const modalMainMenu = document.querySelector(".modal-catalog-menu");
 
-let buttonSearch = document.querySelector(".search__button");
-let modalSearch = document.querySelector(".modal-search");
+const buttonSearch = document.querySelector(".search__button");
+const modalSearch = document.querySelector(".modal-search");
 
-let buttonLogin = document.querySelector(".login__button");
-let modalLogin = document.querySelector(".modal-login");
+const buttonLogin = document.querySelector(".login__button");
+const modalLogin = document.querySelector(".modal-login");
 
-
-functions.popupWindowActions(buttonLogin, modalLogin);
-functions.popupWindowActions(buttonSearch, modalSearch);
-functions.popupWindowActions(buttonMainMenu, modalMainMenu);
-
+const filledBasketElement = document.querySelector(".basket-button");
+const popupFilledBasket = document.querySelector(".popup-filled-basket");
 
 const filledBasket = () => {
-    return `
+  return `
     <svg
     xmlns="http://www.w3.org/2000/svg"
     width="21"
@@ -37,7 +34,12 @@ const filledBasket = () => {
   2 товара
     `;
 };
-
-const filledBasketElement = document.querySelector(`.basket-button`);
 filledBasketElement.classList.add("filled-basket");
 render(filledBasketElement, filledBasket(), `beforeend`);
+
+functions.popupWindowActions(buttonLogin, modalLogin);
+functions.popupWindowActions(buttonSearch, modalSearch);
+functions.popupWindowActions(buttonMainMenu, modalMainMenu);
+functions.popupWindowActions(filledBasketElement, popupFilledBasket);
+
+console.log(popupFilledBasket);

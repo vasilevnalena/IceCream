@@ -137,13 +137,69 @@ const header = () => {
         </section>
       </li>
 
-      <li>
+      <li class="basket-button-container">
         <button
           class="basket-button user-navigation-button"
           type="button"
-        >
-        
+        >        
         </button>
+
+        <section class="modal popup-filled-basket">
+        <h6 class="visually-hidden">Filled basket</h6>
+        <ul class="products-in-basket">
+          <li class="product-item">
+            <div class="delete-product-container">
+              <button class="delete-product-button" type="button">
+                <img src="IMG/cross-small.svg" width="11" height="11" />
+              </button>
+            </div>
+            <div class="taste-image">
+              <img
+                src="IMG/Taste_1.png"
+                width="33"
+                height="33"
+                alt="Мороженое 1"
+              />
+            </div>
+            <p class="taste-text">Пломбир с апельсиновым джемом</p>
+            <p class="weight-text">1.5 кг х</p>
+            <p class="price-text">200 руб.</p>
+            <p class="final-sum">300 руб.</p>
+          </li>
+  
+          <li class="product-item">
+            <div class="delete-product-container">
+              <button class="delete-product-button" type="button">
+                <img src="IMG/cross-small.svg" width="11" height="11" />
+              </button>
+            </div>
+            <div class="taste-image">
+              <img
+                src="IMG/Taste_3.png"
+                width="33"
+                height="33"
+                alt="Мороженое 3"
+              />
+            </div>
+            <p class="taste-text">
+              Клубничный пломбир с присыпкой из белого шоколада
+            </p>
+            <p class="weight-text">1.5 кг х</p>
+            <p class="price-text">300 руб.</p>
+            <p class="final-sum">450 руб.</p>
+          </li>
+        </ul>
+  
+        <hr class="popup-split-line"/>
+  
+        <div class="total-container">
+          <p class="total-text">Итого: 750 руб.</p>
+  
+          <button class="place-an-order-button" type="button">
+            Оформить заказ
+          </button>
+        </div>
+      </section>
       </li>
     </ul>
   </div>

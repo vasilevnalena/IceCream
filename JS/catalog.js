@@ -2,6 +2,8 @@ import * as functions from "./behaviourElements.js";
 
 const buttonMainMenu = document.querySelector(".catalog__button");
 const modalMainMenu = document.querySelector(".modal-catalog-menu");
+const creamyIceCreamItem = document.querySelector(".creamy-ice-cream-item");
+const creamyIceCreamText = document.querySelector(".creamy-ice-cream__button");
 
 const buttonSearch = document.querySelector(".search__button");
 const modalSearch = document.querySelector(".modal-search");
@@ -42,4 +44,5 @@ functions.popupWindowActions(buttonSearch, modalSearch);
 functions.popupWindowActions(buttonMainMenu, modalMainMenu);
 functions.popupWindowActions(filledBasketElement, popupFilledBasket);
 
-console.log(popupFilledBasket);
+creamyIceCreamItem.classList.add("creamy-ice-cream-item-selected");
+creamyIceCreamText.classList.add("creamy-ice-cream-text-selected");

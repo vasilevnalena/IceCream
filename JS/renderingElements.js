@@ -29,7 +29,7 @@ const header = () => {
             <p>Новинки</p>
             <ul class="new-products">
               <li><!-- разделитель--></li>
-              <li>
+              <li class="creamy-ice-cream-item">
                 <a class="creamy-ice-cream__button" href="catalog_creamy.html"
                   >Сливочное</a
                 >

@@ -39,7 +39,6 @@ html {
 body {
   min-width: 960px;
   max-width: 1200px;
-  /* width: 1200px; */
   margin: 0 auto;
   padding: 0;
 
@@ -75,7 +74,6 @@ body {
   background-image: url(../IMG/IceCreams_3.png);
 }
 
-/* В мобильной версии картинку выровнять на фоне */
 .picture-offer-1,
 .picture-offer-2,
 .picture-offer-3 {
@@ -180,6 +178,16 @@ a:focus,
 a:active {
   cursor: pointer;
   color: #ffbc9e;
+}
+
+/* deselect text */
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /* Header: */
@@ -1181,13 +1189,21 @@ a:active {
   color: #323232;
 }
 
-/* Исправить цвет кнопки при наведении в меню каталога, перебивается стиль */
-.creamy__button,
-.creamy__button > a,
-.creamy__button:hover,
-.creamy__button:focus,
-.creamy__button:active {
-  background: #d07058;
+.new-products a {
+  display: block;
+  height: 100%;
+}
+
+.new-products li {
+  cursor: pointer;
+}
+
+.creamy-ice-cream-item-selected {
+  background-color: #d07058;
+}
+
+/* !Должен быть белый цвет текста */
+.creamy-ice-cream-text-selected {
   color: #ffffff;
 }
 
@@ -1736,13 +1752,13 @@ option {
 .fillers [type="checkbox"]:checked + img {
   content: url("/IMG/checkbox-on.svg");
   width: 24px;
-  margin-right: 7px; /*чекбокс не должен ездить при снятии галочки(не менять!)*/
+  margin-right: 7px;
 }
 
 /* -unchecked style- */
 .fillers [type="checkbox"] + img {
   content: url("/IMG/checkbox-off.svg");
-  margin-right: 11px; /*чекбокс не должен ездить при снятии галочки(не менять!)*/
+  margin-right: 11px;
 }
 
 .fillers [type="checkbox"] + img:hover,
@@ -1857,7 +1873,7 @@ option {
   opacity: 0.5;
   transform: rotate(-180deg);
 
-  margin-bottom: -1px; 
+  margin-bottom: -1px;
   margin-right: 2px;
 }
 
@@ -1869,8 +1885,8 @@ a.disabled {
   fill: #ffffff;
 }
 
-#right-arrow-button{
-   margin-bottom: -1px; 
+#right-arrow-button {
+  margin-bottom: -1px;
   margin-left: 5px;
 }
 
@@ -1886,7 +1902,6 @@ a.disabled {
 }
 
 .popup-filled-basket {
-  /* width: 540px; */
   position: absolute;
   top: 36px;
   right: 0;
@@ -1928,7 +1943,7 @@ a.disabled {
 .delete-product-button,
 .delete-product-button:hover,
 .delete-product-button:focus,
-.delete-product-button:active{
+.delete-product-button:active {
   all: unset;
 }
 

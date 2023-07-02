@@ -1805,9 +1805,10 @@ option {
 
 .num-button {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* z-index: 2; */
-  /* align-items: center;
-  justify-content: center; */
 }
 
 .selected-num-button {
@@ -1816,8 +1817,6 @@ option {
   width: 26px;
   height: 26px;
   z-index: 0;
-  /* align-items: center;
-  justify-content: center; */
 
   background: rgba(173, 173, 173, 0.437);
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);

@@ -124,7 +124,6 @@ button {
   background: linear-gradient(0deg, #e74a35 0%, #f26843 100%);
   box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
   border-radius: 40px;
-
   cursor: pointer;
 }
 
@@ -137,7 +136,6 @@ button:focus {
     ),
     linear-gradient(0deg, #e74a35 -3.14%, #f26843 103.11%);
   box-shadow: 0px 2px 2px #ac1000;
-
   cursor: pointer;
 }
 
@@ -145,7 +143,6 @@ button:active {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
     linear-gradient(0deg, #f26843 0%, #e74a35 100%);
   box-shadow: inset 0px 2px 2px #942718;
-
   cursor: pointer;
 }
 
@@ -195,7 +192,7 @@ a:active {
   display: flex;
   flex-direction: column;
 
-  margin: 0 27px 0 27px;
+  margin: 0 27px;
   color: #ffffff;
 }
 
@@ -1196,15 +1193,6 @@ a:active {
 
 .new-products li {
   cursor: pointer;
-}
-
-.creamy-ice-cream-item-selected {
-  background-color: #d07058;
-}
-
-/* !Должен быть белый цвет текста */
-.creamy-ice-cream-text-selected {
-  color: #ffffff;
 }
 
 /* Search window: */
